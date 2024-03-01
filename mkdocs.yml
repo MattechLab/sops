@@ -1,0 +1,78 @@
+site_name: "SOPs template (cookiecutter)"
+site_description: Templates and bootstrapping documentation for standard operating procedures (SOPs)
+site_author: The NiPreps developers
+site_url: https://www.nipreps.org/sops-cookiecutter/
+google_analytics: ['UA-170131052-1', 'www.nipreps.org']
+
+# Copyright
+copyright: Copyright &copy; 2023
+
+nav:
+    - Home: index.md
+    - Change History: changes.md
+    - Recruitment, Scheduling, and Screening:
+      - Introduction: recruitment-scheduling-screening/index.md
+      - Example 1: recruitment-scheduling-screening/example1.md
+      - Example 2: recruitment-scheduling-screening/example2.md
+    - Data collection: data-collection.md
+    - Data storage: data-storage.md
+    - After the session: post-session.md
+    - Quality Assessment and Control: qa-qc.md
+    - Preprocessing: preprocessing.md
+    - Release of data: release.md
+theme:
+  name: material
+  features:
+    - tabs
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    admonition:
+      thanks: octicons/code-of-conduct-16
+      quote: octicons/comment-16
+
+plugins:
+  - search
+  - macros:
+      include_dir: includes
+      include_yaml:
+        # - secrets: 'secrets/settings.yml'
+        - settings: 'study-settings.yml'
+      on_undefined: lax
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - markdown_include.include:
+      base_path: docs
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
