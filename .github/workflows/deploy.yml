@@ -19,8 +19,8 @@ jobs:
         python-version: 3.8
     - name: Setup Git & Install dependencies
       run: |
-        git config --global user.email "nipreps@gmail.com"
-        git config --global user.name "nipreps-bot"
+        git config --global user.email "mauro.leidi@hotmail.com"
+        git config --global user.name "MauroLeidi"
         python -m pip install --upgrade pip
         pip install -r mkdocs/requirements.txt
     - uses: actions/checkout@v2
