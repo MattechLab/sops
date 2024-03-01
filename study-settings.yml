@@ -3,5 +3,5 @@
 # For instance, the first setting (name) can be included with:
 # {{ settings.general.name }}
 general:
-  name: "SOPs Cookiecutter"
-  repo: nipreps/sops-cookiecutter
+  name: "MatTech Lab SOPS"
+  repo: MattechLab/SOPS

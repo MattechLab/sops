@@ -1,8 +1,7 @@
-site_name: "SOPs template (cookiecutter)"
-site_description: Templates and bootstrapping documentation for standard operating procedures (SOPs)
-site_author: The NiPreps developers
-site_url: https://www.nipreps.org/sops-cookiecutter/
-google_analytics: ['UA-170131052-1', 'www.nipreps.org']
+site_name: "MatTech Lab SOPS"
+site_description: standard operating procedures (SOPs) of MatTech Lab
+site_author: MatTech Members
+site_url: https://mattechlab.github.io/SOPS/
 
 # Copyright
 copyright: Copyright &copy; 2023
