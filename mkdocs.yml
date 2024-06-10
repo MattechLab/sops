@@ -8,38 +8,54 @@ copyright: Copyright &copy; 2023
 
 nav:
     - Home: index.md
-    - Change History: changes.md
     - Recruitment, Scheduling, and Screening:
-      - Introduction: recruitment-scheduling-screening/index.md
-      - Example 1: recruitment-scheduling-screening/example1.md
-      - Example 2: recruitment-scheduling-screening/example2.md
-    - Data collection: data-collection.md
+      - Recruitment and screening: recruitment-scheduling-screening/example1.md
+      - Scheduling: recruitment-scheduling-screening/example2.md
+    - Data collection:
+      - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
+      - Audio fMRI protocol: data-collection/data-collection_audio.md
+      - Resting state fMRI protocol: data-collection/data-collection_rs.md
     - Data storage: data-storage.md
-    - After the session: post-session.md
-    - Quality Assessment and Control: qa-qc.md
-    - Preprocessing: preprocessing.md
-    - Release of data: release.md
 theme:
   name: material
+  palette:
+    primary: black
+  logo: assets/images/chuv_logo.svg
   features:
-    - tabs
+    # - tabs
+    - navigation.instant
+    # - navigation.tabs
+    - navigation.expand
+    - navigation.top
     - content.code.copy
     - content.code.annotate
   icon:
     admonition:
       thanks: octicons/code-of-conduct-16
-      quote: octicons/comment-16
+      quote: fontawesome/solid/comment-dots
+      danger: fontawesome/solid/circle-exclamation
+      warning: fontawesome/solid/traffic-light
+      important: fontawesome/solid/bullhorn
+      tip: fontawesome/solid/bookmark
+      bug: fontawesome/regular/circle-xmark
+
 
 plugins:
   - search
-  - macros:
-      include_dir: includes
-      include_yaml:
-        # - secrets: 'secrets/settings.yml'
-        - settings: 'study-settings.yml'
-      on_undefined: lax
+  - mkdocs-jupyter:
+      ignore:
+        - "*.py"
+        - "assets/code/physioconv/.ipynb_checkpoints/physio-to-bids-checkpoint.ipynb"
+        - "assets/code/physioconv/physio-to-bids.ipynb"
+  # - mkpdfs:
+  #     company: Lausanne University Hospital (CHUV)
+  #     author: The Axon Lab
+  #     toc_title: Table of Contents
+  #     design: design/report.css
+  #     output_path: pdf/documentation.pdf
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
   - footnotes
@@ -49,19 +65,24 @@ markdown_extensions:
       generic: true
   - pymdownx.details
   - pymdownx.highlight:
+      use_pygments: true
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - include/abbreviations.md
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.tabbed
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
