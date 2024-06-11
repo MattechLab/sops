@@ -20,7 +20,7 @@ theme:
   name: material
   palette:
     primary: black
-  logo: assets/images/chuv_logo.svg
+  logo: assets/images/Logo_squared_v1.svg
   features:
     # - tabs
     - navigation.instant
