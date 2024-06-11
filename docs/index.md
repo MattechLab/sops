@@ -1,6 +1,12 @@
-# Visual and Acoustic fMRI protocols: Standard Operating Procedures
+# Mat-TechLab's Standard Operating Procedures
 
-These SOPs refers to different protocols which data are collected simultaneously and that show very similar or overlapping procedures. These refers to 3 different protocols: visual checkerboard fMRI protocol, audio fMRI protocol and resting state audio-visual fMRI protocol. In the Data Collection section, the different protocols are extensively descripted. 
+Welcome to MattchLab's SOPs website. These SOPs refers to different protocols which data are collected simultaneously and that show very similar or overlapping procedures. These refers to several different protocols: 
+
+- visual checkerboard fMRI protocol
+- audio fMRI protocol 
+- resting state audio-visual fMRI protocol. 
+
+In the Data Collection section, the different protocols are extensively descripted. 
 
 
 

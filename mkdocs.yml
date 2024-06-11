@@ -9,8 +9,8 @@ copyright: Copyright &copy; 2023
 nav:
     - Home: index.md
     - Recruitment, Scheduling, and Screening:
-      - Recruitment and screening: recruitment-scheduling-screening/example1.md
-      - Scheduling: recruitment-scheduling-screening/example2.md
+      - Recruitment and screening: recruitment-scheduling-screening/participants-recruitment.md
+      - Scheduling: recruitment-scheduling-screening/scanner-scheduling.md
     - Data collection:
       - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
       - Audio fMRI protocol: data-collection/data-collection_audio.md

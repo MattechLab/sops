@@ -2,12 +2,14 @@
 
 #### Overall experimental setting
 The experimental setup includes:
-- *Syncbox:* A NordicLabs Syncbox receives TTL (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
-- *Experimental laptop:* It is the laptop where the Psychopy software is installed and with it the task programs are executed. This laptop also stores the data recorded by the ET at the end of the experiment.
 
-#### Three - One day before the session
-- To verify that the Psychopy experiment runs correctly.
-- To verify that all the tools necessary for the data collection run correctly.
+- **Syncbox:** A NordicLabs Syncbox receives TT (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
+- **Experimental laptop:** It is the laptop where the Psychopy software is installed and with it the task programs are executed. This laptop also stores the data recorded by the ET at the end of the experiment.
+
+**ONE DAY BEFORE SCAN DATE**
+
+- Verify that the Psychopy experiment runs correctly.
+- Verify that all the tools necessary for the data collection run correctly.
 - Print the informed consent form.
 - Print the MRI safety screener (EN|FR).
 - Print a receipt form for each participant that will get scanned.
@@ -30,18 +32,19 @@ The following section describes how to prepare the session on the day of the sca
 ###### Setting up cables and headphones
 - Open the door of the cable section between the control room and the scanner room.
 - Connect the scanner machine to the sharing system.
-- Prepare the headphones to connect to the scanner machine. The type of headphone was choose based on the comfortability for the participant.
+- Prepare the headphones to connect to the scanner machine. The type of headphone was choose based on the comfortability for the participant. Here are the two possible models:
 
-![headphones13](../assets/images/headphones13.jpg "Type 1")
+![headphones13](../assets/images/headphones13.jpg "Type 1"){ width=30% }
 
-![headphones14](../assets/images/headphones14.jpg "Type 2")
-
-![headphones15](../assets/images/headphones15.jpg "Type 2")
+![headphones14](../assets/images/headphones14.jpg "Type 2"){ width=30% }
+![headphones15](../assets/images/headphones15.jpg "Type 2"){ width=30% }
 
 ###### Setting up the coils
 - If any head coil from the last exam is still plugged, remove it:
-  - If it is the 64-channel coil, you can just temporarily move it into the scanner's bore.
-  - Otherwise, store it on the shelf where the other coils are and bring the 64-channel one in the proximity of the bed (e.g., inside the scanner's bore). Make sure to remove other coil's fitting elements.
+  <ul>
+    <li>If it is the 64-channel coil, you can just temporarily move it into the scanner's bore.</li>
+    <li>Otherwise, store it on the shelf where the other coils are and bring the 64-channel one in the proximity of the bed (e.g., inside the scanner's bore). Make sure to remove other coil's fitting elements.</li>
+  </ul>
 - Remove the spine coil by lifting the corresponding latch, then sliding it toward the head of the bed, lift it from the bed and place it on the floor ensuring it is not obstructing any passage or unstable.
 - Place the two back padding elements filling the spine coil socket.
 - Place the 64-channel head-and-neck coil into its socket at the head end of the bed.
@@ -49,39 +52,47 @@ The following section describes how to prepare the session on the day of the sca
 ###### Final setting inside the scanning room
 - Cover the MRI bed with a clean sheet.
 - Prepare padding: under-knee padding, neck-and-head padding, under-elbows padding, head-sides padding, top-head wedge padding.
-  - Wrap a sanitary cover around each ear cover.
-  - Place a double neck-and-head padding inside the coil if necessary.
+  <ul>
+    <li>Wrap a sanitary cover around each padding.</li>
+    <li>Place a double neck-and-head padding inside the coil, to ensure the eyes are close to the coil's windows.</li>
+  </ul>
 - Prepare a blanket to cover the participant.
 
 ##### Setup Preparation Inside the Control Room
 
 ###### Setting up experiment instruments
 - Arrive to the Control Room at least 30 min ahead the session start time.
-- Place the experimental laptop on the designed desk and connect all the as showed in the following picture (without eyelink ethernet). Specifically, connect the experimental laptop to:
-  - Plug the power adaptor to the laptop, and the adaptor to the power outlet on the wall.
-  - the screen switch box with the corresponding HDMI cable ( This should project your screen on the screen of CHUV's tower).
-  - the audio switch box with the corresponding jack cable ( This should share your audio on the audio of CHUV's tower).
-  - Connect the SyncBox to the laptop with the USB cable. It is normally plugged into CHUV's stimuli workstation, it must be re-plugged in there after the session.
-  ![computer_connections3.png](../assets/images/computer_connections3.png "Gas Analyzer front")
-  
+- Place the experimental laptop on the designed desk and connect all the as showed in the following picture (in this case Jack audio is not necessary). Specifically, connect the experimental laptop to:
+  <ul>
+    <li>Plug the power adaptor to the laptop, and the adaptor to the power outlet on the wall.</li>
+    <li>the screen switch box with the corresponding HDMI cable ( This should project your screen on the screen of CHUV's tower).</li>
+    <li>the audio switch box with the corresponding jack cable ( This should share your audio on the audio of CHUV's tower).</li>
+    <li>Connect the SyncBox to the laptop with the USB cable. It is normally plugged into CHUV's stimuli workstation, it must be re-plugged in there after the session.
+  </ul>
+  ![computer_connections3.png](../assets/images/computer_connections3.png "Gas Analyzer front")</li>
+
 - Switch the laptop on and open the psychopy code.
 - Click the switch button to share your PC.
 - Switch the SyncBox on using the button on the right side.
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button “S” from keyboard). Take the SyncBox and go on “Simulation” mode.
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. 
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
-![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front")
-![syncbox5](../assets/images/syncbox5.jpg "Gas Analyzer front")
+![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
+![syncbox5](../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
 
 - Open the door of the cable wardrobe between the recording room and the scanner room, and connect the sync box in the following way:
-![syncbox_connection6](../assets/images/syncbox_connection6.jpg "Gas Analyzer front")
-![syncbox_connection7](../assets/images/syncbox_connection7.jpg "Gas Analyzer front")
+
+![syncbox_connection6](../assets/images/syncbox_connection6.jpg "Gas Analyzer front"){ width=40% }
+![syncbox_connection7](../assets/images/syncbox_connection7.jpg "Gas Analyzer front"){ width=40% }
 
 ##### Setup Preparation at the technician position
 - Changes the parameters for the audio system at the box and at the pc:
-![audio_system16](../assets/images/audio_system16.jpg "Gas Analyzer front")
-![audio_system17](../assets/images/audio_system17.jpg "Gas Analyzer front")
+
+![audio_system16](../assets/images/audio_system16.jpg "Gas Analyzer front"){ width=40% }
+![audio_system17](../assets/images/audio_system17.jpg "Gas Analyzer front"){ width=40% }
+
 - Switch audio to the scanner room clicking “input” button:
+
 ![audio_system18](../assets/images/audio_system18.jpg "Gas Analyzer front")
 
 #### Participant Preparation
@@ -127,6 +138,7 @@ The following section describes how to prepare the session on the day of the sca
 ![psychopy19](../assets/images/psychopy19.png "Gas Analyzer front")
 - Wait for the sentence “In this task you will hear different sounds in the headphones. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”
 - Then click “start session” on the sync box clicking the round button. 
+
 ![gaz-analyser-front](../assets/images/run_experiment11.jpg "Gas Analyzer front")
 ![gaz-analyser-front](../assets/images/run_experiment12.jpg "Gas Analyzer front")
 
@@ -176,10 +188,13 @@ The following section describes how to prepare the session on the day of the sca
 
 ##### Showing the participant out
 - Enter the scanner room, and announce yourself to the participant saying that you will get out the participant in few seconds.
-- Extract the participant by pressing the extraction button and then gently rolling the central knob. Alternatively, you can just press Home button.
-- Remove the upper side of the head coil:
-  - Unplug the head coil from the bed connector.
-  - Lift the lever that releases the upper part of the coil and put it aside (e.g., inside the bore or on a chair next to the scanner).
+- Extract the participant by pressing the extraction button and then gently rolling the central knob. Alternatively, you can just press the Home button.
+  <li>Remove the upper side of the head coil:
+    <ul>
+      <li>Unplug the head coil from the bed connector.</li>
+      <li>Lift the lever that releases the upper part of the coil and put it aside (e.g., inside the bore or on a chair next to the scanner).</li>
+    </ul>
+  </li>
 - Assist the participant to the headphones.
 - Help the participant sit down.
 - Help the participant step down and accompany them out to the control room.
