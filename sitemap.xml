@@ -16,26 +16,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mattechlab.github.io/SOPS/post-session/</loc>
-         <lastmod>2024-06-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://mattechlab.github.io/SOPS/preprocessing/</loc>
-         <lastmod>2024-06-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://mattechlab.github.io/SOPS/qa-qc/</loc>
-         <lastmod>2024-06-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://mattechlab.github.io/SOPS/release/</loc>
-         <lastmod>2024-06-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/data-collection_audio/</loc>
          <lastmod>2024-06-11</lastmod>
          <changefreq>daily</changefreq>
@@ -51,17 +31,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/</loc>
+         <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/participants-recruitment/</loc>
          <lastmod>2024-06-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/example1/</loc>
-         <lastmod>2024-06-11</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/example2/</loc>
+         <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/scanner-scheduling/</loc>
          <lastmod>2024-06-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
