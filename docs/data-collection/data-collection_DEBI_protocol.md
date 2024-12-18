@@ -1,5 +1,4 @@
-## Data Collection Visual checkerboard fMRI protocol
-
+## Data Collection MR-Eye protocol
 
 #### Overall experimental setting
 
@@ -7,13 +6,13 @@ The experimental setup includes:
 
 - **Syncbox**: A NordicLabs Syncbox receives TTL (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
 - **Eye tracker (ET)**: We use the EyeLink 1000 Plus (SR Research Ltd., Ottawa, Canada). Our particular variant “Long Range” is composed of three main elements: 
+  
   <ul>
       <li>inside the scanner's bore, we place an arm that holds an infrared lens and camera sensor on one side and an infrared lamp that illuminates the right eye of the subject through</li>
       <li>a special mirror to reflect the infrared spectrum;</li>
       <li>a PC tower that receives the camera recordings, post-processes the images, and calculates the final parameters of interest (position of the eye, pupil size, etc.).</li>
        The ET is also connected to the experimental laptop.
     </ul>
- 
 
 - **Experimental laptop**: It is the laptop where the Psychopy software is installed and with it the task programs are executed. This laptop also stores the data recorded by the ET at the end of the experiment.
 
@@ -24,24 +23,27 @@ The experimental setup includes:
 
 ???+ quote "Configuration"
      If you connect the eye tracker to the experimental laptop for the first time, you need to configure it.
-	- Go to the experimental laptop.
-	- Double click on the ethernet connection inside the control panel.
+    - Go to the experimental laptop.
+    - Double click on the ethernet connection inside the control panel.
+
+      ![control_panel1.png](../assets/images/control_panel1.png "ET_system")
     
-	  ![control_panel1.png](../assets/images/control_panel1.png "ET_system")
-	  
-	- Change the IP address → double click on the internet protocol version and change IP address with IP 100.1.1.2 and sub with 255.255.255.0.
+    - Change the IP address → double click on the internet protocol version and change IP address with IP 100.1.1.2 and sub with 255.255.255.0.
 
 - Print the informed consent form.
 - Print the MRI safety screener (EN|FR).
 - Print a receipt form for each participant that will get scanned.
 
 #### Session preparation
+
 The following section describes how to prepare the session on the day of the scan BEFORE the participant arrives. Try to arrive at the Control Room at least 30 min ahead of the session start time.
 
 ##### Setup Preparation Inside the Scanner room
+
 - Memorize where the other tools for the recordings are to put those back in place at the end (coil, emergency button, ears cover).
 
 ###### Setting up the projector
+
 - Before entering the scanner room, go to the room where the projector is installed.
 - Switch the projector ON by hitting the power button located on its right side.
 - Verify the aim of the projector's beam by looking through the tube into the Scanning Room.
@@ -50,23 +52,28 @@ The following section describes how to prepare the session on the day of the sca
 - Take the panel to the Control Room.
 - Go to the scanner room and take the half-circle one-direction screen from the table behind the scanner and put it on the back of the scanner.
 
-
 ###### Setting up the eye-tracker
+
 - Check out Eye Tracker set-up guidelin (ET_setup_3T_EyeLink_1000Plus).
+
 - After accurately preparing the ET arm following the ET_setup_3T_EyeLink_1000Plus, bring the plexiglass panel inside the scanning room and place it at the end of the scanner's bore. A sign indicates the top side that MUST face up. The plastic feet must face down to avoid the panel from sliding. To ensure the repeatable positioning of the ET, place the end of the plexiglass such that its edge aligns with the edge of the illuminated MRI rails.
+
 - Exit the Scanning Room and fetch the ET arm.
+
 - Enter the Scanning Room and place the ET arm on top of the plexiglass panel with the two posterior feet of the ET arm aligned within the two corner markers made of scotch tape.
-!!! danger "Hold the ET arm FIRMLY because the magnetic field imposes some resistance"
+  !!! danger "Hold the ET arm FIRMLY because the magnetic field imposes some resistance"
 
 - Unroll and connect the cables (two plugs for the black, one plug for the orange).
-![cables2](../assets/images/cables2.png "ET_system")
+  ![cables2](../assets/images/cables2.png "ET_system")
 
 - Take the half-circle one-direction screen from the table behind the scanner and put it on the back of the scanner behind the ET system (don't push the plexiglass yet).
 
 ![ET_system](../assets/images/ET_system.png "ET_system")
 
 ###### Setting up the coils
+
 - If any head coil from the last exam is still plugged, remove it:
+  
   <ul>
     <li>If it is the 64-channel coil, you can just temporarily move it into the scanner's bore.</li>
     <li>Otherwise, store it on the shelf where the other coils are and bring the 64-channel one in the proximity of the bed (e.g., inside the scanner's bore). Make sure to remove other coil's fitting elements.</li>
@@ -75,6 +82,7 @@ The following section describes how to prepare the session on the day of the sca
 - Place the two back padding elements filling the spine coil socket.
 - Place the 64-channel head-and-neck coil into its socket at the head end of the bed.
 - Attach the dedicated infrared mirror to the coil (see ET_setup_3T_EyeLink_1000Plus):
+  
   <ul>
     <li>Exit the Scanning Room.</li>
     <li>Fit in a pair of new latex gloves.</li>
@@ -83,10 +91,11 @@ The following section describes how to prepare the session on the day of the sca
     <li>Take the mirror, enter the Scanning Room and lock the mirror onto the frame of the head-coil.</li>
   </ul>
 
-
 ###### Final setting inside the scanning room
+
 - Cover the MRI bed with a clean sheet.
 - Prepare padding: under-knee padding, neck-and-head padding, under-elbows padding, head-sides padding, top-head wedge padding.
+  
   <ul>
     <li>Wrap a sanitary cover around each padding.</li>
     <li>Place a double neck-and-head padding inside the coil, to ensure the eyes are close to the coil's windows.</li>
@@ -95,29 +104,36 @@ The following section describes how to prepare the session on the day of the sca
 - Prepare a new pair of earplugs.
 - Completely disable the light inside of the scanner and the ventilation of the scanning room to facilitate the best performance of the ET.
 
-
 ##### Setup Preparation Inside the Control Room
 
 ###### Setting up experiment instruments
+
 - Arrive to the Control Room at least 30 min ahead the session start time.
+
 - Place the experimental laptop on the designed desk and connect all the as showed in the following picture (in this case Jack audio is not necessary). Specifically, connect the experimental laptop to:
+  
   <ul>
     <li>Plug the power adaptor to the laptop, and the adaptor to the power outlet on the wall.</li>
     <li>The screen switch box with the corresponding HDMI cable (This should project your screen on the screen of CHUV's tower).</li>
     <li>The RJ-45/Ethernet cable from the ET computer into the RJ-45 socket of the experimental laptop.</li>
     <li>Connect the SyncBox to the laptop with the USB cable. It is normally plugged into CHUV's stimuli workstation, it must be re-plugged in there after the session.</li>
   </ul>
-
-  ![computer_connections3.png](../assets/images/computer_connections3.png "Gas Analyzer front")
   
+  ![computer_connections3.png](../assets/images/computer_connections3.png "Gas Analyzer front")
+
 - Switch the laptop on and open the psychopy code.
+
 - Click the switch button to share your PC.
+
 - Switch the SyncBox on using the button on the right side.
+
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button “S” from keyboard). Take the SyncBox and go on “Simulation” mode.
+
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. 
+
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
-![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
-![syncbox5](../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
+  ![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
+  ![syncbox5](../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
 
 - Open the door of the cable wardrobe between the recording room and the scanner room, and connect the sync box in the following way:
 
@@ -126,6 +142,7 @@ The following section describes how to prepare the session on the day of the sca
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
+  
   <li>Verify the IP address assigned to the Ethernet interface of the experimental laptop is correct:
     <ul>
       <li>Check the output of the following command and verify that IP/mask is 100.1.1.2/24, and the protocol is IP version 4.</li>
@@ -171,17 +188,17 @@ The following section describes how to prepare the session on the day of the sca
 
 ???+ quote "ET Calibration"
     - Open psychopy in the experimental laptop.If you connect the eye tracker to the experimental laptop for the first time, you need to configure it.
-	- Double click on the psychopy file of the rs protocol to open it.
-	- Run the experiment on psychopy clicking the “run experiment” button. IMPORTANT: make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed at the ET’s PC screen.
-	- Once the stimulation begins, you follow the messages on the screen to run the calibration (make sure the 5 points calibration has been selected).
-	- ET PC – apply threshold (left upper corner, as on the left figure), make sure that the pupil was found, and you see the blue cross on the eye. In case of troubles – check if there is enough light inside the scanner and not too much, check the position of the participant inside the coil. Once the calibration starts accept calibration points when green (Accept fixation).
-	  
-    ![ET_calibration8](../assets/images/ET_calibration8.png "ET_system")
-	  ![ET_calibration9](../assets/images/ET_calibration9.png "ET_system")
-	  ![ET_calibration10](../assets/images/ET_calibration10.png "ET_system")
+    - Double click on the psychopy file of the rs protocol to open it.
+    - Run the experiment on psychopy clicking the “run experiment” button. IMPORTANT: make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed at the ET’s PC screen.
+    - Once the stimulation begins, you follow the messages on the screen to run the calibration (make sure the 5 points calibration has been selected).
+    - ET PC – apply threshold (left upper corner, as on the left figure), make sure that the pupil was found, and you see the blue cross on the eye. In case of troubles – check if there is enough light inside the scanner and not too much, check the position of the participant inside the coil. Once the calibration starts accept calibration points when green (Accept fixation).
 
-	- If the calibration was successful, you will see the sentence ‘calibration successful’ at the bottom in green. Check the stability of the accepted points and overall score o the calibration.
-	- Follow up with the validation. What you should see in an ideal situation is: the reference dot on the center of the screen and another dot, which correspond to the pupil calibration, that it is more and less stable moving a little around the reference dot. If the calibration dot is unstable and is moving around far from the reference dot the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable proceed with the validation clicking the accept fixation. 
+    ![ET_calibration8](../assets/images/ET_calibration8.png "ET_system")
+      ![ET_calibration9](../assets/images/ET_calibration9.png "ET_system")
+      ![ET_calibration10](../assets/images/ET_calibration10.png "ET_system")
+    
+    - If the calibration was successful, you will see the sentence ‘calibration successful’ at the bottom in green. Check the stability of the accepted points and overall score o the calibration.
+    - Follow up with the validation. What you should see in an ideal situation is: the reference dot on the center of the screen and another dot, which correspond to the pupil calibration, that it is more and less stable moving a little around the reference dot. If the calibration dot is unstable and is moving around far from the reference dot the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable proceed with the validation clicking the accept fixation. 
 
 - Inform the participant that you are leaving the room and will now close the door to start. Let them also know that you are going to communicate with them very shortly to check that communications through the speaker are functioning.
 - Exit the Scanning Room.
@@ -219,19 +236,22 @@ The following section describes how to prepare the session on the day of the sca
 ### Acquire a High-Resolution Anatomical Image
 
 - Run the wip19_mprage_1iso_cs4p2 protocol by pressing Continue.
-???+ quote "Anatomical image Acquisition" 
-    - While you are still running the MPRAGE sequence open the parameters of the sequence and ensure that:
-    -	under Sequence ⤷ Part1, the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
-    -	under Routine, TR and TE should be set at the minimum value. the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
-    -	under Contrast ⤷ common, TR and TE should be set at the minimum value. The fat-water should be set as standard and the flip angle should be set to 5 degree.
-    -	under Contrast ⤷ filter, click on the three dots and tick the “unfiltered images”.
-    -	under System ⤷ coils, select the coils HC3, HC5, HC4, HC6, HC7.
-    -	under System ⤷ miscellaneous, Put the coil selection as manual.
-    -	under Physio, make sure that RECONSTRUCTION is off. 
-    - Finally, click copy and go button
-### Acquire Functional Image
+  ???+ quote "Anatomical image Acquisition" 
+  
+  - While you are still running the MPRAGE sequence open the parameters of the sequence and ensure that:
+  - under Sequence ⤷ Part1, the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
+  - under Routine, TR and TE should be set at the minimum value. the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
+  - under Contrast ⤷ common, TR and TE should be set at the minimum value. The fat-water should be set as standard and the flip angle should be set to 5 degree.
+  - under Contrast ⤷ filter, click on the three dots and tick the “unfiltered images”.
+  - under System ⤷ coils, select the coils HC3, HC5, HC4, HC6, HC7.
+  - under System ⤷ miscellaneous, Put the coil selection as manual.
+  - under Physio, make sure that RECONSTRUCTION is off. 
+  - Finally, click copy and go button
+    
+    ### Acquire Functional Image
 
 - Inform the participant that we will start with the fMRI block, therefore the participant will start hearing sounds.
+
 - Run the BEAT_LIBREoff_BOLD_audio_bis protocol by pressing Continue.
 
 ## Session Completed
@@ -246,6 +266,7 @@ The following section describes how to prepare the session on the day of the sca
 
 - Enter the scanner room, and announce yourself to the participant saying that you will get out the participant in a few seconds.
 - Extract the participant by pressing the extraction button and then gently rolling the central knob. Alternatively, you can just press the Home button.
+  
   <li>Remove the upper side of the head coil:
     <ul>
       <li>Unplug the head coil from the bed connector.</li>
@@ -273,7 +294,6 @@ The following section describes how to prepare the session on the day of the sca
 - Put the head coil away with the other head-coils on the shelf next to the scanner.
 - Return the bed to its Home position by pressing the button (more info).
 - Exit and close the external door.
-
 
 !!!danger "Everything that is removed for the experiment needs to be put back in place at the end of the experiment, i.e., position of the bed, coil, emergency button, ears cover."
 
