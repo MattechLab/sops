@@ -15,6 +15,7 @@ nav:
       - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
       - Audio fMRI protocol: data-collection/data-collection_audio.md
       - Resting state fMRI protocol: data-collection/data-collection_rs.md
+      - DEBI protocol: data-collection/data-collection_DEBI_protocol.md
     - Data storage: data-storage.md
 theme:
   name: material
