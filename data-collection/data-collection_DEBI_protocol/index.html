@@ -675,9 +675,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#run-the-experiment-on-psychopy-b" class="md-nav__link">
+  <a href="#run-the-experiment-on-psychopy" class="md-nav__link">
     <span class="md-ellipsis">
-      Run the experiment on psychopy b
+      Run the experiment on psychopy
     </span>
   </a>
   
@@ -1101,9 +1101,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#run-the-experiment-on-psychopy-b" class="md-nav__link">
+  <a href="#run-the-experiment-on-psychopy" class="md-nav__link">
     <span class="md-ellipsis">
-      Run the experiment on psychopy b
+      Run the experiment on psychopy
     </span>
   </a>
   
@@ -1293,145 +1293,151 @@
 </details>
 <h2 id="overall-experimental-setting">Overall experimental setting<a class="headerlink" href="#overall-experimental-setting" title="Permanent link">&para;</a></h2>
 <ul>
-<li>The sync box will send the signal to the psychopy laptop by key 's', and send to the scanner with pulses, as illustrations below:
-  <img alt="" src="../../assets/debi_protocol/selected/19-pc-trigger-signal.png" />
-  <img alt="" src="../../assets/debi_protocol/selected/19-scanner-signal.png" /></li>
+<li>The Syncbox transmits the signal to the PsychoPy laptop using the 'S' key and sends pulses to the scanner, as illustrated below:</li>
 </ul>
+<p><img alt="" src="../../assets/debi_protocol/selected/19-pc-trigger-signal.png" />
+<img alt="" src="../../assets/debi_protocol/selected/19-scanner-signal.png" /></p>
 <h2 id="configure-the-ip-address">Configure the IP address<a class="headerlink" href="#configure-the-ip-address" title="Permanent link">&para;</a></h2>
-<p>If you connect your PC to the ET for the first time, it is necessary to re-configure the IP address.
+<p>If you are connecting your PC to the eye tracker (ET) for the first time, you need to reconfigure the IP address.
 On windows:
 - Go to <code>Control Panel</code> -&gt; <code>Network and Internet</code> -&gt; <code>Network Connections</code>
-- Double click on the <code>Ethernet</code>
-- Double click on the internet protocol version and change IP address with IP <code>100.1.1.2</code> and sub with <code>255.255.255.0</code>.<mark> (Photos from Helene's sop)</mark>
-<img alt="" src="../../assets/debi_protocol/selected/0-e-ip.jpg" />
+- Double-click on the <code>Ethernet</code> connection.
+- Select <code>Internet Protocol Version 4 (TCP/IPv4)</code> and click <code>Properties</code>.
+- Update the IP address to <code>100.1.1.2</code> and the subnet mask <code>255.255.255.0</code>.<mark> (Photos from Helene's sop)</mark></p>
+<p><img alt="" src="../../assets/debi_protocol/selected/0-e-ip.jpg" />
 <img alt="" src="../../assets/debi_protocol/selected/0-e2-ip.png" /></p>
 <h2 id="prepare-et-set-up-outside-the-scanner-room">Prepare ET set up outside the scanner room<a class="headerlink" href="#prepare-et-set-up-outside-the-scanner-room" title="Permanent link">&para;</a></h2>
 <h3 id="setting-up-the-projector">Setting up the projector<a class="headerlink" href="#setting-up-the-projector" title="Permanent link">&para;</a></h3>
-<p>Turn on the projector at the backroom of the scanner room (Sony projector)
-<img alt="" src="../../assets/debi_protocol/selected/1-projector-e.png" />
-Make sure the beam project into the scanner room. </p>
+<p>Turn on the Sony projector located in the back room of the scanner room.
+<img alt="" src="../../assets/debi_protocol/selected/1-projector-e.png" /></p>
+<p>Ensure the projector beam is directed into the scanner room.</p>
 <h3 id="set-up-the-psychopy-laptop-on-the-table">Set up the Psychopy laptop on the table<a class="headerlink" href="#set-up-the-psychopy-laptop-on-the-table" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Insert the hdmi into the Psychopy laptop, so that we can monitor the visual stimuli on the screen. The hdmi should be from the 3-cable (which connect PC, projector and the Psychopy laptop).
-  <img alt="" src="../../assets/debi_protocol/selected/2-e-psychopy-laptop.png" /></li>
-<li>If the monitoer does not automatically switch the source of the screen, you can use the button below to switch it.
-  <img alt="" src="../../assets/debi_protocol/selected/3-e-button-monitor.jpg" /></li>
-<li>Keep the PC under the screen turned on for psychopy laptop.
-  <img alt="" src="../../assets/debi_protocol/selected/3-e-pc-under-screen.png" /></li>
-<li>Connect the USB that comes from the synthbox to the psychopy laptop
-  <img alt="" src="../../assets/debi_protocol/selected/4-e-usb-from-syncbox.png" />
-  <img alt="" src="../../assets/debi_protocol/selected/4-e2-usb-from-syncbox.png" /></li>
-<li>Plug the Ethernet from ET computer to the psychopy laptop
-  <img alt="" src="../../assets/debi_protocol/selected/5-e-ethernet.png" /></li>
+<li>
+<p>Insert the hdmi into the Psychopy laptop to monitor the visual stimuli on the screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
+<img alt="" src="../../assets/debi_protocol/selected/2-e-psychopy-laptop.png" /></p>
+</li>
+<li>
+<p>If the monitor does not automatically switch the screen source, use the button below to manually change it. 
+<img alt="" src="../../assets/debi_protocol/selected/3-e-button-monitor.jpg" /></p>
+</li>
+<li>
+<p>Ensure that the PC beneath the monitor remains turned on.
+<img alt="" src="../../assets/debi_protocol/selected/3-e-pc-under-screen.png" /></p>
+</li>
+<li>
+<p>Connect the USB cable from the Syncbox to the PsychoPy laptop.
+<img alt="" src="../../assets/debi_protocol/selected/4-e-usb-from-syncbox.png" />
+<img alt="" src="../../assets/debi_protocol/selected/4-e2-usb-from-syncbox.png" /></p>
+</li>
+<li>
+<p>Plug the Ethernet from the ET computer to the psychopy laptop.
+<img alt="" src="../../assets/debi_protocol/selected/5-e-ethernet.png" /></p>
+</li>
 </ul>
 <div class="admonition danger">
-<p class="admonition-title">Make sure the IP address reset if the laptop Is the first time to be connected to the ET PC!</p>
+<p class="admonition-title">Make sure the IP address is reset if the laptop is connected to the ET PC for the first time!</p>
 </div>
 <h3 id="set-up-the-syncbox">Set up the syncbox<a class="headerlink" href="#set-up-the-syncbox" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Find the SyncBox cable (RT45) already plugged onto interface to the scanner room.
-  <img alt="" src="../../assets/debi_protocol/selected/6-rj45-plugged.png" /></li>
-<li>Plug the other end to the syncbox
-  <img alt="" src="../../assets/debi_protocol/selected/6-e2-rj45-plugged.png" /></li>
+<li>Ensure the SyncBox cable (RJ45) already plugged onto the interface to the scanner room.
+<img alt="" src="../../assets/debi_protocol/selected/6-rj45-plugged.png" /></li>
+<li>Plug the other end of the cable into the SyncBox.
+<img alt="" src="../../assets/debi_protocol/selected/6-e2-rj45-plugged.png" /></li>
 <li>Turn on the syncbox</li>
-<li>Go to the simulation, and we can see the "Start Sesson" on the page.
-  <img alt="" src="../../assets/debi_protocol/selected/7-e-start-sync.png" />
-  <img alt="" src="../../assets/debi_protocol/selected/7-e2-start-sync.png" /></li>
-<li>Configure the TR time according to our sequence (2500 ms). The TR decides the interval time between two triggers.
-  <img alt="" src="../../assets/debi_protocol/selected/7-e3-tr-sync.png" /></li>
+<li>Go to the <code>Simulation</code>, and we can see the <code>Start Sesson</code> on the page.
+<img alt="" src="../../assets/debi_protocol/selected/7-e-start-sync.png" />
+<img alt="" src="../../assets/debi_protocol/selected/7-e2-start-sync.png" /></li>
+<li>Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
+<img alt="" src="../../assets/debi_protocol/selected/7-e3-tr-sync.png" /></li>
 </ul>
 <h2 id="set-up-the-et-workstation">Set up the ET workstation<a class="headerlink" href="#set-up-the-et-workstation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Make sure the ET PC is charged
-  <img alt="" src="../../assets/debi_protocol/selected/8-e-charge-ET-PC.png" /></li>
-<li>Before turn the ET computer on, make sure it is connected to the psychopy laptop
-  (should have been done in the step before). </li>
-<li>Turn on the ET PC</li>
-<li>Initialize the ET software from the ET work station here. Type "elcl.exe" in the terminal
-    <img alt="" src="../../assets/debi_protocol/selected/8-e-ET-initial.png" /></li>
+<img alt="" src="../../assets/debi_protocol/selected/8-e-charge-ET-PC.png" /></li>
+<li>Before turning on the ET computer, ensure it is connected to the PsychoPy laptop (this should have been done in the previous step).</li>
+<li>Turn on the ET PC.</li>
+<li>Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
+<img alt="" src="../../assets/debi_protocol/selected/8-e-ET-initial.png" /></li>
 </ul>
 <h3 id="prepare-the-et">Prepare the ET<a class="headerlink" href="#prepare-the-et" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>All the lenses, mirrors, etc are in the box in JB's office.
-  <img alt="" src="../../assets/debi_protocol/selected/9-e-box.png" /></p>
-</li>
-<li>
-<p>Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has a silver screw on it) <mark>(photos from Oscar's SOP)</mark></p>
-</li>
+<li>All the lenses, mirrors, and other equipment are in the box in JB's office.
+<img alt="" src="../../assets/debi_protocol/selected/9-e-box.png" /></li>
+<li>Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has a silver screw on it) <mark>(photos from Oscar's SOP)</mark>
+<img alt="" src="../../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png" />
+<img alt="" src="../../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png" />
+<mark>what value is the default position of the screw for convenient focus ?</mark></li>
 </ul>
-<p><img alt="" src="../../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png" /></p>
-<p><img alt="" src="../../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png" /></p>
-<p><mark>what value is the default position of the screw for convenient focus ?</mark></p>
+<div class="admonition tip">
+<p class="admonition-title">The default position of the screw for convenient focus is typically set to <code>1</code>. However, the exact value can vary depending on the specific participant and setup for each time. It's recommended to start with the screw at value <code>1</code> and adjust from there for optimal focus during setup. If you're following a specific SOP, it might provide additional details for your equipment.</p>
+</div>
 <p><img alt="" src="../../assets/debi_protocol/selected/11-install-lens-ET.png" /></p>
 <h3 id="place-the-infrared-mirror-onto-the-head-coil">Place the infrared-mirror onto the head coil<a class="headerlink" href="#place-the-infrared-mirror-onto-the-head-coil" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Detach the standard mirror's frame from the head coil, if it is placed there. </li>
-<li>Take the infrared mirror out of the «fMRI usage» box. It should be always protected by a mask unless it is used.</li>
-<li><strong>This infrared mirror is THE MOST DELICATE PART, BECAUSE THE MIRROR CANNOT BE REPLACED NOR CLEANED</strong>. This mirror is <strong>EXTREMELY EXPENSIVE</strong>.
-  <img alt="" src="../../assets/debi_protocol/selected/12-e-infered-mirror.png" /></li>
-<li>Get two gloves (e.g., from the box hanging at the entrance of the scanner room)</li>
-<li>Put the gloves on, and <strong>DON'T TOUCH ANYTHING</strong>. You MUST have the standard mirror dismounted and ahead of this step. </li>
-<li><strong>WITH THE GLOVES</strong> proceed to extract the infra-red mirror from its box, being extremely careful. <strong>YOU CAN ONLY TOUCH THE MIRROR WITH GLOVES</strong>, because it cannot be cleaned up. Watch out for FINGERPRINTS and once taken out of the protection mask, IMMEDIATELY AND CAREFULLY ATTACH IT to the head coil.
-  <mark>[A photo of the head coil with the mirror correctly installed is missing]</mark></li>
+<li>Take the infrared mirror out of the «fMRI usage» box. It should be always protected by a mask unless in use.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">This infrared mirror is the most delicate part, because the morror cannot be replaced nor cleaned. This mirror is EXTREMELY EXPENSIVE.</p>
+</div>
+<p><img alt="" src="../../assets/debi_protocol/selected/12-e-infered-mirror.png" />
+- Get two gloves (e.g., from the box hanging at the entrance of the scanner room)
+- Put the gloves on, and <strong>DON'T TOUCH ANYTHING</strong>. You must have the standard mirror dismounted and ahead of this step. 
+- <strong>WITH THE GLOVES</strong> proceed to extract the infra-red mirror from its box, being extremely careful. <strong>YOU CAN ONLY TOUCH THE MIRROR WITH GLOVES</strong>, because it cannot be cleaned up. Watch out for FINGERPRINTS and once taken out of the protection mask, IMMEDIATELY AND CAREFULLY ATTACH IT to the head coil.
+<mark>[A photo of the head coil with the mirror correctly installed is missing]</mark></p>
 <h2 id="preparation-in-the-scanner-room">Preparation in the scanner room<a class="headerlink" href="#preparation-in-the-scanner-room" title="Permanent link">&para;</a></h2>
 <h3 id="connect-three-external-cables-to-et-and-scanner">Connect three external cables to ET and scanner<a class="headerlink" href="#connect-three-external-cables-to-et-and-scanner" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../../assets/debi_protocol/selected/13-e-cables.png" /></p>
-<ul>
-<li>
-<p>Two plugs for the black and one plug for the orange to ET 
-  <img alt="" src="../../assets/debi_protocol/selected/13-e-ET-cables.png" /></p>
-</li>
-<li>
-<p>Connect the external cable from the syncbox to the scanner.</p>
-</li>
-</ul>
-<p><mark>No photo here due to magnetic field</mark></p>
+<p><img alt="" src="../../assets/debi_protocol/selected/13-e-cables.png" />
+- Two plugs for the black and one plug for the orange to ET 
+<img alt="" src="../../assets/debi_protocol/selected/13-e-ET-cables.png" />
+- Connect the external cable from the syncbox to the scanner.
+<mark>No photo here due to magnetic field</mark></p>
 <h3 id="place-the-eye-tracker-and-screen">Place the eye tracker and screen<a class="headerlink" href="#place-the-eye-tracker-and-screen" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Place the glass plate (stored in JB's office) on the scanner</li>
-<li>Place the ET on the glass plate</li>
-<li>Set a half-circle one-direction screen from the table behind the scanner and put it on the glass plate for the reflection of the projector, between the projector and the eye tracker.
-  <img alt="" src="../../assets/debi_protocol/selected/14-half-circle-screen.png" /></li>
+<li>Position the ET on the glass plate according to the stickers on the plate.</li>
+<li>Place the half-circle one-direction screen, which is on the table behind the scanner, onto the glass plate. Position it between the projector and the eye tracker to reflect the projector's image.
+<img alt="" src="../../assets/debi_protocol/selected/14-half-circle-screen.png" /></li>
 </ul>
 <h3 id="place-the-participant">Place the participant<a class="headerlink" href="#place-the-participant" title="Permanent link">&para;</a></h3>
 <h4 id="place-the-subject-on-the-bed">Place the subject on the bed<a class="headerlink" href="#place-the-subject-on-the-bed" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Apply blanket, ear plugs and sand bags to the participant.</li>
-<li>Adjust the head coil and the mirror, if necessary, apply some pads to adjust the head position to let the participant's forehead tied closely to the head coil.</li>
-<li>Don't let the subject cross his legs.</li>
-<li>Give the participant the emergency button, and explain to them they can press the button if emergency.</li>
+<li>Apply a blanket, ear plugs and sand bags to the participant.</li>
+<li>Adjust the head coil and the mirror. If necessary, apply some pads to adjust the participant's head position to ensure the forehead tightly positioned against the head coil.</li>
+<li>Ensure the participant does not cross their legs.</li>
+<li>Provide the participant with the emergency button and explain that they can press it in case of an emergency.</li>
 </ul>
 <h4 id="adjust-the-scanner-before-send-the-subject-inside">Adjust the scanner before send the subject inside<a class="headerlink" href="#adjust-the-scanner-before-send-the-subject-inside" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Twist the nob to adjust the height of the bed and  wait for its stop.</li>
-<li>Gently move the participant with the manual regulation. Stop when the head is under the head-localizer. Let the subject to close his eyes.</li>
-<li>Turn on the red light to localize the head. Put one hand to the head coil then turn left or turn right to make sure the red light aligned with the mark on the head coil. Turn off the red light and now the participant can open the eyes.</li>
-<li>Turn off the vertilation and make the light inside the scanner the minimum.</li>
-<li>Send participant inside the scanner, then you can move forward to the console.</li>
+<li>Twist the knob to adjust the height of the bed and  wait for it to stop.</li>
+<li>Gently move the participant with the manual controls. Stop when the head is under the head-localizer. Instruct the participant to close his eyes.</li>
+<li>Turn on the red light to localize the head. Put one hand on the head coil, then turn the knob left or right to align the red light with the mark on the head coil. Once aligned, turn off the red light and instruct the participant to open their eyes.</li>
+<li>Turn off the ventilation and set the scanner light to the minimum level.</li>
+<li>SSend the participant into the scanner, then proceed to the console at the back of scanner.</li>
 </ul>
 <h4 id="adjust-the-lens-of-eye-tracker">Adjust the lens of eye tracker<a class="headerlink" href="#adjust-the-lens-of-eye-tracker" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Point the lens to the subject's right eye</li>
+<li>Point the lens of eye tracker towards the participant's right eye.</li>
 <li><mark>[Add the default position of the lens for convenient adjustment]</mark></li>
-<li>Rotate the lens so that we can observe the pupil is in focus on the screen during the camera mode, until the image is sharp, the pupil and the eyelashes are well defined.
-    <img alt="" src="../../assets/debi_protocol/selected/17-e-no-pupil.jpg" />
-    <img alt="" src="../../assets/debi_protocol/selected/17-e-good-pupil.jpg" />
-    <mark>ask for Mauro's consent</mark></li>
+<li>Rotate the lens until the pupil is in focus on the screen during camera mode. Adjust until the image is sharp, with both the pupil and eyelashes well defined.
+<img alt="" src="../../assets/debi_protocol/selected/17-e-no-pupil.jpg" />
+<img alt="" src="../../assets/debi_protocol/selected/17-e-good-pupil.jpg" />
+<mark>ask for Mauro's consent</mark></li>
 </ul>
 <h2 id="et-calibration">ET Calibration<a class="headerlink" href="#et-calibration" title="Permanent link">&para;</a></h2>
 <h4 id="inform-the-participant">Inform the participant<a class="headerlink" href="#inform-the-participant" title="Permanent link">&para;</a></h4>
 <p>Inform the participant that you are leaving the room and will shortly come back for a final preparation.</p>
 <h4 id="open-psychopy-in-the-psychopy-laptop">Open psychopy in the psychopy laptop.<a class="headerlink" href="#open-psychopy-in-the-psychopy-laptop" title="Permanent link">&para;</a></h4>
-<p>If you connect the eye tracker to the experimental laptop for the first time, you need to configure it (Section 0)</p>
-<h4 id="run-the-experiment-on-psychopy-b">Run the experiment on psychopy b<a class="headerlink" href="#run-the-experiment-on-psychopy-b" title="Permanent link">&para;</a></h4>
-<p>By clicking the “run experiment” button. Or run the experiment in terminal <code>python experiment.py</code></p>
+<p>If you are connecting the eye tracker to the experimental laptop for the first time, you will need to configure it (see Section 0).</p>
+<h4 id="run-the-experiment-on-psychopy">Run the experiment on psychopy<a class="headerlink" href="#run-the-experiment-on-psychopy" title="Permanent link">&para;</a></h4>
+<p>Click the <code>Run Experiment</code> button, or run the experiment from the terminal by typing:
+<code>python experiment.py</code></p>
 <div class="admonition important">
 <p class="admonition-title">Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark></p>
 </div>
 <h4 id="run-the-calibration">Run the calibration<a class="headerlink" href="#run-the-calibration" title="Permanent link">&para;</a></h4>
-<p>Once the stimulation begins, you follow the messages on the screen to run the calibration, make sure the following options are selected correctly</p>
+<p>Once the stimulation begins, follow the messages on the screen to run the calibration, make sure the following options are selected correctly</p>
 <ul>
 <li>Calibration Type: <code>5 points calibration</code></li>
 <li>Sampling rate: <code>1k</code></li>
@@ -1441,21 +1447,21 @@ Make sure the beam project into the scanner room. </p>
 </ul>
 <h4 id="apply-threshold-to-find-the-pupil">Apply threshold to find the pupil<a class="headerlink" href="#apply-threshold-to-find-the-pupil" title="Permanent link">&para;</a></h4>
 <ul>
-<li>On the ET PC – click <code>apply threshold</code> (left upper corner, as the figure below), make sure that the pupil was found, and you see the blue cross on the eye. In case of troubles – check if there is enough light inside the scanner and not too much, check the position of the participant inside the coil. Once the calibration starts, accept calibration points when green (click <code>Accept fixation</code>).</li>
+<li>On the ET PC, click <code>Apply Threshold</code> (top left corner, as shown in the figure below). Ensure that the pupil is detected and that you see the blue cross on the eye. If you encounter issues, check the lighting inside the scanner (ensure it's not too bright or too dim) and verify the participant's position inside the coil. Once the calibration starts, accept the calibration points when they turn green by clicking <code>Accept Fixation</code>.</li>
 <li>If the calibration was successful, you will see the sentence <code>calibration successful</code> at the bottom in green. Check the stability of the accepted points and overall score of the calibration. </li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">If the calibration points form a cross, it is the perfect calibration.</p>
-<p><img alt="" src="../../assets/debi_protocol/selected/16-e-good-cross.jpg" /></p>
 </div>
+<p><img alt="" src="../../assets/debi_protocol/selected/16-e-good-cross.jpg" /></p>
 <h4 id="follow-up-with-the-validation">Follow up with the validation.<a class="headerlink" href="#follow-up-with-the-validation" title="Permanent link">&para;</a></h4>
 <div class="admonition tip">
 <p class="admonition-title">What you should see in an ideal situation is: the reference dot on the center of the screen and another dot that corresponds to the pupil calibration. The calibration dot is more or less stable moving a little around the reference dot.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">If the calibration dot is unstable and is moving around far from the reference dot, the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable, proceed with the validation clicking the accept fixation.</p>
-<p><img alt="" src="../../assets/debi_protocol/selected/18-e-validation.jpg" /></p>
 </div>
+<p><img alt="" src="../../assets/debi_protocol/selected/18-e-validation.jpg" /></p>
 <h4 id="go-into-the-scanner-room-and-inform-the-participant">Go into the scanner room and inform the participant<a class="headerlink" href="#go-into-the-scanner-room-and-inform-the-participant" title="Permanent link">&para;</a></h4>
 <p>Inform the participant that you are leaving the room and will now close the door to start. Let them also know that you are going to communicate with them very shortly to check that communications through the speaker are functioning.</p>
 <h4 id="exit-the-scanning-room">Exit the Scanning Room.<a class="headerlink" href="#exit-the-scanning-room" title="Permanent link">&para;</a></h4>
@@ -1475,7 +1481,7 @@ Make sure the beam project into the scanner room. </p>
 <ul>
 <li>Now two people need to get ready beside the syncbox and the scanner.</li>
 <li>One person first start the scanner acquisition.</li>
-<li>Then, another person press  “start session” on the sync box clicking the round button. </li>
+<li>Then, another person press  <code>start session</code> on the sync box clicking the round button. </li>
 <li>The stimulation will start with the ET recording. </li>
 </ul>
 <h3 id="acquire-a-high-resolution-anatomical-image">Acquire a high-resolution anatomical image<a class="headerlink" href="#acquire-a-high-resolution-anatomical-image" title="Permanent link">&para;</a></h3>
