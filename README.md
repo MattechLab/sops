@@ -7,7 +7,7 @@ Workflow for editing sops:
   $conda create -n sops python=3.10 
   $conda activate sops
   $cd SOPS
-  $pip isntall -r requirements.txt
+  $pip install -r requirements.txt
   ```
 
 - Add the new markdown in the folder desired, eg: `/docs/data-collection/`data-collection_DEBI_protocol.md

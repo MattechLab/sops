@@ -79,7 +79,7 @@ Ensure the projector beam is directed into the scanner room.
 - Plug the other end of the cable into the SyncBox.
 ![](../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Turn on the syncbox
-- Go to the `Simulation`, and we can see the `Start Sesson` on the page.
+- Go to the `Simulation`, and we can see the `Start Session` on the page.
 ![](../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![](../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
