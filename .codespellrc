@@ -1,4 +1,5 @@
 [codespell]
+ignore-words = ./codespell_ignore.txt
 skip = ./site/*,./docs/stylesheets/*
 builtin = clear,rare,en-GB_to_en-US
 count =

@@ -16,5 +16,4 @@ jobs:
         
       - name: Codespell
         uses: codespell-project/actions-codespell@v1
-        with:
-          args: "--ignore-words=codespell_ignore.txt"
+
