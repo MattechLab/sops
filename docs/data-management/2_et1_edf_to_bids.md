@@ -2,7 +2,7 @@ Derived from [edf_to_bids](https://www.axonlab.org/hcph-sops/data-management/edf
 Hsop: Converting eye-tracking into BIDS - Standard Operating Procedures of the HCPh project (axonlab.org)
 TheAxonLab/hcph-sops (github.com)
  
-EyeLink eye tracking system produces EDF recording files. In this step we need to first convert the raw edf files to BIDS format for enforcing a standardized structure, naming conventin and metadata description. It makes researchers easier to undertand and use data from different sources.
+EyeLink eye tracking system produces EDF recording files. In this step we need to first convert the raw edf files to BIDS format for enforcing a standardized structure, naming conventin and metadata description. It makes researchers easier to understand and use data from different sources.
 
 
 - To use pyEDFRead python package, we must properly install the open-source software EyeLink on our device/laptop in the very first step. You can find the instructions [here](0_software_install.md).
