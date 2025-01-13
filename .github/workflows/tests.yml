@@ -10,9 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
-      - name: List Files (Debug Step)
-        run: ls -la
         
       - name: Codespell
         uses: codespell-project/actions-codespell@v1
