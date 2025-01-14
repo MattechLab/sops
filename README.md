@@ -26,6 +26,14 @@ Workflow for editing sops:
 
 - Deploy the site to the github page
   ```
-  $mkdocs gh-deploy
-
+  $ git add .
+  $ git commit -m 'your comment'
+  $ git push
   ```
+
+The workflow in the .github/workflows will take care of the deployment
+with the same function as
+ ```
+ $ mkdocs gh-deploy
+ ```
+  
