@@ -20,9 +20,9 @@ nav:
     - Data management: 
       - Software installation: data-management/0_software_install.md
       - Overall data workflow: data-management/0_overall-data-workflow.md
-      - Data storage: data-management/1_data-storage.md
+      - Data export: data-management/1_data_export.md
       - EDF conversion: data-management/2_et1_edf_to_bids.md
-      - MRI data: data-management/3_MRI_management.md
+      - Data storage: data-management/3_data_storage.md
     - Post-processing:
       - Eye tracking data: post-processing/1_et2_QAQC_of_eye-tracking_data.md
       - MRI data: post-processing/2_MRI_post_processing.md

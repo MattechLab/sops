@@ -47,6 +47,7 @@ Install the EyeLink Developer Kit and EyeLink Data Viewer following the instruct
 - Create a Python virtual environment
 - Load the new virtual environment -->
 This part is derived from[ HCPH SOP](https://www.axonlab.org/hcph-sops/data-collection/setup/#installing-eyelink-eye-tracker-software). Since we did not work on eye tracking data with Linux system, we refer to the HCPH SOP for completeness.
+
 - Enable Canonical's universe repository with the following command:
   ```bash
   sudo add-apt-repository universe

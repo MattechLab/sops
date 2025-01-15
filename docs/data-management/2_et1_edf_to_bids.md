@@ -2,7 +2,7 @@ Derived from [edf_to_bids](https://www.axonlab.org/hcph-sops/data-management/edf
 Hsop: Converting eye-tracking into BIDS - Standard Operating Procedures of the HCPh project (axonlab.org)
 TheAxonLab/hcph-sops (github.com)
  
-EyeLink eye tracking system produces EDF recording files. In this step we need to first convert the raw edf files to BIDS format for enforcing a standardized structure, naming conventin and metadata description. It makes researchers easier to understand and use data from different sources.
+EyeLink eye tracking system produces EDF recording files. In this step we need to first convert the raw edf files to BIDS format for enforcing a standardized structure, naming convention and metadata description. It makes researchers easier to understand and use data from different sources.
 
 ## 0 Package preparation
 
@@ -34,9 +34,10 @@ print(file_path)
 ori_recording, ori_events, ori_messages = read_edf(file_path)
 ```
 The edf file will generate Pandas dataframes:
-        - `ori_recording`: The ET recordings with trajectory information, pupil area and other information.
-        - `ori_events`: contains information of task events.
-        - `ori_messages`: log messages including ET calibration, validation and user-defined task messages sent from Psychopy program to the device.
+
+- `ori_recording`: The ET recordings with trajectory information, pupil area and other information.
+- `ori_events`: contains information of task events.
+- `ori_messages`: log messages including ET calibration, validation and user-defined task messages sent from Psychopy program to the device.
 
 ```python
 ori_messages = ori_messages.rename(
@@ -55,7 +56,7 @@ events = ori_events
 print(f'\nThe entire info of `message`: \n{messages}')
 recording.columns
 ```
-## Parsing the messages
+## 2 Parsing the messages
 - Drop the duplicated codes.
 ``` python
 messages = messages.rename(
@@ -71,6 +72,7 @@ calibration = ori_messages[_cal_hdr]
 # messages = messages.drop(messages.index[_cal_hdr])
 print(calibration)
 ```
+
 - Extracting the start time and stop time from metadata. If no information is extracted from metadata, we will keep them as `None`.
 ``` python
 # Extracting the StartTime and StopTime metadata.
@@ -188,6 +190,7 @@ print(metadata)
 ```
 
 - Extracting parameters of the pupil fit model.
+  
 ```python
 # Extracting parameters of the pupil fit model.
 # ELCL_PROC ELLIPSE (5)
@@ -229,7 +232,9 @@ if pupilfit_msg_params.any():
     finally:
         messages = messages.loc[~pupilfit_msg_params]     
 ```
+
 - Parsing validation messages
+  
 ```python
 # Calibration validation.
 # VALIDATE R 4POINT 4 RIGHT at 752,300 OFFSET 0.35 deg. -8.7,-3.8 pix.
@@ -306,7 +311,9 @@ print(metadata)
 ```python
 recording = ori_recording
 ```
+
 - Curation of the input dataframe
+  
 ```python
 # Normalize timestamps (should be int and strictly positive)
 recording = recording.astype({"time": int})
@@ -341,7 +348,9 @@ recording = recording.replace({1e8: np.nan})
 
 assert len(recording) == raw_recording_len
 ```
+
 - Clean-up pupil size and gaze position
+  
 ```python
 
 # These are the parameters we most likely we care for, so special curation is applied:
@@ -372,7 +381,9 @@ for eyenum, eyename in enumerate(eye):
 print(recording)
 assert len(recording) == raw_recording_len
 ```
+
 - Shape the columns to comply with BIDS format.
+  
 ```python
 # Munging columns to comply with BIDS. 
 # At this point, the dataframe is almost ready for writing out as BIDS.
@@ -465,6 +476,7 @@ print(calibration)
 
 ## 5 Parsing the events dataframe
 There are three types of eye movements:
+
 - fixation 
 - saccade
 - blinks
@@ -597,5 +609,6 @@ write_bids_from_df(
 
 Now the BIDS files are generated:
 EDF Path
-  - \<filename\>.json
-  - \<filename\>.tsv.gz
+
+  - <filename\>.json
+  - <filename\>.tsv.gz

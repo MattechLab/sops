@@ -1,10 +1,14 @@
 ### Collect ET data 
-- Copy data from the subfolder of PsychoPy program into the hard drive.
-!!! tip "The subfolder should include the files for one session with the formats like 
-`000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.EDF`
-`000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.csv`
-`000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.log`
-where '**.EDF' files are eye tracking records, `.csv` and `.log` files logs the task messages and the corresponding timestamps."
+Copy data from the subfolder of PsychoPy program into the hard drive.
+
+!!! tip 
+    The subfolder should include the files for one session with the formats like 
+
+    - `000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.EDF` 
+    - `000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.csv` 
+    - `000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.log`
+    
+    where '**.EDF' files are eye tracking records, `.csv` and `.log` files logs the task messages and the corresponding timestamps."
 
 
 ### Collect MRI raw data
