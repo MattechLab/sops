@@ -11,11 +11,37 @@ https://docs.google.com/drawings/d/1J4RUVk647YXuAsq7B-6wf6nKiEy5rKnjl5h4MKooOrw/
 - Example folder structure should be followed as below:
 
 ```
-MREye_Track
-├── Twix
-├── EDF
-└── MRI_folders
-    ├── subject001
-    ├── subject002
-    └── subject003
+MR-Eye/
+    ├── code/
+    │   ├── git_repo_specific_for_this_project/
+    │   │   ├── README.md  # Add a detailed description of the repository here
+    │   │   ├── [Your code files for this specific project go here]
+    │   │   └── .gitignore  # Include entries to exclude commonly-used packages like Monalisa
+    │
+    ├── data/
+    │   ├── update_protocol_description.md
+    │   ├── subject_table.xlsx
+    │   ├── final_fixed_protocol.md
+    │   ├── pilot_/
+    │   │   ├── year-month-date/
+    │   │   │   ├── subject00x/
+    │   │   │   │   └── [Relevant pilot subject data files]
+    │   │   └── [Additional subjects as needed]
+    │   ├── final_protocol/
+    │   │   ├── subject001/
+    │   │   │   ├── mri/
+    │   │   │   │   ├── dicom/
+    │   │   │   │   ├── raw_data/
+    │   │   │   │   ├── ISMRMD/
+    │   │   │   │   └── bids/  # (TBD: Decide on the structure)
+    │   │   │   ├── physio/
+    │   │   │   └── others/
+    │   │   └── [Additional subjects as needed]
+    │
+    ├── output/
+    │   └── [Generated output files go here]
+    │
+    ├── .gitignore  # Add patterns to exclude unnecessary files globally, like logs or temp files
+    └── README.md  # Main project description with an overview, usage, and other details.
+
 ```
