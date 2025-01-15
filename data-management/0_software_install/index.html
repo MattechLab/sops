@@ -661,11 +661,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../1_data-storage/" class="md-nav__link">
+      <a href="../1_data_export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Data storage
+    Data export
   </span>
   
 
@@ -703,11 +703,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../3_MRI_management/" class="md-nav__link">
+      <a href="../3_data_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    MRI data
+    Data storage
   </span>
   
 
@@ -956,24 +956,26 @@
 </span></code></pre></div>
 - Create a Python virtual environment
 - Load the new virtual environment -->
-<p>This part is derived from<a href="https://www.axonlab.org/hcph-sops/data-collection/setup/#installing-eyelink-eye-tracker-software"> HCPH SOP</a>. Since we did not work on eye tracking data with Linux system, we refer to the HCPH SOP for completeness.
-- Enable Canonical's universe repository with the following command:
+<p>This part is derived from<a href="https://www.axonlab.org/hcph-sops/data-collection/setup/#installing-eyelink-eye-tracker-software"> HCPH SOP</a>. Since we did not work on eye tracking data with Linux system, we refer to the HCPH SOP for completeness.</p>
+<ul>
+<li>Enable Canonical's universe repository with the following command:
   <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>universe
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span></code></pre></div>
-- Install and update the ca-certificates package:
+</span></code></pre></div></li>
+<li>Install and update the ca-certificates package:
   <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ca-certificates
-</span></code></pre></div>
-- Add the SR Research Software Repository signing key:
+</span></code></pre></div></li>
+<li>Add the SR Research Software Repository signing key:
   <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-sS<span class="w"> </span>https://apt.sr-research.com/SRResearch_key<span class="w"> </span><span class="p">|</span><span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/trusted.gpg.d/sr-research.gpg
-</span></code></pre></div>
-- Add the SR Research Software Repository as an Aptitude source:
+</span></code></pre></div></li>
+<li>Add the SR Research Software Repository as an Aptitude source:
     <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>eyelink-display-software
-</span></code></pre></div>
-- Install the EyeLink Data Viewer:
+</span></code></pre></div></li>
+<li>Install the EyeLink Data Viewer:
   <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo apt install eyelink-dataviewer
-</span></code></pre></div></p>
+</span></code></pre></div></li>
+</ul>
 <h2 id="3-virtual-environment-preparation">3 Virtual Environment Preparation<a class="headerlink" href="#3-virtual-environment-preparation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
