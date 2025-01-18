@@ -2,62 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mattechlab.github.io/SOPS/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/data-collection_DEBI_protocol/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/data-collection_audio/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/data-collection_rs/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-collection/data-collection_visuo/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-management/0_overall-data-workflow/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-management/0_software_install/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-management/1_data_export/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-management/2_et1_edf_to_bids/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/data-management/3_data_storage/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/post-processing/1_et2_QAQC_of_eye-tracking_data/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/post-processing/2_MRI_post_processing/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/participants-recruitment/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/recruitment-scheduling-screening/scanner-scheduling/</loc>
-         <lastmod>2025-01-15</lastmod>
+         <lastmod>2025-01-18</lastmod>
     </url>
 </urlset>
