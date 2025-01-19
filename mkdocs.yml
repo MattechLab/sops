@@ -24,7 +24,9 @@ nav:
       - EDF conversion: data-management/2_et1_edf_to_bids.md
       - Data storage: data-management/3_data_storage.md
     - Post-processing:
-      - Eye tracking data: post-processing/1_et2_QAQC_of_eye-tracking_data.md
+      - Eye tracking data: 
+        - MR-Eye 2.0: post-processing/1_1_et_QAQC_of_mreye_data.md
+        - MREye_Track: post-processing/1_2_et_QAQC_of_mreye_tracking.md
       - MRI data: post-processing/2_MRI_post_processing.md
       
         

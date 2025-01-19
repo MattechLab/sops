@@ -113,13 +113,13 @@ You can find more details in the [Monalisa document](https://mattechlab.github.i
 ## 2 Pipeline for processing Dicom
 Whereas, the recon results from standard clinical protocols are in DICOM format, directly exported from scanner PC.
  
--  Convert Dicom to .nii files: download the [MRIcroGL](https://people.cas.sc.edu/rorden/mricron/dcm2nii.html) software.
-   - Download and install the software.
-   - prepare the nifti folder under the Dicom folder.
-   `MRICron.exe >> import >> Dcm2nii >> uncompressed NifTi (.nii)`
--  Inspect the .nii files: 
-   - Prepare [spm](https://www.fil.ion.ucl.ac.uk/spm/docs/installation/) software on the laptop.
-   - Open spm -> display buttons
+- Convert Dicom to .nii files: download the [MRIcroGL](https://people.cas.sc.edu/rorden/mricron/dcm2nii.html) software.
+    - Download and install the software.
+    - Prepare the nifti folder under the Dicom folder.
+    - `MRICron.exe >> import >> Dcm2nii >> uncompressed NifTi (.nii)`
+- Inspect the .nii files: 
+    - Prepare [spm](https://www.fil.ion.ucl.ac.uk/spm/docs/installation/) software on the laptop.
+    - Open spm -> display buttons.
 - Coregister: Estimate & Reslice.
   Coregister the DICOM results from the standard clinical protocol with those from LIBRE. Although the DICOM result from LIBRE will not be used for further analysis, it serves as a reference image, allowing us to transform the clinical protocol image to the same spatial domain as LIBRE for subsequent comparison.
 
