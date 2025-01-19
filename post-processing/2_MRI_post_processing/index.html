@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://mattechlab.github.io/SOPS/post-processing/2_MRI_post_processing/">
       
       
-        <link rel="prev" href="../1_et2_QAQC_of_eye-tracking_data/">
+        <link rel="prev" href="../1_2_et_QAQC_of_mreye_tracking/">
       
       
       
@@ -669,16 +669,82 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../1_et2_QAQC_of_eye-tracking_data/" class="md-nav__link">
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Eye tracking data
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Eye tracking data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_1_et_QAQC_of_mreye_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MR-Eye 2.0
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1_2_et_QAQC_of_mreye_tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MREye_Track
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1053,13 +1119,17 @@ You can find more details in the <a href="https://mattechlab.github.io/monalisa/
 <h2 id="2-pipeline-for-processing-dicom">2 Pipeline for processing Dicom<a class="headerlink" href="#2-pipeline-for-processing-dicom" title="Permanent link">&para;</a></h2>
 <p>Whereas, the recon results from standard clinical protocols are in DICOM format, directly exported from scanner PC.</p>
 <ul>
-<li>Convert Dicom to .nii files: download the <a href="https://people.cas.sc.edu/rorden/mricron/dcm2nii.html">MRIcroGL</a> software.</li>
+<li>Convert Dicom to .nii files: download the <a href="https://people.cas.sc.edu/rorden/mricron/dcm2nii.html">MRIcroGL</a> software.<ul>
 <li>Download and install the software.</li>
-<li>prepare the nifti folder under the Dicom folder.
-   <code>MRICron.exe &gt;&gt; import &gt;&gt; Dcm2nii &gt;&gt; uncompressed NifTi (.nii)</code></li>
-<li>Inspect the .nii files: </li>
+<li>Prepare the nifti folder under the Dicom folder.</li>
+<li><code>MRICron.exe &gt;&gt; import &gt;&gt; Dcm2nii &gt;&gt; uncompressed NifTi (.nii)</code></li>
+</ul>
+</li>
+<li>Inspect the .nii files: <ul>
 <li>Prepare <a href="https://www.fil.ion.ucl.ac.uk/spm/docs/installation/">spm</a> software on the laptop.</li>
-<li>Open spm -&gt; display buttons</li>
+<li>Open spm -&gt; display buttons.</li>
+</ul>
+</li>
 <li>Coregister: Estimate &amp; Reslice.
   Coregister the DICOM results from the standard clinical protocol with those from LIBRE. Although the DICOM result from LIBRE will not be used for further analysis, it serves as a reference image, allowing us to transform the clinical protocol image to the same spatial domain as LIBRE for subsequent comparison.</li>
 </ul>
