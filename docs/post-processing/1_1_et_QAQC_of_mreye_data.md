@@ -567,7 +567,7 @@ Inspect the extracted subset to understand its structure and characteristics, su
 
 
 ```python
-# Here is the given inforation: time duration (in sec) according to the prior information.
+# Here is the given information: time duration (in sec) according to the prior information.
 
 if  subject_idx == 1:
     T1_LIBRE = 374.558

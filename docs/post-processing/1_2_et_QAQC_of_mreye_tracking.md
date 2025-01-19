@@ -70,7 +70,7 @@ gif_name = f'{FILE_NAME}.gif'
 
 ```python
 # Read in tsv.gz file
-# Naming convension can be modified later
+# Naming convention can be modified later
 # recording_file = BIDS_PATH / "sub-001" / f"ses-{session}" / "dwi" / f"sub-001_ses-{session}_acq-highres_dir-RL_recording-eyetrack_physio.tsv.gz"
 recording_file = BIDS_PATH / tsv_name
 print(f'recording_file: {recording_file}')
@@ -306,7 +306,7 @@ The coordinate sequence is stable during fixation, we should extract the data in
 
 # 2 Data Cleaning
 
-- Seperate the two phases of sequences
+- Separate the two phases of sequences
 - Extract the X Y coordinates
 - Eliminate the blinking and non-fixation area of LIBRE data, and keep the raw data of STANDARD.Because there is no mechanism for the second STANDARD one to correct the eye fixation.
 - Design some criteria for cleaning the noise data
@@ -314,7 +314,7 @@ The coordinate sequence is stable during fixation, we should extract the data in
     - Heat maps
     - Fixation algorithm (literature review)
 
-## 2.1 Seperate the two phases of sequences
+## 2.1 Separate the two phases of sequences
 
 
 ```python
