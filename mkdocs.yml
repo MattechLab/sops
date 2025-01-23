@@ -12,7 +12,6 @@ nav:
       - Recruitment and screening: recruitment-scheduling-screening/participants-recruitment.md
       - Scheduling: recruitment-scheduling-screening/scanner-scheduling.md
     - Data collection: 
-      - Data collection: data-collection.md
       - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
       - Audio fMRI protocol: data-collection/data-collection_audio.md
       - Resting state fMRI protocol: data-collection/data-collection_rs.md
