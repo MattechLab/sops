@@ -27,6 +27,8 @@ nav:
         - MR-Eye 2.0: post-processing/1_1_et_QAQC_of_mreye_data.md
         - MREye_Track: post-processing/1_2_et_QAQC_of_mreye_tracking.md
       - MRI data: post-processing/2_MRI_post_processing.md
+    - Appendices:
+      - ET extended guidelines: data-collection/notes-et.md
       
         
 theme:
