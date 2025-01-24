@@ -12,3 +12,5 @@ In the Data Collection section, the different protocols are extensively descript
 ## About us
 
 The [Mat-Tech Lab (Mathematical Technologies Lab)](https://sites.google.com/view/mat-tech-lab/home) is a vibrant interdisciplinary team composed by mathematicians, engineers, physicists, and neuroscientists working at the interface between the development of new technologies in healthcare (& beyond) and mathematics. The goal of the lab is to promote new innovations in the field of healthcare technologies while being able to re-adapt creatively the modeling frameworks used up to now. We value industrial partnerships and hybrid developments (across academia and industry).
+
+![What We Do](assets/images/what-we-do.png)
