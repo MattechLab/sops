@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#step-1-inspecting-eye-tracking-data" class="md-skip">
+        <a href="#mr-eye-20" class="md-skip">
           Skip to content
         </a>
       
@@ -374,27 +374,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-collection/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data collection
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../data-collection/data-collection_visuo/" class="md-nav__link">
         
   
@@ -527,7 +506,7 @@
         
   
   <span class="md-ellipsis">
-    Software installation
+    Software installation (Eyelink)
   </span>
   
 
@@ -790,6 +769,71 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Appendices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-collection/notes-et/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ET extended guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -823,9 +867,7 @@
                   
 
 
-<p>Derived from:
-https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/</p>
-<p>Author: Yiwei Jia</p>
+<h1 id="mr-eye-20">MR-Eye 2.0<a class="headerlink" href="#mr-eye-20" title="Permanent link">&para;</a></h1>
 <p>This notebook focuses on the analysis of eye-tracking data within the MR-Eye 2.0 project, where visual stimuli are presented at the center of the screen. The analysis includes examining eye-tracking signals, identifying regions of interest (ROIs), and creating eye-tracking (ET) masks based on specific criteria—in this case, selecting areas corresponding to eye rotation displacements within 1/3 voxel size. Furthermore, we investigate eye movement characteristics extracted from the ET data and compare them across four subjects to assess and standardize the data quality.</p>
 <p>For demonstration purposes, this notebook illustrates only the method for selecting the region but does not include functions for saving the masks to a local device. Readers are encouraged to implement their own save functions as needed.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Derived from:</span>

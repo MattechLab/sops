@@ -26,7 +26,7 @@
     
     
       
-        <title>Software installation - MatTech Lab SOPS</title>
+        <title>Software installation (Eyelink) - MatTech Lab SOPS</title>
       
     
     
@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-eyelink-installation" class="md-skip">
+        <a href="#software-installation-eyelink" class="md-skip">
           Skip to content
         </a>
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Software installation
+              Software installation (Eyelink)
             
           </span>
         </div>
@@ -374,27 +374,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-collection/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Data collection
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../data-collection/data-collection_visuo/" class="md-nav__link">
         
   
@@ -529,12 +508,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Software installation
+    Software installation (Eyelink)
   </span>
   
 
@@ -545,7 +526,7 @@
         
   
   <span class="md-ellipsis">
-    Software installation
+    Software installation (Eyelink)
   </span>
   
 
@@ -556,6 +537,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -876,6 +859,71 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Appendices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-collection/notes-et/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ET extended guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -892,6 +940,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -975,15 +1025,14 @@
                   
 
 
-  <h1>Software installation</h1>
-
+<h1 id="software-installation-eyelink">Software Installation: EyeLink<a class="headerlink" href="#software-installation-eyelink" title="Permanent link">&para;</a></h1>
 <h2 id="1-eyelink-installation">1 EyeLink Installation<a class="headerlink" href="#1-eyelink-installation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The EyeLink MUST be installed before PyEDFRead and Pychopy.</li>
 <li>Register a new account for downloading the EyeLink Developers Kits. <a href="https://www.sr-research.com/support/forumdisplay.php?fid=3">Link for installation</a>.</li>
 <li>The activation of the new account might take up for 24 hours.</li>
 <li>Install the EyeLink Developer Kit and EyeLink Data Viewer following the instructions.
-  <img alt="" src="../../assets/debi_protocol/data_management/0install_SR_research.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+  <img alt="install-sr-research" src="../../assets/debi_protocol/data_management/0install_SR_research.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
 </ul>
 <h2 id="2-additional-steps">2 Additional Steps<a class="headerlink" href="#2-additional-steps" title="Permanent link">&para;</a></h2>
 <h3 id="21-for-windows-platform">2.1 For Windows Platform<a class="headerlink" href="#21-for-windows-platform" title="Permanent link">&para;</a></h3>
@@ -991,16 +1040,20 @@
 <li>Ensure you have installed the Microsoft C++ Build Tools.</li>
 <li>You can download them from the <a href="https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/">Visual Studio website</a>.</li>
 <li>Make sure to select the "Desktop development with C++" workload during the installation.</li>
-<li>Properly set up the environment variable:<ul>
-<li>For example on Windows system
+<li>
+<p>Properly set up the environment variable:</p>
+<ul>
+<li>For example on Windows system</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>D:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="w"> </span><span class="o">(</span>x86<span class="o">)</span><span class="se">\M</span>icrosoft<span class="w"> </span>Visual<span class="w"> </span>Studio<span class="se">\2</span><span class="m">022</span><span class="se">\B</span>uildTools<span class="se">\V</span>C<span class="se">\T</span>ools<span class="se">\M</span>SVC<span class="se">\1</span><span class="m">4</span>.40.33807<span class="se">\b</span>in<span class="se">\H</span>ostx64<span class="se">\x</span><span class="m">64</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>D:<span class="se">\P</span>rogram<span class="w"> </span>Files<span class="w"> </span><span class="o">(</span>x86<span class="o">)</span><span class="se">\M</span>icrosoft<span class="w"> </span>Visual<span class="w"> </span>Studio<span class="se">\2</span><span class="m">022</span><span class="se">\B</span>uildTools<span class="se">\V</span>C<span class="se">\T</span>ools<span class="se">\M</span>SVC<span class="se">\1</span><span class="m">4</span>.40.33807<span class="se">\i</span>nclude
-</span></code></pre></div></li>
-</ul>
+</span></code></pre></div>
 </li>
-<li>Modify the files in the directory of EyeLink for supporting Windows</li>
+<li>
+<p>Modify the files in the directory of EyeLink for supporting Windows</p>
+</li>
 <li>Edit edftypes.h in the dir: C:\Program Files (x86)\SR Research\EyeLink\Includes\eyelink
-  <img alt="" src="../../assets/debi_protocol/data_management/0install_variable_win.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+  <img alt="install-variable-win" src="../../assets/debi_protocol/data_management/0install_variable_win.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
 </ul>
 <h3 id="22-for-mac-platform">2.2 For Mac Platform<a class="headerlink" href="#22-for-mac-platform" title="Permanent link">&para;</a></h3>
 <p>Install the EyeLink Developer Kit and EyeLink Data Viewer following the instructions on the website.</p>
@@ -1024,41 +1077,51 @@
 - Load the new virtual environment -->
 <p>This part is derived from<a href="https://www.axonlab.org/hcph-sops/data-collection/setup/#installing-eyelink-eye-tracker-software"> HCPH SOP</a>. Since we did not work on eye tracking data with Linux system, we refer to the HCPH SOP for completeness.</p>
 <ul>
-<li>Enable Canonical's universe repository with the following command:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>universe
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span></code></pre></div></li>
-<li>Install and update the ca-certificates package:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ca-certificates
-</span></code></pre></div></li>
-<li>Add the SR Research Software Repository signing key:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-sS<span class="w"> </span>https://apt.sr-research.com/SRResearch_key<span class="w"> </span><span class="p">|</span><span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/trusted.gpg.d/sr-research.gpg
-</span></code></pre></div></li>
-<li>Add the SR Research Software Repository as an Aptitude source:
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>eyelink-display-software
-</span></code></pre></div></li>
-<li>Install the EyeLink Data Viewer:
-  <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo apt install eyelink-dataviewer
-</span></code></pre></div></li>
+<li>Enable Canonical's universe repository with the following command:</li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>universe
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span></code></pre></div>
+<ul>
+<li>Install and update the ca-certificates package:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ca-certificates
+</span></code></pre></div>
+<ul>
+<li>Add the SR Research Software Repository signing key:</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>curl<span class="w"> </span>-sS<span class="w"> </span>https://apt.sr-research.com/SRResearch_key<span class="w"> </span><span class="p">|</span><span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/trusted.gpg.d/sr-research.gpg
+</span></code></pre></div>
+<ul>
+<li>
+<p>Add the SR Research Software Repository as an Aptitude source:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>eyelink-display-software
+</span></code></pre></div>
+</li>
+<li>
+<p>Install the EyeLink Data Viewer:</p>
+</li>
+</ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>eyelink-dataviewer
+</span></code></pre></div>
 <h2 id="3-virtual-environment-preparation">3 Virtual Environment Preparation<a class="headerlink" href="#3-virtual-environment-preparation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>Prepare conda virtual env, with python version above 3.7. Some unexpected issues will occur if the python version=3.6 or below.
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$<span class="w"> </span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>edfenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>$<span class="w"> </span>conda<span class="w"> </span>activate<span class="w"> </span>edfenv
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>cython
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>pandas
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>h5py
-</span></code></pre></div></p>
+<p>Prepare conda virtual env, with python version above 3.7. Some unexpected issues will occur if the python version=3.6 or below.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>edfenv<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.8
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>edfenv
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>pip<span class="w"> </span>install<span class="w"> </span>cython
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>pip<span class="w"> </span>install<span class="w"> </span>pandas
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>pip<span class="w"> </span>install<span class="w"> </span>h5py
+</span></code></pre></div>
 </li>
 <li>
-<p>Install pyedfread from the original repo:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>$<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/s-ccs/pyedfread
-</span></code></pre></div></p>
+<p>Install pyedfread from the original repo:</p>
 </li>
 </ul>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/s-ccs/pyedfread
+</span></code></pre></div>
 
 
 
