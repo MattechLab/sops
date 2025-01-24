@@ -52,77 +52,77 @@ On windows:
 - Select `Internet Protocol Version 4 (TCP/IPv4)` and click `Properties`.
 - Update the IP address to `100.1.1.2` and the subnet mask `255.255.255.0`.<mark> (Photos from Helene's sop)</mark>
 
-![](../assets/debi_protocol/selected/0-e-ip.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
-![](../assets/debi_protocol/selected/0-e2-ip.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![0-e-ip](../assets/debi_protocol/selected/0-e-ip.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![0-e2-ip](../assets/debi_protocol/selected/0-e2-ip.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 ### Prepare ET set up outside the scanner room
 
 #### Setting up the projector
 
 Turn on the Sony projector located in the back room of the scanner room.
-![](../assets/debi_protocol/selected/1-projector-e.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![projector-e](../assets/debi_protocol/selected/1-projector-e.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 Ensure the projector beam is directed into the scanner room.
 
 #### Set up the Psychopy laptop on the table
 
 - Insert the hdmi into the Psychopy laptop to monitor the visual stimuli on the screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
-![](../assets/debi_protocol/selected/2-e-psychopy-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![psychopy-laptop](../assets/debi_protocol/selected/2-e-psychopy-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - If the monitor does not automatically switch the screen source, use the button below to manually change it.
-![](../assets/debi_protocol/selected/3-e-button-monitor.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![button-monitor](../assets/debi_protocol/selected/3-e-button-monitor.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Ensure that the PC beneath the monitor remains turned on.
-![](../assets/debi_protocol/selected/3-e-pc-under-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![pc-under-screen](../assets/debi_protocol/selected/3-e-pc-under-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Connect the USB cable from the Syncbox to the PsychoPy laptop.
-![](../assets/debi_protocol/selected/4-e-usb-from-syncbox.png){: style="width: 80%;display: block; margin: 0 auto;"}
-![](../assets/debi_protocol/selected/4-e2-usb-from-syncbox.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![usb-from-syncbox-1](../assets/debi_protocol/selected/4-e-usb-from-syncbox.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![usb-from-syncbox-2](../assets/debi_protocol/selected/4-e2-usb-from-syncbox.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Plug the Ethernet from the ET computer to the psychopy laptop.
-![](../assets/debi_protocol/selected/5-e-ethernet.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![ethernet](../assets/debi_protocol/selected/5-e-ethernet.png){: style="width: 80%;display: block; margin: 0 auto;"}
 !!! danger "Make sure the IP address is reset if the laptop is connected to the ET PC for the first time!"
 
 #### Set up the syncbox
 
 - Ensure the SyncBox cable (RJ45) already plugged onto the interface to the scanner room.
-![](../assets/debi_protocol/selected/6-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![rj45-1](../assets/debi_protocol/selected/6-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Plug the other end of the cable into the SyncBox.
-![](../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![rj45-2](../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Turn on the syncbox
 - Go to the `Simulation`, and we can see the `Start Session` on the page.
-![](../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
-![](../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![start-sync-1](../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![start-sync-2](../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
-![](../assets/debi_protocol/selected/7-e3-tr-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![tr-sync](../assets/debi_protocol/selected/7-e3-tr-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 ### Set up the ET workstation
 
 - Make sure the ET PC is charged
-![](../assets/debi_protocol/selected/8-e-charge-ET-PC.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![charge-et-pc](../assets/debi_protocol/selected/8-e-charge-ET-PC.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Before turning on the ET computer, ensure it is connected to the PsychoPy laptop (this should have been done in the previous step).
 - Turn on the ET PC.
 - Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
-![](../assets/debi_protocol/selected/8-e-ET-initial.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![et-initial](../assets/debi_protocol/selected/8-e-ET-initial.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Prepare the ET
 
 - All the lenses, mirrors, and other equipment are in the box in JB's office.
-![](../assets/debi_protocol/selected/9-e-box.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![box](../assets/debi_protocol/selected/9-e-box.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has a silver screw on it) <mark>(photos from Oscar's SOP)</mark>
   
-![](../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
-![](../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![lens-1](../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![lens-2](../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
 <mark>what value is the default position of the screw for convenient focus ?</mark>
 !!! tip "The default position of the screw for convenient focus is typically set to `1`. However, the exact value can vary depending on the specific participant and setup for each time. It's recommended to start with the screw at value `1` and adjust from there for optimal focus during setup. If you're following a specific SOP, it might provide additional details for your equipment."
-![](../assets/debi_protocol/selected/11-install-lens-ET.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![install-lens](../assets/debi_protocol/selected/11-install-lens-ET.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Place the infrared-mirror onto the head coil
 
 - Detach the standard mirror's frame from the head coil, if it is placed there.
 - Take the infrared mirror out of the «fMRI usage» box. It should be always protected by a mask unless in use.
 !!! warning "This infrared mirror is the most delicate part, because the morror cannot be replaced nor cleaned. This mirror is EXTREMELY EXPENSIVE."
-![](../assets/debi_protocol/selected/12-e-infered-mirror.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![ir-mirror](../assets/debi_protocol/selected/12-e-infered-mirror.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Get two gloves (e.g., from the box hanging at the entrance of the scanner room)
 - Put the gloves on, and **DON'T TOUCH ANYTHING**. You must have the standard mirror dismounted and ahead of this step.
@@ -133,10 +133,10 @@ Ensure the projector beam is directed into the scanner room.
 
 #### Connect three external cables to ET and scanner
 
-![](../assets/debi_protocol/selected/13-e-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![cables](../assets/debi_protocol/selected/13-e-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Two plugs for the black and one plug for the orange to ET
-![](../assets/debi_protocol/selected/13-e-ET-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![et-cables](../assets/debi_protocol/selected/13-e-ET-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Connect the external cable from the syncbox to the scanner.
 <mark>No photo here due to magnetic field</mark>
 
@@ -145,7 +145,7 @@ Ensure the projector beam is directed into the scanner room.
 - Place the glass plate (stored in JB's office) on the scanner
 - Position the ET on the glass plate according to the stickers on the plate.
 - Place the half-circle one-direction screen, which is on the table behind the scanner, onto the glass plate. Position it between the projector and the eye tracker to reflect the projector's image.
-![](../assets/debi_protocol/selected/14-half-circle-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
+![half-circle-screen](../assets/debi_protocol/selected/14-half-circle-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Place the participant
 
@@ -169,8 +169,8 @@ Ensure the projector beam is directed into the scanner room.
 - Point the lens of eye tracker towards the participant's right eye.
 - <mark>[Add the default position of the lens for convenient adjustment]</mark>
 - Rotate the lens until the pupil is in focus on the screen during camera mode. Adjust until the image is sharp, with both the pupil and eyelashes well defined.
-![](../assets/debi_protocol/selected/17-e-no-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
-![](../assets/debi_protocol/selected/17-e-good-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![no-pupil](../assets/debi_protocol/selected/17-e-no-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![good-pupil](../assets/debi_protocol/selected/17-e-good-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 <mark>ask for Mauro's consent</mark>
 
 ### ET Calibration
@@ -205,14 +205,14 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 - On the ET PC, click `Apply Threshold` (top left corner, as shown in the figure below). Ensure that the pupil is detected and that you see the blue cross on the eye. If you encounter issues, check the lighting inside the scanner (ensure it's not too bright or too dim) and verify the participant's position inside the coil. Once the calibration starts, accept the calibration points when they turn green by clicking `Accept Fixation`.
 - If the calibration was successful, you will see the sentence `calibration successful` at the bottom in green. Check the stability of the accepted points and overall score of the calibration.
 !!!tip "If the calibration points form a cross, it is the perfect calibration."
-![](../assets/debi_protocol/selected/16-e-good-cross.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![good-cross](../assets/debi_protocol/selected/16-e-good-cross.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Follow up with the validation
 
 !!! tip "What you should see in an ideal situation is: the reference dot on the center of the screen and another dot that corresponds to the pupil calibration. The calibration dot is more or less stable moving a little around the reference dot."
 !!! warning "If the calibration dot is unstable and is moving around far from the reference dot, the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable, proceed with the validation clicking the accept fixation."
 
-![](../assets/debi_protocol/selected/18-e-validation.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+![validation](../assets/debi_protocol/selected/18-e-validation.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Go into the scanner room and inform the participant
 
