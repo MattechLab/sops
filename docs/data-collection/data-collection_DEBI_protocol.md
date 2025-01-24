@@ -243,7 +243,23 @@ It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (
 
 Check this video for the complete acquisition process:
 
-![acquisition-screen-recording]()
+<div style="text-align: center;">
+  <iframe width="600" height="338"
+          src="https://www.youtube.com/embed/1iX3KdKMM6E"
+          frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+  <p>If the video does not render, you can
+  <a href="../assets/debi_protocol/selected/scan_eva.mp4" download>download the video here</a>.</p>
+</div>
+
+<!-- This didn't work... -->
+<!-- <video controls width="600">
+  <source src="../assets/debi_protocol/selected/scan_eva.mp4" type="video/mp4">
+  Your browser does not support the video tag. 
+  <a href="../assets/debi_protocol/selected/scan_eva.mp4">Watch the complete acquisition process video</a>
+</video> -->
 
 #### Session Completed
 
