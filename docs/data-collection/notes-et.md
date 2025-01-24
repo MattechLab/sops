@@ -4,23 +4,7 @@
 
 !!! warning "To ensure accurate performance and prevent minor drifts in the pupil and corneal reflection (CR) thresholds, perform the ET Setup 10-15 minutes after powering the ET on."
 
-- [ ] Initiate the fixation program on the stimuli laptop (*{{ secrets.hosts.psychopy | default("███") }}*), by typing the following on a terminal:
-
-    ??? warning "Make sure to have the correct environment loaded before invoking the task"
-
-        - [ ] Deactivate conda (if active):
-            ``` shell
-            conda deactivate
-            ```
-        - [ ] Load the new virtual environment:
-            ``` shell
-            source $HOME/psychopyenv/bin/activate
-            ```
-
-    ``` shell
-    cd ~/workspace/HCPh-fMRI-tasks
-    python {{ settings.psychopy.tasks.dwi }}.py
-    ```
+- [ ] Initiate the program on the stimuli laptop.
 
     A modal dialog will ask you for the number of trial (automatically calculated, DO NOT modify) and the session number.
 
