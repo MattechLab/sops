@@ -1,6 +1,6 @@
 # Data Collection DEBI protocol
 
-???+ quote "Note for writers"
+???+ quote "Note"
     - Precisely point out what is connected to what by which kind of cables.
     - Need double check with JB
 
@@ -16,15 +16,6 @@ The graph above can be divided into the following components:
 
 - Syncbox: A NordicLabs Syncbox sends TTL (transistor-transistor logic) triggers to the scanner and forward the signal converted to the keyboard signal "s" to the PsychoPy laptop.
 
-<!-- <div style="text-align: center;">
-  <img src="../assets/debi_protocol/selected/19-pc-trigger-signal.png" alt="Trigger to PsychoPy PC" style="width: 80%;">
-  <p><strong>Trigger to PsychoPy PC</strong></p>
-</div>
-
-<div style="text-align: center; margin-top: 20px;">
-  <img src="../assets/debi_protocol/selected/19-scanner-signal.png" alt="Trigger to Scanner" style="width: 80%;">
-  <p><strong>Trigger to Scanner</strong></p>
-</div> -->
 ![Trigger to PsychoPy PC](../assets/debi_protocol/selected/19-pc-trigger-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
 **Trigger to PsychoPy PC**
 {: style="text-align: center;"}
@@ -186,8 +177,13 @@ If you are connecting the eye tracker to the experimental laptop for the first t
 #### Run the experiment on psychopy
 
 Click the `Run Experiment` button, or run the experiment from the terminal by typing:
-`python experiment.py`
-  
+`python experiment.py`. All the experiments must have a calibration and validation phase before the experiment itself.
+
+![et-calibration](../assets/debi_protocol/selected/18-e-calibration.png)
+<!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
+**Example psychopy project (MR-Eye Track)**
+{: style="text-align: center;"}
+
 !!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark>"
 
 #### Run the calibration
@@ -226,9 +222,9 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 
 #### Run the Experiment
 
-- At the end of the ET calibration we are ready to run the experiment.
-- Wait for the sentence “In this task you will see a color dot. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”
-  
+- At the end of the ET calibration we are ready to continue with the experiment.
+- Wait for the sentence regarding the initial description of the task: “In this task you will see...”
+
 !!! important "Due to the upgrade of the scanner, it cannot immediately start the acquisition after receives the trigger signal from the syncbox. Thus, we need to extract the temporal information of the scanner and ET respectively. In order to make such post-processing easier, we need to first start the acquisition, and then the eye tracker. Thus, the first trigger recorded in the pmu in the raw data will be exactly the same trigger that starts the eye tracker."
 
 !!! danger "The order: start of scanner -> press the button of syncbox is important and cannot be exchanged."
