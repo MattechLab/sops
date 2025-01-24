@@ -57,6 +57,9 @@ Ensure the projector beam is directed into the scanner room.
 
 #### Set up the Psychopy laptop on the table
 
+- Take the psychopy PC from JB's office.
+![laptop-office](../assets/debi_protocol/selected/2-e-jb-office-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
+
 - Insert the hdmi into the Psychopy laptop to monitor the visual stimuli on the screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
 ![psychopy-laptop](../assets/debi_protocol/selected/2-e-psychopy-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
@@ -234,13 +237,13 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 - Then, another person press  `start session` on the sync box clicking the round button.
 - The stimulation will start with the ET recording.
 
-#### Acquire a high-resolution anatomical image
+#### Run the scanning sequence
 
-wip
+It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (mprage), and other protocols depending on the project: T1w-LIBRE for MR-Eye Track and T1w-LIBRE, T1w-VIBE, T2w-LIBRE, and T2w-TSE.
 
-#### Acquire T1w-LIBRE image and T1w-VIBE image
+Check this video for the complete acquisition process:
 
-#### Acquire T2w-LIBRE image and T2w-TSE image
+![acquisition-screen-recording]()
 
 #### Session Completed
 
