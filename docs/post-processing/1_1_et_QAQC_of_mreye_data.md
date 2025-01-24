@@ -1,8 +1,4 @@
-Derived from:
-https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/
-
-Author: Yiwei Jia
-
+# MR-Eye 2.0
 
 This notebook focuses on the analysis of eye-tracking data within the MR-Eye 2.0 project, where visual stimuli are presented at the center of the screen. The analysis includes examining eye-tracking signals, identifying regions of interest (ROIs), and creating eye-tracking (ET) masks based on specific criteria—in this case, selecting areas corresponding to eye rotation displacements within 1/3 voxel size. Furthermore, we investigate eye movement characteristics extracted from the ET data and compare them across four subjects to assess and standardize the data quality.
 

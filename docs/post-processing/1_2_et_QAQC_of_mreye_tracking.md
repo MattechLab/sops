@@ -1,10 +1,6 @@
-Derived from:
-https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/
-
-Author: Yiwei Jia
+# MR-Eye Track
 
 In this notebook, we delve into eye-tracking data analysis, focusing specifically on the MREye_track project. The project involves visual stimuli appearing in different directions: up, down, left, right and center. Within this notebook, we inspect the eye-tracking signals, determine regions of interest (ROIs) corresponding to each stimulus, and generate eye-tracking (ET) masks. Additionally, we calculate the distance distribution between two adjacent gaze points and also analyze that of specific time windows of eye-tracking data.
-
 
 ```python
 # Derived from:
