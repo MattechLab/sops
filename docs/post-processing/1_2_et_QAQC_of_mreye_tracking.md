@@ -1,3 +1,4 @@
+# Analysis of ET data within MREye_Track
 Derived from:
 https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/
 
@@ -97,7 +98,7 @@ print('The duration of mri acquisition sub001 sub002 and sub003: 655240 ms')
     The duration of mri acquisition sub001 sub002 and sub003: 655240 ms
 
 
-# 1 Metadata and calibration
+## 1 Metadata and calibration
 
 We always run a calibration before it is started. As a result, we will typically see the metadata corresponding to calibration on this particular run.
 
@@ -304,7 +305,7 @@ The analysis did not reveal a strong correlation between pupil size and saccade 
 
 The coordinate sequence is stable during fixation, we should extract the data in the event.
 
-# 2 Data Cleaning
+## 2 Data Cleaning
 
 - Separate the two phases of sequences
 - Extract the X Y coordinates
@@ -314,7 +315,7 @@ The coordinate sequence is stable during fixation, we should extract the data in
     - Heat maps
     - Fixation algorithm (literature review)
 
-## 2.1 Separate the two phases of sequences
+### 2.1 Separate the two phases of sequences
 
 
 ```python
@@ -474,13 +475,13 @@ print(len(coor_data_LIBRE))
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png)
     
 
 
@@ -491,7 +492,7 @@ print(len(coor_data_LIBRE))
 # scipy.io.savemat(f'coor_data_raw_t1w_libre_sub00{subject_idx}.mat', {'coordinates': coor_array})
 ```
 
-## 2.2 Eliminating blinking
+### 2.2 Eliminating blinking
 
 
 ```python
@@ -532,7 +533,7 @@ if plot_heatmap:
 # coor_data_LIBRE[coor_recording_LIBRE.blink > 0]
 ```
 
-## 2.3 Preserving fixation
+### 2.3 Preserving fixation
 
 
 ```python
@@ -568,7 +569,7 @@ if plot_heatmap:
     len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657900
 
 
-## 2.4 Plot the gazing dots
+### 2.4 Plot the gazing dots
 
 
 ```python
@@ -616,13 +617,13 @@ plt.gca().invert_xaxis()
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png)
     
 
 
@@ -633,7 +634,7 @@ By far, we initially cleaned data based on the inherent properties in the metada
 # see cleaned_cell [2]
 ```
 
-## 2.5 Visualize gaze groups
+### 2.5 Visualize gaze groups
 
 
 ```python
@@ -860,7 +861,7 @@ plt.show()
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png)
     
 
 
@@ -1000,7 +1001,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png)
     
 
 
@@ -1029,7 +1030,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png)
     
 
 
@@ -1062,7 +1063,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png)
     
 
 
@@ -1133,7 +1134,7 @@ print(threshold_value)
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png)
     
 
 
@@ -1142,7 +1143,7 @@ print(threshold_value)
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png)
     
 
 
@@ -1151,7 +1152,7 @@ print(threshold_value)
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png)
     
 
 
@@ -1201,7 +1202,7 @@ cal_statistics(distances_max_win)
     Number of NaN values: 0
 
 
-## Generate movement distance mask
+## 3 Generate movement distance mask
 
 
 ```python
@@ -1245,7 +1246,7 @@ if save_move_preserve_mask:
     The mask file has been saved here: ./masks_1206/subject_1_move_win80_crit60_mask.mat
 
 
-## Generate the raw masks: 5 masks
+## 4 Generate the raw masks: 5 masks
 According to the stimuli intervals
 
 
@@ -1362,7 +1363,7 @@ if see_raw:
 
 ```
 
-## Generate the location masks: 5 masks
+## 5 Generate the location masks: 5 masks
 According to the absolute locations
 
 
@@ -1589,35 +1590,35 @@ for idx in range(5):
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png)
     
 
 
-## Generate the filtered 5 mask
+## 6 Generate the filtered 5 mask
 based on the filtered coordinate
 
 
@@ -1785,61 +1786,61 @@ for idx in range(5):
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png)
     
 
 
@@ -1898,7 +1899,7 @@ discarded_x_mask, discarded_y_mask = filter_criteria(h_dis_left, v_dis_left, cri
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png)
     
 
 
@@ -1912,13 +1913,13 @@ plot_h_v_disp(h_dis_left, v_dis_left, discarded_x_mask,
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png)
     
 
 
@@ -1930,7 +1931,7 @@ coor_data_left_clean, Preserve_mask, Discard_mask = filter_XY_with_mask(coor_dat
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png)
     
 
 
@@ -1966,13 +1967,13 @@ threshold_value_y = plt_distribution(coor_data_left_clean['y_coordinate'], thres
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png)
     
 
 
@@ -2000,7 +2001,7 @@ visualization_func(fig_title='Before vs After (filtering)',
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png)
     
 
 
@@ -2080,7 +2081,7 @@ if save_Discard_mask:
     656158
 
 
-# Multiple Masks
+## 6 Multiple Masks
 
 if num=4, divide the valid range into 4 parts
 
@@ -2279,97 +2280,97 @@ for region_idx in range(4):
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png)
     
 
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png)
     
 
 
@@ -2397,7 +2398,7 @@ plt.scatter(coor_data_region_clean['x_coordinate'], coor_data_region_clean['y_co
 
 
     
-![png](et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png)
+![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png)
     
 
 

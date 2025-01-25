@@ -1,3 +1,4 @@
+# Analysis of ET data within MR-Eye 2.0
 Derived from:
 https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/
 
@@ -36,7 +37,7 @@ import copy
 from write_bids_yiwei import EyeTrackingRun, write_bids, write_bids_from_df
 ```
 
-# Step 1: Inspecting Eye-Tracking Data
+## Step 1: Inspecting Eye-Tracking Data
 
 In this step, we’ll begin by parsing the metadata of our eye-tracking data. This will help us understand the structure of the data, including the recording parameters, subject details, and any relevant events or labels. Parsing the metadata provides insight into the conditions and settings during data collection, which is essential for accurate analysis.
 
@@ -87,7 +88,7 @@ print(f'The length of the recording: {len(recording)}')
     The length of the recording: 754932
 
 
-# Step 2: Understanding Metadata
+## Step 2: Understanding Metadata
 
 The metadata provides crucial information about the setup and parameters used during eye-tracking data collection. By examining the metadata, we can gain insights into the recording conditions, data quality, and calibration settings.
 
@@ -242,7 +243,7 @@ metadata["Columns"]
 
 
 
-# Step 3: Inspecting Signals, Event Masks and Correlation
+## Step 3: Inspecting Signals, Event Masks and Correlation
 In this step we first visualize all the signals in the recordings to examine the overall shapes (trend, variability, or periodicity) and the scale of its values (range and units).
 
 Besides, eye-tracking data includes event masks, which label segments of the data corresponding to specific events such as blinks, saccades, or fixations. These masks are typically binary arrays or categorical labels indicating the presence of a specific event at each timestamp.
@@ -296,7 +297,7 @@ if check_all:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_13_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_13_0.png)
     
 
 
@@ -329,13 +330,13 @@ if check_pupil:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_15_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_15_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_1.png)
     
 
 
@@ -379,13 +380,13 @@ if check_blink:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_17_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_17_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_1.png)
     
 
 
@@ -420,7 +421,7 @@ if plot_pupil_blink:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_18_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_18_0.png)
     
 
 
@@ -452,13 +453,13 @@ if Check_saccading:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_20_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_20_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_1.png)
     
 
 
@@ -489,7 +490,7 @@ if plot_pupil_saccade:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_21_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_21_0.png)
     
 
 
@@ -534,20 +535,20 @@ if plot_fixation:
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_23_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_23_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_1.png)
     
 
 
 Did you find the correlation between x/y coordinates, pupil area and saccade or fixation events?
 
 
-# Step 4: Data Cleaning
+## Step 4: Data Cleaning
 
 - Extract the signals we need 
 
@@ -684,13 +685,13 @@ print(len(coor_data_LIBRE))
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_29_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_1.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_29_2.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_2.png)
     
 
 
@@ -838,13 +839,13 @@ plt.gca().invert_xaxis()
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_36_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_36_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_1.png)
     
 
 
@@ -887,11 +888,11 @@ plt.show()
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_38_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_38_0.png)
     
 
 
-# Step 5: Calculate the mask, statistics 
+## Stp 5: Calculate the mask, statistics 
 
 You can calculate the mask based on your user case. 
 
@@ -968,19 +969,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_43_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_1.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_43_2.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_2.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_43_3.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_3.png)
     
 
 
@@ -1016,19 +1017,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_44_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_1.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_44_2.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_2.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_44_3.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_3.png)
     
 
 
@@ -1059,19 +1060,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_45_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_1.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_45_2.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_2.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_45_3.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_3.png)
     
 
 
@@ -1145,11 +1146,11 @@ visualization_func(fig_title='Before vs. After Filtering',
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_46_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_46_1.png)
     
 
 
-# Step 6: Investigate the statistics of eye movement events across different subjects
+## Stp 6: Investigate the statistics of eye movement events across different subjects
 Eye movement events such as blinks, saccades, and fixations provide valuable information about gaze behavior and data quality. By analyzing these events across different subjects, we can assess the consistency and reliability of the recorded data.
 
 
@@ -1420,19 +1421,19 @@ voilinplot(subject_event_dict, event='fixation',color='teal')
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_56_0.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_0.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_56_1.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_1.png)
     
 
 
 
     
-![png](et_mreye_img/L9_eye-tracking_data_Solution_56_2.png)
+![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_2.png)
     
 
 
