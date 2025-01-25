@@ -104,7 +104,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mr-eye-track" class="md-skip">
+        <a href="#analysis-of-et-data-within-mreye_track" class="md-skip">
           Skip to content
         </a>
       
@@ -718,6 +718,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    MREye_Track
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -727,6 +738,154 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-metadata-and-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Metadata and calibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Data Cleaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Data Cleaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-separate-the-two-phases-of-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Separate the two phases of sequences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-eliminating-blinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Eliminating blinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-preserving-fixation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Preserving fixation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-plot-the-gazing-dots" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Plot the gazing dots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-visualize-gaze-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Visualize gaze groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-generate-movement-distance-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Generate movement distance mask
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-generate-the-raw-masks-5-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Generate the raw masks: 5 masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-generate-the-location-masks-5-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Generate the location masks: 5 masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-generate-the-filtered-5-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Generate the filtered 5 mask
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Generate the filtered 5 mask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtered-the-coor_data_dot_filtered_offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtered the coor_data_dot_filtered_offset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-multiple-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Multiple Masks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -854,6 +1013,143 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-metadata-and-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Metadata and calibration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data-cleaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 Data Cleaning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 Data Cleaning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-separate-the-two-phases-of-sequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Separate the two phases of sequences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-eliminating-blinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Eliminating blinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-preserving-fixation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Preserving fixation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-plot-the-gazing-dots" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Plot the gazing dots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-visualize-gaze-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Visualize gaze groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-generate-movement-distance-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 Generate movement distance mask
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-generate-the-raw-masks-5-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 Generate the raw masks: 5 masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-generate-the-location-masks-5-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 Generate the location masks: 5 masks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-generate-the-filtered-5-mask" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Generate the filtered 5 mask
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6 Generate the filtered 5 mask">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filtered-the-coor_data_dot_filtered_offset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filtered the coor_data_dot_filtered_offset
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-multiple-masks" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 Multiple Masks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -867,7 +1163,10 @@
                   
 
 
-<h1 id="mr-eye-track">MR-Eye Track<a class="headerlink" href="#mr-eye-track" title="Permanent link">&para;</a></h1>
+<h1 id="analysis-of-et-data-within-mreye_track">Analysis of ET data within MREye_Track<a class="headerlink" href="#analysis-of-et-data-within-mreye_track" title="Permanent link">&para;</a></h1>
+<p>Derived from:
+https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/</p>
+<p>Author: Yiwei Jia</p>
 <p>In this notebook, we delve into eye-tracking data analysis, focusing specifically on the MREye_track project. The project involves visual stimuli appearing in different directions: up, down, left, right and center. Within this notebook, we inspect the eye-tracking signals, determine regions of interest (ROIs) corresponding to each stimulus, and generate eye-tracking (ET) masks. Additionally, we calculate the distance distribution between two adjacent gaze points and also analyze that of specific time windows of eye-tracking data.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Derived from:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">#     https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc</span>
@@ -948,7 +1247,7 @@
 recording len: 657900
 The duration of mri acquisition sub001 sub002 and sub003: 655240 ms
 </code></pre></div>
-<h1 id="1-metadata-and-calibration">1 Metadata and calibration<a class="headerlink" href="#1-metadata-and-calibration" title="Permanent link">&para;</a></h1>
+<h2 id="1-metadata-and-calibration">1 Metadata and calibration<a class="headerlink" href="#1-metadata-and-calibration" title="Permanent link">&para;</a></h2>
 <p>We always run a calibration before it is started. As a result, we will typically see the metadata corresponding to calibration on this particular run.</p>
 <p>Now, let's print out the contents of the BIDS' sidecar JSON corresponding to the DWI in this session.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">target_message</span> <span class="o">=</span> <span class="s2">&quot;ET: Start routine &#39;centered_dot&#39;&quot;</span>
@@ -1112,7 +1411,7 @@ From the start of recording to the first dot: 498
 </span></code></pre></div>
 <p>The analysis did not reveal a strong correlation between pupil size and saccade or fixation events.</p>
 <p>The coordinate sequence is stable during fixation, we should extract the data in the event.</p>
-<h1 id="2-data-cleaning">2 Data Cleaning<a class="headerlink" href="#2-data-cleaning" title="Permanent link">&para;</a></h1>
+<h2 id="2-data-cleaning">2 Data Cleaning<a class="headerlink" href="#2-data-cleaning" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Separate the two phases of sequences</li>
 <li>Extract the X Y coordinates</li>
@@ -1124,7 +1423,7 @@ From the start of recording to the first dot: 498
 </ul>
 </li>
 </ul>
-<h2 id="21-separate-the-two-phases-of-sequences">2.1 Separate the two phases of sequences<a class="headerlink" href="#21-separate-the-two-phases-of-sequences" title="Permanent link">&para;</a></h2>
+<h3 id="21-separate-the-two-phases-of-sequences">2.1 Separate the two phases of sequences<a class="headerlink" href="#21-separate-the-two-phases-of-sequences" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># -----------------------------</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">reset_index_bool</span> <span class="o">=</span> <span class="kc">False</span>
 </span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">eliminate_all_nan</span> <span class="o">=</span> <span class="kc">False</span>
@@ -1267,13 +1566,13 @@ len of coor_data 657900 should be equal to len of coor_recording 657900
 set start margin as 0
 657900
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># import scipy.io</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># coor_array = coor_data_LIBRE[[&#39;x_coordinate&#39;, &#39;y_coordinate&#39;]].to_numpy()</span>
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># scipy.io.savemat(f&#39;coor_data_raw_t1w_libre_sub00{subject_idx}.mat&#39;, {&#39;coordinates&#39;: coor_array})</span>
 </span></code></pre></div>
-<h2 id="22-eliminating-blinking">2.2 Eliminating blinking<a class="headerlink" href="#22-eliminating-blinking" title="Permanent link">&para;</a></h2>
+<h3 id="22-eliminating-blinking">2.2 Eliminating blinking<a class="headerlink" href="#22-eliminating-blinking" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">use_eliminate_blink</span> <span class="o">=</span> <span class="kc">True</span>
 </span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
 </span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">def</span> <span class="nf">eliminate_blink</span><span class="p">(</span><span class="n">coor_data</span><span class="p">,</span> <span class="n">coor_recording</span><span class="p">,</span> <span class="n">seq_name</span><span class="p">):</span>
@@ -1306,7 +1605,7 @@ len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657
 </code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># coor_data_LIBRE[coor_recording_LIBRE.blink &gt; 0]</span>
 </span></code></pre></div>
-<h2 id="23-preserving-fixation">2.3 Preserving fixation<a class="headerlink" href="#23-preserving-fixation" title="Permanent link">&para;</a></h2>
+<h3 id="23-preserving-fixation">2.3 Preserving fixation<a class="headerlink" href="#23-preserving-fixation" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">use_preserve_fixation</span> <span class="o">=</span> <span class="kc">True</span>
 </span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
 </span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">def</span> <span class="nf">preserve_fixation</span><span class="p">(</span><span class="n">coor_data</span><span class="p">,</span> <span class="n">coor_recording</span><span class="p">,</span> <span class="n">seq_name</span><span class="p">):</span>
@@ -1337,7 +1636,7 @@ len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657
 After preserving fixation: 
 len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657900
 </code></pre></div>
-<h2 id="24-plot-the-gazing-dots">2.4 Plot the gazing dots<a class="headerlink" href="#24-plot-the-gazing-dots" title="Permanent link">&para;</a></h2>
+<h3 id="24-plot-the-gazing-dots">2.4 Plot the gazing dots<a class="headerlink" href="#24-plot-the-gazing-dots" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># see cleaned_cell [1]</span>
 </span></code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Example data (replace with your actual data)</span>
@@ -1374,12 +1673,12 @@ len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657
 </span><span id="__span-20-32"><a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span>
 </span><span id="__span-20-33"><a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a><span class="c1"># ============================================================</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png" /></p>
 <p>By far, we initially cleaned data based on the inherent properties in the metadata from EyeLink. And we plotted the fixation evaluation. </p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># see cleaned_cell [2]</span>
 </span></code></pre></div>
-<h2 id="25-visualize-gaze-groups">2.5 Visualize gaze groups<a class="headerlink" href="#25-visualize-gaze-groups" title="Permanent link">&para;</a></h2>
+<h3 id="25-visualize-gaze-groups">2.5 Visualize gaze groups<a class="headerlink" href="#25-visualize-gaze-groups" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">def</span> <span class="nf">within_2d_range</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y_vals</span><span class="p">,</span> <span class="n">x_range</span><span class="p">,</span> <span class="n">y_range</span><span class="p">):</span>
 </span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">x_vals</span> <span class="o">&gt;=</span> <span class="n">x_range</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">x_vals</span> <span class="o">&lt;=</span> <span class="n">x_range</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">&amp;</span>
 </span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>                      <span class="p">(</span><span class="n">y_vals</span> <span class="o">&gt;=</span> <span class="n">y_range</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">y_vals</span> <span class="o">&lt;=</span> <span class="n">y_range</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
@@ -1579,7 +1878,7 @@ index-109: label corrected, count of valid points is less than half of interval
 index-115: label corrected, count of valid points is less than half of interval
 [74, 91, 109, 115]
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">def</span> <span class="nf">cal_diff_distance</span><span class="p">(</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">):</span>
 </span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
 </span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="c1"># Calculate differences</span>
@@ -1705,7 +2004,7 @@ index-115: label corrected, count of valid points is less than half of interval
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 </span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">distances_win</span> <span class="o">=</span> <span class="n">cal_diff_sum_window</span><span class="p">(</span><span class="n">X_coord</span><span class="p">,</span> <span class="n">Y_coord</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">7</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">distances_win</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -1724,7 +2023,7 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 </span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">window_size</span> <span class="o">=</span> <span class="mi">80</span>
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="n">distances_max_win</span> <span class="o">=</span> <span class="n">cal_max_distance_window</span><span class="p">(</span><span class="n">X_coord</span><span class="p">,</span> <span class="n">Y_coord</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="n">window_size</span><span class="p">)</span>
@@ -1747,7 +2046,7 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">save_mask_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./masks_1206/subject_</span><span class="si">{</span><span class="n">subject_idx</span><span class="si">}</span><span class="s1">_max_dist_win_</span><span class="si">{</span><span class="n">window_size</span><span class="si">}</span><span class="s1">.mat&#39;</span>
 </span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">sio</span><span class="o">.</span><span class="n">savemat</span><span class="p">(</span><span class="n">save_mask_path</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;distances_max_win&#39;</span><span class="p">:</span> <span class="n">distances_max_win</span><span class="p">})</span>
 </span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The mask file has been saved here: </span><span class="si">{</span><span class="n">save_mask_path</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -1806,13 +2105,13 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 </span><span id="__span-32-46"><a id="__codelineno-32-46" name="__codelineno-32-46" href="#__codelineno-32-46"></a><span class="n">threshold_value</span> <span class="o">=</span> <span class="n">plt_distribution</span><span class="p">(</span><span class="n">distances_max_win</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
 </span><span id="__span-32-47"><a id="__codelineno-32-47" name="__codelineno-32-47" href="#__codelineno-32-47"></a><span class="nb">print</span><span class="p">(</span><span class="n">threshold_value</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>1.748739720799676
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>21.51341017672875
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>51.6691085454658
 </code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">def</span> <span class="nf">cal_statistics</span><span class="p">(</span><span class="n">distances</span><span class="p">):</span>
@@ -1854,7 +2153,7 @@ Minimum distance: 0.00
 Maximum distance: 360.06
 Number of NaN values: 0
 </code></pre></div>
-<h2 id="generate-movement-distance-mask">Generate movement distance mask<a class="headerlink" href="#generate-movement-distance-mask" title="Permanent link">&para;</a></h2>
+<h2 id="3-generate-movement-distance-mask">3 Generate movement distance mask<a class="headerlink" href="#3-generate-movement-distance-mask" title="Permanent link">&para;</a></h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">def</span> <span class="nf">generate_movement_mask</span><span class="p">(</span><span class="n">distances_max_win</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">move_criteria</span><span class="p">):</span>
 </span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="c1"># Generate the mask</span>
 </span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="c1"># the threshold should be within voxel size, or some relationship with voxel size.</span>
@@ -1893,7 +2192,7 @@ Number of NaN values: 0
 <div class="language-text highlight"><pre><span></span><code>Mask shape: (656158,)
 The mask file has been saved here: ./masks_1206/subject_1_move_win80_crit60_mask.mat
 </code></pre></div>
-<h2 id="generate-the-raw-masks-5-masks">Generate the raw masks: 5 masks<a class="headerlink" href="#generate-the-raw-masks-5-masks" title="Permanent link">&para;</a></h2>
+<h2 id="4-generate-the-raw-masks-5-masks">4 Generate the raw masks: 5 masks<a class="headerlink" href="#4-generate-the-raw-masks-5-masks" title="Permanent link">&para;</a></h2>
 <p>According to the stimuli intervals</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">see_raw</span><span class="o">=</span><span class="kc">False</span>
 </span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>
@@ -1988,7 +2287,7 @@ The mask file has been saved here: ./masks_1206/subject_1_move_win80_crit60_mask
 </span></code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>
 </span></code></pre></div>
-<h2 id="generate-the-location-masks-5-masks">Generate the location masks: 5 masks<a class="headerlink" href="#generate-the-location-masks-5-masks" title="Permanent link">&para;</a></h2>
+<h2 id="5-generate-the-location-masks-5-masks">5 Generate the location masks: 5 masks<a class="headerlink" href="#5-generate-the-location-masks-5-masks" title="Permanent link">&para;</a></h2>
 <p>According to the absolute locations</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">coor_data_dot_raw</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">coor_data_LIBRE_raw</span><span class="p">)</span>
 </span><span id="__span-40-2"><a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">coor_data_dot_raw</span><span class="p">))</span>
@@ -2189,12 +2488,12 @@ The mask file has been saved here: ./masks/subject_1_lc_mask_center.mat
 </span><span id="__span-43-35"><a id="__codelineno-43-35" name="__codelineno-43-35" href="#__codelineno-43-35"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span>
 </span><span id="__span-43-36"><a id="__codelineno-43-36" name="__codelineno-43-36" href="#__codelineno-43-36"></a>    <span class="c1"># ============================================================</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png" /></p>
-<h2 id="generate-the-filtered-5-mask">Generate the filtered 5 mask<a class="headerlink" href="#generate-the-filtered-5-mask" title="Permanent link">&para;</a></h2>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png" /></p>
+<h2 id="6-generate-the-filtered-5-mask">6 Generate the filtered 5 mask<a class="headerlink" href="#6-generate-the-filtered-5-mask" title="Permanent link">&para;</a></h2>
 <p>based on the filtered coordinate</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="c1"># def find_mean(x)</span>
 </span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>
@@ -2343,16 +2642,16 @@ The mask file has been saved here: ./masks/subject_1_ft_mask_center.mat
 </span><span id="__span-46-36"><a id="__codelineno-46-36" name="__codelineno-46-36" href="#__codelineno-46-36"></a>
 </span><span id="__span-46-37"><a id="__codelineno-46-37" name="__codelineno-46-37" href="#__codelineno-46-37"></a>    <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">raw_mask_lc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">ft_mask_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png" /></p>
 <h3 id="filtered-the-coor_data_dot_filtered_offset">Filtered the coor_data_dot_filtered_offset<a class="headerlink" href="#filtered-the-coor_data_dot_filtered_offset" title="Permanent link">&para;</a></h3>
 <p>Region by the gaze points</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>
@@ -2394,16 +2693,16 @@ To calculate the displacement in both directions (mm)
 656158
 To generate discard masks for x and y direction...
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">plot_h_v_disp</span><span class="p">(</span><span class="n">h_dis_left</span><span class="p">,</span> <span class="n">v_dis_left</span><span class="p">,</span> <span class="n">discarded_x_mask</span><span class="p">,</span> 
 </span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>              <span class="n">discarded_y_mask</span><span class="p">,</span> <span class="n">criteria_ratio</span><span class="o">=</span><span class="n">criteria_ratio</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="n">coor_data_left_clean</span><span class="p">,</span> <span class="n">Preserve_mask</span><span class="p">,</span> <span class="n">Discard_mask</span> <span class="o">=</span> <span class="n">filter_XY_with_mask</span><span class="p">(</span><span class="n">coor_data_left</span><span class="p">,</span> <span class="n">discarded_x_mask</span><span class="p">,</span> 
 </span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>                                                                        <span class="n">discarded_y_mask</span><span class="p">,</span> <span class="n">seq_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">====</span><span class="se">\n</span><span class="s1">x_coordinate --- statistics&#39;</span><span class="p">)</span>
 </span><span id="__span-51-2"><a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="n">cal_statistics</span><span class="p">(</span><span class="n">coor_data_left_clean</span><span class="p">[</span><span class="s1">&#39;x_coordinate&#39;</span><span class="p">])</span>
 </span><span id="__span-51-3"><a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">====</span><span class="se">\n</span><span class="s1">y_coordinate --- statistics&#39;</span><span class="p">)</span>
@@ -2429,8 +2728,8 @@ Minimum distance: 255.20
 Maximum distance: 312.20
 Number of NaN values: 527290
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="c1"># Visualization of filtered coor data LIBRE</span>
 </span><span id="__span-52-2"><a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="n">coor_data_raw_left</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">coor_data_dot_offset</span><span class="p">)</span>
 </span><span id="__span-52-3"><a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>
@@ -2446,7 +2745,7 @@ Number of NaN values: 527290
 sum of filtered mask: 141776
 sum of mask clean: 128868
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a>
 </span></code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="n">count_true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Preserve_mask</span><span class="p">)</span>
@@ -2509,7 +2808,7 @@ The mask file has been saved here: ./masks/subject_1_mask_clean_0.3_2.mat
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code>656158
 </code></pre></div>
-<h1 id="multiple-masks">Multiple Masks<a class="headerlink" href="#multiple-masks" title="Permanent link">&para;</a></h1>
+<h2 id="6-multiple-masks">6 Multiple Masks<a class="headerlink" href="#6-multiple-masks" title="Permanent link">&para;</a></h2>
 <p>if num=4, divide the valid range into 4 parts</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="kn">from</span> <span class="nn">mask_clean</span> <span class="kn">import</span> <span class="n">find_mean_position</span><span class="p">,</span> <span class="n">cal_angles</span><span class="p">,</span> <span class="n">cal_disp</span><span class="p">,</span> <span class="n">filter_criteria</span><span class="p">,</span> <span class="n">filter_XY_with_mask</span><span class="p">,</span> <span class="n">visualization_func</span>
 </span><span id="__span-57-2"><a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a><span class="n">Preserve_mask_list</span> <span class="o">=</span> <span class="p">[]</span>
@@ -2698,22 +2997,22 @@ sum of filtered mask: 136285
 sum of mask clean: 100028
 The mask file has been saved here: ./masks/subject_1_mask_clean_0.3_3.mat
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png" /></p>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Preserve_mask_list</span><span class="p">))</span>
 </span><span id="__span-58-2"><a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Preserve_mask_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 </span></code></pre></div>
@@ -2724,7 +3023,7 @@ The mask file has been saved here: ./masks/subject_1_mask_clean_0.3_3.mat
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code>&lt;matplotlib.collections.PathCollection at 0x31d9317f0&gt;
 </code></pre></div>
-<p><img alt="png" src="../et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png" /></p>
+<p><img alt="png" src="../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="n">coor_data_region_clean</span><span class="p">[</span><span class="n">coor_data_region_clean</span><span class="p">[</span><span class="s1">&#39;x_coordinate&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span>
 </span></code></pre></div>
 
