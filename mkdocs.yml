@@ -12,13 +12,12 @@ nav:
       - Recruitment and screening: recruitment-scheduling-screening/participants-recruitment.md
       - Scheduling: recruitment-scheduling-screening/scanner-scheduling.md
     - Data collection: 
-      - Data collection: data-collection.md
       - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
       - Audio fMRI protocol: data-collection/data-collection_audio.md
       - Resting state fMRI protocol: data-collection/data-collection_rs.md
       - DEBI protocol: data-collection/data-collection_DEBI_protocol.md
     - Data management: 
-      - Software installation: data-management/0_software_install.md
+      - Software installation (Eyelink): data-management/0_software_install.md
       - Overall data workflow: data-management/0_overall-data-workflow.md
       - Data export: data-management/1_data_export.md
       - EDF conversion: data-management/2_et1_edf_to_bids.md
@@ -28,6 +27,8 @@ nav:
         - MR-Eye 2.0: post-processing/1_1_et_QAQC_of_mreye_data.md
         - MREye_Track: post-processing/1_2_et_QAQC_of_mreye_tracking.md
       - MRI data: post-processing/2_MRI_post_processing.md
+    - Appendices:
+      - ET extended guidelines: data-collection/notes-et.md
       
         
 theme:
