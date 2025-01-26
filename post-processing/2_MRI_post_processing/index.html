@@ -1064,7 +1064,7 @@ revise the codes.</li>
 </ul>
 <h2 id="1-reconstruction-from-raw-data">1 Reconstruction from raw data<a class="headerlink" href="#1-reconstruction-from-raw-data" title="Permanent link">&para;</a></h2>
 <p>For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the Monalisa toolkit, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.</p>
-<p>Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be executed on Debi or the HES-SO server.</p>
+<p>Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of memory (Debi or the HES-SO server).</p>
 <p>The practical steps for reconstructing the data are as follows:</p>
 <h3 id="prepare-raw-data-path-on-debi">Prepare raw data path on Debi<a class="headerlink" href="#prepare-raw-data-path-on-debi" title="Permanent link">&para;</a></h3>
 <p>To accelerate data processing, we can first prepare a list of all raw data paths required for the upcoming reconstruction.
@@ -1132,7 +1132,7 @@ Additionally, make sure to record the duration of the raw data by examining the 
 <p>Save the generated ET mask in .mat format.</p>
 </li>
 </ul>
-<p>Further details on generating the ET mask and saving it will be provided in Section <mark>ref()<mark>.</p>
+<p>Further details on generating the ET mask and saving it will be provided in Section <a href="../1_1_et_QAQC_of_mreye_data/">MREye-2.0</a> and Section <a href="../1_2_et_QAQC_of_mreye_tracking/">MREye_Track</a>.</p>
 <h3 id="binning-the-raw-data-according-to-et-masks">Binning the raw data according to ET masks.<a class="headerlink" href="#binning-the-raw-data-according-to-et-masks" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For the raw data, we first eliminate the SI projection of raw data by setting the corresponding mask elements to a value of 0. </li>
