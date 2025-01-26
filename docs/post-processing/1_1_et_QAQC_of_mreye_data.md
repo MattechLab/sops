@@ -102,10 +102,6 @@ metadata = json.loads((
 
 metadata
 ```
-
-
-
-
     {'AverageCalibrationError': [0.5],
      'CalibrationCount': 1,
      'CalibrationLog': [[1047679,
@@ -181,9 +177,9 @@ metadata
 
 
 For instance:
-- **RecordedEye**: This specifies which eye was tracked. Here, the data corresponds to the right eye.
-- **SamplingFrequency**: The sampling rate is 1000 Hz (1 kHz), meaning the data captures 1000 samples per second.
-- **CalibrationDetails**: We can see the calibration method used (`HV5`), calibration quality (`GOOD`), and errors.
+    - **RecordedEye**: This specifies which eye was tracked. Here, the data corresponds to the right eye
+    - **SamplingFrequency**: The sampling rate is 1000 Hz (1 kHz), meaning the data captures 1000 samples per second.
+    - **CalibrationDetails**: We can see the calibration method used (`HV5`), calibration quality (`GOOD`), and errors.
 
 Understanding these parameters helps us ensure data reliability and assess the quality of eye-tracking measurements before analysis.
 
@@ -738,11 +734,6 @@ if plot_heatmap:
       coor_data.loc[coor_recording.blink > 0,  ['x_coordinate', 'y_coordinate']] = np.nan
 
 
-
-```python
-
-```
-
 ## 4.3 Preserving fixation
 
 Similarly, we will preserve the timestamps where fixation events are detected.
@@ -892,7 +883,7 @@ plt.show()
     
 
 
-## Stp 5: Calculate the mask, statistics 
+## Step 5: Calculate the mask, statistics 
 
 You can calculate the mask based on your user case. 
 
@@ -1150,7 +1141,7 @@ visualization_func(fig_title='Before vs. After Filtering',
     
 
 
-## Stp 6: Investigate the statistics of eye movement events across different subjects
+## Step 6: Investigate the statistics of eye movement events across different subjects
 Eye movement events such as blinks, saccades, and fixations provide valuable information about gaze behavior and data quality. By analyzing these events across different subjects, we can assess the consistency and reliability of the recorded data.
 
 
@@ -1435,12 +1426,6 @@ voilinplot(subject_event_dict, event='fixation',color='teal')
     
 ![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_2.png)
     
-
-
-
-```python
-
-```
 
 ## 6.2 Statistics Test
 

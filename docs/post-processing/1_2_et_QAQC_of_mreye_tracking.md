@@ -1246,124 +1246,7 @@ if save_move_preserve_mask:
     The mask file has been saved here: ./masks_1206/subject_1_move_win80_crit60_mask.mat
 
 
-## 4 Generate the raw masks: 5 masks
-According to the stimuli intervals
-
-
-```python
-see_raw=False
-
-if see_raw:
-    coor_data_dot_raw = copy.deepcopy(coor_data_LIBRE_raw)
-    
-    print(len(coor_data_dot_raw))
-    
-    coor_data_dot_raw = coor_data_dot_raw.reset_index(drop=True)
-    
-    
-    if subject_idx == 1:
-        offset_first_dot_mriStart = 1244 #1243.9 -> 1244
-    elif subject_idx == 2:
-        offset_first_dot_mriStart = -475
-    else:
-        offset_first_dot_mriStart= 1451 #1450.5 -> 1451
-    
-    # I want to generate a table, concatenate the labels along with the recordings.
-    # for example, I have 657402 coordinates pandas dataframe, and I have subsequent 131 intervals and 131 labels,
-    # I want to add the labels to the dataframe as a new column according to the intervals.
-    
-    
-    
-    # Initialize a new column for labels
-    coor_data_dot_raw['label'] = None
-    
-    # Assign labels based on intervals
-    for i, dot_m in enumerate(dot_message):
-        start = dot_m[0]
-        end = start+intervals[i]
-        coor_data_dot_raw.loc[start:end, 'label'] = labels[i]
-    
-    # Check result
-    # print(coor_data_dot_raw[dot_message[19][0]:dot_message[19][0]+intervals[19]])
-    
-
-```
-
-
-```python
-if see_raw:
-    coor_data_dot_offset = coor_data_dot_raw[offset_first_dot_mriStart:].reset_index(drop=True)
-    mri_duration = 655240
-    coor_data_dot_offset = coor_data_dot_offset[:mri_duration]
-    print(len(coor_data_dot_offset))
-    print(coor_data_dot_offset)
-    unique_labels = coor_data_dot_offset["label"].unique()
-    print("Unique labels:", unique_labels)
-    coor_data_dot_offset[coor_data_dot_offset["label"] == 'center'][-2000:-1990]
-```
-
-
-```python
-def generate_raw_mask(coor_data, label_type='label', label='up'):
-    # Generate the mask
-    raw_mask = np.where(coor_data[label_type] == label, 1, 0)
-    
-    # Check the result
-    print("Mask:", raw_mask)
-    print("Mask shape:", raw_mask.shape)
-
-    
-    return raw_mask
-    
-if see_raw:
-    # Generate 5 raw mask
-    import os
-    import scipy.io as sio
-    
-    
-    
-    label_list = ['up', 'down', 'left', 'right', 'center', 'invalid']
-    raw_mask_5p = []
-    raw_mask_up = generate_raw_mask(coor_data_dot_offset, label_type='label', label=label_list[0])
-    raw_mask_5p.append(raw_mask_up)
-    
-    raw_mask_down = generate_raw_mask(coor_data_dot_offset, label_type='label', label=label_list[1])
-    raw_mask_5p.append(raw_mask_down)
-    
-    raw_mask_left = generate_raw_mask(coor_data_dot_offset, label_type='label', label=label_list[2])
-    raw_mask_5p.append(raw_mask_left)
-    
-    raw_mask_right = generate_raw_mask(coor_data_dot_offset,label_type='label', label=label_list[3])
-    raw_mask_5p.append(raw_mask_right)
-    
-    raw_mask_center = generate_raw_mask(coor_data_dot_offset,label_type='label', label=label_list[4])
-    raw_mask_5p.append(raw_mask_center)
-    
-    coor_data_dot_offset[raw_mask_center.astype(bool)]
-    
-    save_mask = True
-    if save_mask:
-        for m_idx in range(5):
-            save_mask_path = f'./masks/subject_{subject_idx}_raw_mask_{label_list[m_idx]}.mat'
-            sio.savemat(save_mask_path, {'array': raw_mask_5p[m_idx]})
-            print(f'The mask file has been saved here: {save_mask_path}')
-            
-      
-    
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-## 5 Generate the location masks: 5 masks
+## 4 Generate the location masks: 5 masks
 According to the absolute locations
 
 
@@ -1618,7 +1501,7 @@ for idx in range(5):
     
 
 
-## 6 Generate the filtered 5 mask
+## 5 Generate the filtered 5 mask
 based on the filtered coordinate
 
 
