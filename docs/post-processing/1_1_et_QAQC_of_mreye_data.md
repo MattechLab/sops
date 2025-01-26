@@ -102,6 +102,9 @@ metadata = json.loads((
 
 metadata
 ```
+
+```python
+
     {'AverageCalibrationError': [0.5],
      'CalibrationCount': 1,
      'CalibrationLog': [[1047679,
@@ -174,12 +177,13 @@ metadata
       ['eye1', [48, 300]],
       ['eye1', [752, 300]]]}
 
-
+```
 
 For instance:
-    - **RecordedEye**: This specifies which eye was tracked. Here, the data corresponds to the right eye
-    - **SamplingFrequency**: The sampling rate is 1000 Hz (1 kHz), meaning the data captures 1000 samples per second.
-    - **CalibrationDetails**: We can see the calibration method used (`HV5`), calibration quality (`GOOD`), and errors.
+
+- **RecordedEye**: This specifies which eye was tracked. Here, the data corresponds to the right eye
+- **SamplingFrequency**: The sampling rate is 1000 Hz (1 kHz), meaning the data captures 1000 samples per second.
+- **CalibrationDetails**: We can see the calibration method used (`HV5`), calibration quality (`GOOD`), and errors.
 
 Understanding these parameters helps us ensure data reliability and assess the quality of eye-tracking measurements before analysis.
 
@@ -923,12 +927,6 @@ def cal_stats(coor_data):
 
 ```
 
-
-```python
-
-```
-
-
 ```python
 coor_data_LIBRE_1 = copy.deepcopy(coor_data_LIBRE)
 stats_dict = cal_stats(coor_data_LIBRE_1)
@@ -1441,11 +1439,6 @@ It is particularly useful when comparing groups where the data may not meet the 
 
 Eye-tracking event statistics (e.g., blink counts, fixation durations) may not follow normal distributions due to inter-subject variability or artifacts. The Mann-Whitney U test allows robust comparison of these statistics between groups or conditions without requiring strict assumptions about the data.
 
-
-
-```python
-
-```
 
 
 ```python
