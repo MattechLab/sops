@@ -1,6 +1,6 @@
 # **Data Collection for Resting-state audiovisual fMRI protocol**
 
-## **Overall experimental setting**
+## **Overall experimental setting** 
 
 The experimental setup includes:
 

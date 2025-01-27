@@ -1,6 +1,6 @@
 # **Data Collection for Audio fMRI protocol**
 
-## **Overall experimental setting**
+## **Overall experimental setting** 
 
 The experimental setup includes:
 
