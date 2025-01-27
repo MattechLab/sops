@@ -243,23 +243,8 @@ It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (
 
 Check this video for the complete acquisition process:
 
-<div style="text-align: center;">
-  <iframe width="600" height="338"
-          src="https://www.youtube.com/embed/1iX3KdKMM6E"
-          frameborder="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-  </iframe>
-  <p>If the video does not render, you can
-  <a href="../assets/debi_protocol/selected/scan_eva.mp4" download>download the video here</a>.</p>
-</div>
-
-<!-- This didn't work... -->
-<!-- <video controls width="600">
-  <source src="../assets/debi_protocol/selected/scan_eva.mp4" type="video/mp4">
-  Your browser does not support the video tag. 
-  <a href="../assets/debi_protocol/selected/scan_eva.mp4">Watch the complete acquisition process video</a>
-</video> -->
+<script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script><style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6eod5wljf4"></wistia-player>
+Your browser does not support the video? <a href="../assets/debi_protocol/selected/scan_eva.mp4">Click here to download it</a>
 
 #### Session Completed
 
