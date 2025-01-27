@@ -244,7 +244,8 @@ It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (
 Check this video for the complete acquisition process:
 
 <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script><style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6eod5wljf4"></wistia-player>
-Your browser does not support the video? <a href="../assets/debi_protocol/selected/scan_eva.mp4">Click here to download it</a>
+
+Your browser does not support the video? Click [here](https://github.com/MattechLab/sops/blob/dev/docs/assets/debi_protocol/selected/scan_eva.mp4) to download it.
 
 #### Session Completed
 
