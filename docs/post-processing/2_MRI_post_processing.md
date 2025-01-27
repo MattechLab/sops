@@ -5,7 +5,7 @@ revise the codes.
 ## 1 Reconstruction from raw data
 For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the Monalisa toolkit, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.
 
-Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be executed on Debi or the HES-SO server.
+Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of memory (Debi or the HES-SO server).
 
 The practical steps for reconstructing the data are as follows:
 ### Prepare raw data path on Debi
@@ -74,7 +74,7 @@ The duration of the rawdata is: 650185 ms with data points:22000
 
 - Save the generated ET mask in .mat format.
 
-Further details on generating the ET mask and saving it will be provided in Section <mark>ref()<mark>.
+Further details on generating the ET mask and saving it will be provided in Section [MREye-2.0](./1_1_et_QAQC_of_mreye_data.md) and Section [MREye_Track](./1_2_et_QAQC_of_mreye_tracking.md).
 
 ### Binning the raw data according to ET masks.
 - For the raw data, we first eliminate the SI projection of raw data by setting the corresponding mask elements to a value of 0. 
