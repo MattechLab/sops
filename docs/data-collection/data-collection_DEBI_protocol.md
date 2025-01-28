@@ -3,6 +3,7 @@
 ???+ quote "Note"
     - Precisely point out what is connected to what by which kind of cables.
     - Need double check with JB
+    - <mark> The reviewer can correct the part in the block of mark as shown here.</mark>
 
 ## Overall experimental setting
 
@@ -41,14 +42,14 @@ On windows:
 - Go to `Control Panel` -> `Network and Internet` -> `Network Connections`
 - Double-click on the `Ethernet` connection.
 - Select `Internet Protocol Version 4 (TCP/IPv4)` and click `Properties`.
-- Update the IP address to `100.1.1.2` and the subnet mask `255.255.255.0`.<mark> (Photos from Helene's sop)</mark>
+- Update the IP address to `100.1.1.2` and the subnet mask `255.255.255.0`.
 
 ![0-e-ip](../assets/debi_protocol/selected/0-e-ip.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 ![0-e2-ip](../assets/debi_protocol/selected/0-e2-ip.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-### Prepare ET set up outside the scanner room
+### Prepare Equipment Outside the Scanner Room
 
-#### Setting up the projector
+#### Turn on the projector
 
 Turn on the Sony projector located in the back room of the scanner room.
 ![projector-e](../assets/debi_protocol/selected/1-projector-e.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -90,7 +91,7 @@ Ensure the projector beam is directed into the scanner room.
 - Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
 ![tr-sync](../assets/debi_protocol/selected/7-e3-tr-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-### Set up the ET workstation
+#### Set up the ET system
 
 - Make sure the ET PC is charged
 ![charge-et-pc](../assets/debi_protocol/selected/8-e-charge-ET-PC.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -99,7 +100,9 @@ Ensure the projector beam is directed into the scanner room.
 - Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
 ![et-initial](../assets/debi_protocol/selected/8-e-ET-initial.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-#### Prepare the ET
+!!! warning "The command elcl.exe will only work and start the software once the eye tracker device is connected to the ET PC. If you encounter any error messages, please ensure the eye tracker is connected to the PC inside the scanner room and try running the command again."
+
+#### Prepare the Eye Tracker device
 
 - All the lenses, mirrors, and other equipment are in the box in JB's office.
 ![box](../assets/debi_protocol/selected/9-e-box.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -107,8 +110,8 @@ Ensure the projector beam is directed into the scanner room.
   
 ![lens-1](../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![lens-2](../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
-<mark>what value is the default position of the screw for convenient focus ?</mark>
-!!! tip "The default position of the screw for convenient focus is typically set to `1`. However, the exact value can vary depending on the specific participant and setup for each time. It's recommended to start with the screw at value `1` and adjust from there for optimal focus during setup. If you're following a specific SOP, it might provide additional details for your equipment."
+
+!!! tip "The default position of the screw for convenient focus is typically set to around `1`. ![install-lens](../assets/debi_protocol/selected/20-e-screw-of-lens.jpg)However, the exact value can vary depending on the specific participant and setup for each time. It's recommended to start with the screw at value `1` and adjust from there for optimal focus during setup. If you're following a specific SOP, it might provide additional details for your equipment."
 ![install-lens](../assets/debi_protocol/selected/11-install-lens-ET.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Place the infrared-mirror onto the head coil
@@ -121,7 +124,7 @@ Ensure the projector beam is directed into the scanner room.
 - Get two gloves (e.g., from the box hanging at the entrance of the scanner room)
 - Put the gloves on, and **DON'T TOUCH ANYTHING**. You must have the standard mirror dismounted and ahead of this step.
 - **WITH THE GLOVES** proceed to extract the infra-red mirror from its box, being extremely careful. **YOU CAN ONLY TOUCH THE MIRROR WITH GLOVES**, because it cannot be cleaned up. Watch out for FINGERPRINTS and once taken out of the protection mask, IMMEDIATELY AND CAREFULLY ATTACH IT to the head coil.
-<mark>[A photo of the head coil with the mirror correctly installed is missing]</mark>
+![head_coil_mirror](../assets/debi_protocol/selected/22_anno_head_coil_mirror.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 ### Preparation in the scanner room
 
@@ -132,7 +135,9 @@ Ensure the projector beam is directed into the scanner room.
 - Two plugs for the black and one plug for the orange to ET
 ![et-cables](../assets/debi_protocol/selected/13-e-ET-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Connect the external cable from the syncbox to the scanner.
-<mark>No photo here due to magnetic field</mark>
+
+!!! warning No photo here due to magnetic field.
+
 
 #### Place the eye tracker and screen
 
@@ -161,11 +166,12 @@ Ensure the projector beam is directed into the scanner room.
 ##### Adjust the lens of eye tracker
 
 - Point the lens of eye tracker towards the participant's right eye.
-- <mark>[Add the default position of the lens for convenient adjustment]</mark>
+- The default position of the screw on the lens can be set to around 1 for convenient adjustment.
+![install-lens](../assets/debi_protocol/selected/20-e-screw-of-lens.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 - Rotate the lens until the pupil is in focus on the screen during camera mode. Adjust until the image is sharp, with both the pupil and eyelashes well defined.
 ![no-pupil](../assets/debi_protocol/selected/17-e-no-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 ![good-pupil](../assets/debi_protocol/selected/17-e-good-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
-<mark>ask for Mauro's consent</mark>
+
 
 ### ET Calibration
 
@@ -187,7 +193,7 @@ Click the `Run Experiment` button, or run the experiment from the terminal by ty
 **Example psychopy project (MR-Eye Track)**
 {: style="text-align: center;"}
 
-!!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark>"
+<!-- !!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark>" -->
 
 #### Run the calibration
 
