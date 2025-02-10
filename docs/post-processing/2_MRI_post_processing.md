@@ -3,12 +3,12 @@ revise the codes.
 - raw data from MR-Eye or MR_Track protocols: binning with ET masks -> Compressed sensing recon
 
 ## 1 Reconstruction from raw data
-For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the Monalisa toolkit, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.
+For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the Monalisa toolkit <- WHERE IS THE MONALISA LINK???, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.
 
-Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of memory (Debi or the HES-SO server).
+Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of memory (Debi or the HES-SO server). <- THESE ARE GENERAL PROCEDURES, YOU DO NOT NEED TO INDICATE WHERE YOU ARE GOING TO PERFORM YOUR RECONSTRUCTIONS
 
 The practical steps for reconstructing the data are as follows:
-### Prepare raw data path on Debi
+### Prepare raw data path on Debi <- I think that several sections and print screen can be taken from the tutorial of Monalisa, if I am not mistaken, or at least repoint towards what we did so far
 To accelerate data processing, we can first prepare a list of all raw data paths required for the upcoming reconstruction.
 ```matlab
 reconDir = '/path/to/recon/folder';

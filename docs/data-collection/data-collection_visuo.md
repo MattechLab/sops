@@ -1,7 +1,7 @@
 ## Data Collection Visual checkerboard fMRI protocol
 
 
-#### Overall experimental setting
+#### Overall experimental setting <- there should be a tribute to OScar's lab and SOPS somewhere
 
 The experimental setup includes:
 
@@ -38,7 +38,7 @@ The experimental setup includes:
 #### Session preparation
 The following section describes how to prepare the session on the day of the scan BEFORE the participant arrives. Try to arrive at the Control Room at least 30 min ahead of the session start time.
 
-##### Setup Preparation Inside the Scanner room
+###### Setup Preparation Inside the Scanner room
 - Memorize where the other tools for the recordings are to put those back in place at the end (coil, emergency button, ears cover).
 
 ###### Setting up the projector
@@ -71,7 +71,7 @@ The following section describes how to prepare the session on the day of the sca
     <li>If it is the 64-channel coil, you can just temporarily move it into the scanner's bore.</li>
     <li>Otherwise, store it on the shelf where the other coils are and bring the 64-channel one in the proximity of the bed (e.g., inside the scanner's bore). Make sure to remove other coil's fitting elements.</li>
   </ul>
-- Remove the spine coil by lifting the corresponding latch, then sliding it toward the head of the bed, lift it from the bed and place it on the floor ensuring it is not obstructing any passage or unstable.
+- Remove the spine coil by lifting the corresponding latch, then sliding it toward the head of the bed, lift it from the bed and place it on the floor ensuring it is not obstructing any passage or unstable. <- CAREFUL! I don't think the remotion of the spine coil applies to us
 - Place the two back padding elements filling the spine coil socket.
 - Place the 64-channel head-and-neck coil into its socket at the head end of the bed.
 - Attach the dedicated infrared mirror to the coil (see ET_setup_3T_EyeLink_1000Plus):
@@ -81,7 +81,7 @@ The following section describes how to prepare the session on the day of the sca
     <li>Extract the dedicated infrared mirror from the ET box CAREFULLY.</li>
     <li>Remove the mirror protection EXTRA-CAREFULLY.</li>
     <li>Take the mirror, enter the Scanning Room and lock the mirror onto the frame of the head-coil.</li>
-  </ul>
+  </ul> <- this doesn't apply anymore (and signal it to Oscar). We now have a dedicated mirror extension that has already the infrared mirror collated, so that we don't have to remove and scotch the mirror at every session. Please correct
 
 
 ###### Final setting inside the scanning room
@@ -93,7 +93,7 @@ The following section describes how to prepare the session on the day of the sca
   </ul>
 - Prepare a blanket to cover the participant.
 - Prepare a new pair of earplugs.
-- Completely disable the light inside of the scanner and the ventilation of the scanning room to facilitate the best performance of the ET.
+- Completely disable the light inside of the scanner and the ventilation of the scanning room to facilitate the best performance of the ET (i.e. to reduce eye blink and harmonise the light contrast across participants).
 
 
 ##### Setup Preparation Inside the Control Room
@@ -114,7 +114,7 @@ The following section describes how to prepare the session on the day of the sca
 - Click the switch button to share your PC.
 - Switch the SyncBox on using the button on the right side.
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button “S” from keyboard). Take the SyncBox and go on “Simulation” mode.
-- Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. 
+- Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. <- CAREFUL! This set-up is intrinsically linked to the capability of receiving / sending the trigger, therefore it's sequence sensitive. We need to put an extra care to this, and anyways, this should be a work in progress section (same as points above -> and it applies to all sections (Data collection))
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
 ![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
 ![syncbox5](../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
@@ -129,7 +129,7 @@ The following section describes how to prepare the session on the day of the sca
   <li>Verify the IP address assigned to the Ethernet interface of the experimental laptop is correct:
     <ul>
       <li>Check the output of the following command and verify that IP/mask is 100.1.1.2/24, and the protocol is IP version 4.</li>
-      <li>Check whether the link is properly established.</li>
+      <li>Check whether the link is properly established.</li> <- how do you do this?
     </ul>
   </li>
 
@@ -139,14 +139,14 @@ The following section describes how to prepare the session on the day of the sca
 
 ## Participant Reception
 
-- Meet the participant at an easily locatable place (e.g., the reception desk of the Radiology Unit) and show them the way into the control room. Allow sufficient time before the experiment for the preparation.
+- Meet the participant at an easily locatable place (e.g., the reception desk of the Radiology Unit) and show them the way into the control room. Allow sufficient time before the experiment for the preparation. <- and signature of the ICF and related documents (Safety questionnaire too)
 - Show the participant the scanning room and explain to them how the device is controlled from outside.
-- Ask the participant to fill out the consent form and MRI safety screener, and verbally confirm responses and discuss further doubts, paying attention to frequently forgotten devices and implants, like orthodontia.
+- Ask the participant to fill out the consent form and MRI safety screener, and verbally confirm responses and discuss further doubts, paying attention to frequently forgotten devices and implants, like orthodontia. <- SIGNATURE!!!!
 - Remind the participant to use the bathroom at this moment if they need.
 - Describe to the participant how the session will develop and explain clearly the task. Let them interrupt you to ask for clarifications and answer all the questions that may arise.
 
 ???+ quote "Script for the session"
-      “We are going to acquire two types of images. The first type is anatomical imaging that we use to study the morphology of the brain. The second type is a functional MRI, which we use to understand how the brain activates as a response to stimuli we will present to you. During the whole duration of the exam, please do not create closed loops by crossing your legs or holding your hands together. It is possible that your peripheral nerves get stimulated at some points, so you will feel twitching of muscles, for instance, of your pectorals. Do not panic, it is okay, but if it feels too uncomfortable, please squeeze the alarm button.During the functional MRI you will see a point at the center of the screen that will change the colors. For the entire period of the experiment you should takes the eye open on this fixation point at the center of a gray environment. The experiment has a duration of 30 minutes more and less. Before to start with scanning we will need to calibrate the eyetracker, therefore we will ask you to fix different points on the screen.
+      “We are going to acquire two types of images. The first type is anatomical imaging that we use to study the morphology of the brain. The second type is a functional MRI, which we use to understand how the brain activates as a response to stimuli we will present to you. During the whole duration of the exam, please do not cross your legs or hold your hands together, as it might creates close loops. It is possible that your peripheral nerves get stimulated at some points, so you will feel twitching of muscles, for instance, of your pectorals. Do not panic, it is okay, but if it feels too uncomfortable, please squeeze the alarm button. During the functional MRI you will see a point at the center of the screen that will change the colors. For the entire period of the experiment you should takes the eye open on this fixation point at the center of a gray environment. The experiment has a duration of 30 minutes more and less. Before to start with scanning we will need to calibrate the eyetracker, therefore we will ask you to fix different points on the screen, but try not to anticipate the dot repositioning. During the calibration, we will do a back and forth from outside to inside the scanner room, to make sure the camera properly catches your eye.
 
       Is everything clear to you? Do you have any questions?”
 
@@ -155,8 +155,8 @@ The following section describes how to prepare the session on the day of the sca
 
 ## Participant Preparation in the Scanning Room
 
-- Instruct the participant to lay on the MRI bed and adjust the participant inside. With the paddings, their head position MUST be adjusted and elevated so that the nose and the forehead of the participant are both close to the upper coil. This procedure ensures the ET has the clearest possible view of the eye.
 - Give them the ear-plugs to protect their hearing during acquisition, allow time for them to place them.
+- Instruct the participant to lay on the MRI bed and adjust the participant inside. With the paddings, their head position MUST be adjusted and elevated so that the nose and the forehead of the participant are both close (ideally touching) the upper coil. This procedure ensures the ET has the clearest possible view of the eye and that the setup is standardised across all participants.
 - Give the participant the emergency button. Make the participant try it, so they can see it works. To switch off the alarm, there’s a button on the scanner (circular, both on the left and on the right of the hole).
 - Once the previous part is ensured, the participant is ready. If the participant is cold, put a blanket on top of him.
 - Connect the coil's cable to the corresponding socket on the table.
@@ -194,13 +194,13 @@ The following section describes how to prepare the session on the day of the sca
 ### Before Initiating the Session: Run the Experiment
 
 - At the end of the ET calibration we are ready to run the experiment.
-- Wait for the sentence “In this task you will see a color dot. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”
-- Then click “start session” on the sync box clicking the round button. 
+- Wait for the sentence “In this task you will see a color dot. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.” <- This message should be changed, as in our case the color is changing to improve attention in fixation
+- Then click “start session” on the sync box clicking the round button. <- (Careful here, the syncbox setup might change due to whether the sequence receives or sends a trigger)
 
 ![gaz-analyser-front](../assets/images/run_experiment11.jpg "Gas Analyzer front"){ width=40% }
 ![gaz-analyser-front](../assets/images/run_experiment12.jpg "Gas Analyzer front"){ width=40% }
 
-- The stimulation will start with the scanning. At the end of the experiment click “t” on the experimental laptop and click the round button on the SyncBox to stop the running session.
+- The stimulation will start with the scanning <- ( careful here as well). At the end of the experiment click “t” on the experimental laptop and click the round button on the SyncBox to stop the running session. <- NOTE: we should also provide the stimulation codes on psychopy, are you planning making these availables? 
 
 ### During the Session
 
@@ -213,16 +213,16 @@ The following section describes how to prepare the session on the day of the sca
 - Indicate the participant that the scanning will soon start.
 - Wait for the participant confirmation and set the speaker off afterward.
 - Launch the AAhead_scout_64ch-head-coil protocol by pressing Continue.
-- Once the localizer is concluded, click on the image stack icon with left click and drag the image with a 1 onto the image viewer. That will open the interpolated localizer on the viewer.
+- Once the localizer is concluded, click on the image stack icon with left click and drag the image with a 1 onto the image viewer. That will open the interpolated localizer on the viewer. <- Very good, but... when the scanner will upgrade, any pics taken during the scanning should be updated (and the scanner software version specified.... Perhaps better stay general)
 - If the quality looks good, check the box stating Localizer looked ok. If not, re-acquire the localizer.
 
-### Acquire a High-Resolution Anatomical Image
+### Acquire a High-Resolution Anatomical Image -> I have the feeling these points below comes from Oscar's acquisition. can you please double check with our protocol's parameter? Thanks 
 
 - Run the wip19_mprage_1iso_cs4p2 protocol by pressing Continue.
 ???+ quote "Anatomical image Acquisition" 
     - While you are still running the MPRAGE sequence open the parameters of the sequence and ensure that:
     -	under Sequence ⤷ Part1, the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
-    -	under Routine, TR and TE should be set at the minimum value. the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
+    -	under Routine, TR and TE should be set at the minimum value, the shot per slice is 419. This is crucial so that so that the acquisition time is more and less 1 minute.
     -	under Contrast ⤷ common, TR and TE should be set at the minimum value. The fat-water should be set as standard and the flip angle should be set to 5 degree.
     -	under Contrast ⤷ filter, click on the three dots and tick the “unfiltered images”.
     -	under System ⤷ coils, select the coils HC3, HC5, HC4, HC6, HC7.
@@ -231,14 +231,14 @@ The following section describes how to prepare the session on the day of the sca
     - Finally, click copy and go button
 ### Acquire Functional Image
 
-- Inform the participant that we will start with the fMRI block, therefore the participant will start hearing sounds.
-- Run the BEAT_LIBREoff_BOLD_audio_bis protocol by pressing Continue.
+- Inform the participant that we will start with the fMRI block, therefore the participant will start hearing sounds. <- EXCEPT that this is the visual section
+- Run the BEAT_LIBREoff_BOLD_audio_bis protocol by pressing Continue. <- OK But I don't think we will call this that way, we should be descriptive of what type of acquisition we are running (as much as we do above with the mprage)
 
 ## Session Completed
 
 - The exam is over, inform the participant that the session has concluded.
 - At the end of the stimulation click “t” on the experimental laptop and click the round button on the SyncBox to stop the running session.
-- You can proceed with the tear-down protocol.
+- You can proceed with the tear-down protocol. <- AFTER YOU MAKE SURE THAT ALL THE PHYSIO IS PROPERLY STORED
 
 ## Session Tear-Down
 
