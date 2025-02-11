@@ -57,6 +57,12 @@ theme:
 
 plugins:
   - search
+  - macros:
+      include_dir: include
+      include_yaml:
+        - secrets: 'include/secrets.yml'
+        - settings: 'include/study-settings.yml'
+      on_undefined: lax
   - mkdocs-jupyter:
       ignore:
         - "*.py"

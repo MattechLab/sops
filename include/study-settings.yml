@@ -1,7 +1,7 @@
 ## Study-wise settings that can be shared publicly
 general:
-  name: "My SOPs"
-  repo: gh_username/my-sops
+  name: "Mat-Tech Lab Sops"
+  repo: MattechLab/sops
 
 mri:
   timings:
