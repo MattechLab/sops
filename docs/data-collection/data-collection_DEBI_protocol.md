@@ -2,7 +2,7 @@
 
 ???+ quote "Note"
     - Precisely point out what is connected to what by which kind of cables.
-    - Need double check with JB <- ? what ? 
+    - Ask the MRI technician if you need help.
 
 ## Overall experimental setting
 
