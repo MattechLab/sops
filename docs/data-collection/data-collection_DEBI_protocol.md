@@ -182,6 +182,8 @@ If you are connecting the eye tracker to the experimental laptop for the first t
 Click the `Run Experiment` button, or run the experiment from the terminal by typing:
 `python experiment.py`. All the experiments must have a calibration and validation phase before the experiment itself.
 
+!!!info "Click [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) to check out the psychopy code for the MR-Eye Track study"
+
 ![et-calibration](../assets/debi_protocol/selected/18-e-calibration.png)
 <!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
 **Example psychopy project (MR-Eye Track)**
@@ -224,6 +226,8 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 ### Running the scanning session
 
 #### Run the Experiment
+
+!!!info "Click [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) to check out the psychopy code for the MR-Eye Track study"
 
 - At the end of the ET calibration we are ready to continue with the experiment.
 - Wait for the sentence regarding the initial description of the task: “In this task you will see...”
