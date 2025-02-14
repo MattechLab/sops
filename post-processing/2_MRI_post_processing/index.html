@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -840,7 +840,7 @@
           <li class="md-nav__item">
   <a href="#binning-the-raw-data-according-to-et-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Binning the raw data according to ET masks.
+      Binning the raw data according to ET masks
     </span>
   </a>
   
@@ -1025,7 +1025,7 @@
           <li class="md-nav__item">
   <a href="#binning-the-raw-data-according-to-et-masks" class="md-nav__link">
     <span class="md-ellipsis">
-      Binning the raw data according to ET masks.
+      Binning the raw data according to ET masks
     </span>
   </a>
   
@@ -1082,16 +1082,19 @@
   <h1>MRI data</h1>
 
 <ul>
-<li>DICOM from standard clinical protocols: spm12 -&gt;reslicing and registration
+<li>DICOM from standard clinical protocols: spm12 -&gt; reslicing and registration
 revise the codes.</li>
 <li>raw data from MR-Eye or MR_Track protocols: binning with ET masks -&gt; Compressed sensing recon</li>
 </ul>
 <h2 id="1-reconstruction-from-raw-data">1 Reconstruction from raw data<a class="headerlink" href="#1-reconstruction-from-raw-data" title="Permanent link">&para;</a></h2>
-<p>For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the Monalisa toolkit, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.</p>
-<p>Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of memory (Debi or the HES-SO server).</p>
+<p>For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the <a href="https://mattechlab.github.io/monalisa/">Monalisa toolkit</a>, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.</p>
+<p>Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of RAM.</p>
 <p>The practical steps for reconstructing the data are as follows:</p>
 <h3 id="prepare-raw-data-path-on-debi">Prepare raw data path on Debi<a class="headerlink" href="#prepare-raw-data-path-on-debi" title="Permanent link">&para;</a></h3>
-<p>To accelerate data processing, we can first prepare a list of all raw data paths required for the upcoming reconstruction.
+<div class="admonition info">
+<p class="admonition-title">Check <a href="https://mattechlab.github.io/monalisa/3-1_example1.html">Monalisa's tutorial</a></p>
+</div>
+<p>To accelerate data processing, we can first prepare a list of all raw data paths required for the upcoming reconstruction.</p>
 <div class="language-matlab highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">reconDir</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">&#39;/path/to/recon/folder&#39;</span><span class="p">;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c">% Subject 001</span>
@@ -1121,10 +1124,10 @@ revise the codes.</li>
 </span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="n">meas_MIDxxxx_FIDxxxxx_BEAT_LIBREon_T2_eye</span><span class="p">.</span><span class="n">dat</span>
 </span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="n">meas_MIDxxxx_FIDxxxxx_BEAT_LIBREon_eye_BC_BC</span><span class="p">.</span><span class="n">dat</span>
 </span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="n">meas_MIDxxxx_FIDxxxxx_BEAT_LIBREon_eye_HC_BC</span><span class="p">.</span><span class="n">dat</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h3 id="load-all-the-raw-data-files">Load all the raw data files<a class="headerlink" href="#load-all-the-raw-data-files" title="Permanent link">&para;</a></h3>
-<p>It is important to consider the number of channels (nCh), as it may vary across different subjects and acquisitions. 
-Additionally, make sure to record the duration of the raw data by examining the PMU, as this information will be crucial for the subsequent binning process.
+<p>It is important to consider the number of channels (nCh), as it may vary across different subjects and acquisitions.
+Additionally, make sure to record the duration of the raw data by examining the PMU, as this information will be crucial for the subsequent binning process.</p>
 <div class="language-matlab highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c">%Sub001</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">N</span><span class="w">     </span><span class="p">=</span><span class="w"> </span><span class="mi">480</span><span class="w"> </span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">nSeg</span><span class="w">  </span><span class="p">=</span><span class="w"> </span><span class="mi">22</span><span class="w"> </span>
@@ -1144,10 +1147,10 @@ Additionally, make sure to record the duration of the raw data by examining the 
 </span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">nCh</span><span class="w">   </span><span class="p">=</span><span class="w"> </span><span class="mi">44</span><span class="w"> </span>
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">nEcho</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">The</span><span class="w"> </span><span class="s">duration</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">the</span><span class="w"> </span><span class="s">rawdata</span><span class="w"> </span><span class="s">is:</span><span class="w"> </span><span class="s">650185</span><span class="w"> </span><span class="s">ms</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">data</span><span class="w"> </span><span class="s">points:22000</span>
-</span></code></pre></div></p>
+</span></code></pre></div>
 <h3 id="generate-et-masks">Generate ET masks<a class="headerlink" href="#generate-et-masks" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Synchronize the eye-tracking (ET) data with the MRI readouts using the trigger information. </li>
+<li>Synchronize the eye-tracking (ET) data with the MRI readouts using the trigger information.</li>
 <li>
 <p>Once the criteria for selecting the ET data have been established, we will generate an ET mask that matches the duration of the MRI readout.
   For instance, if the raw data duration is 650,185 ms, as determined in a previous step, and the ET sampling rate is 1 kHz, an ET mask with a length of 650,185 samples can be generated after identifying the start timestamp of the ET data.</p>
@@ -1157,19 +1160,17 @@ Additionally, make sure to record the duration of the raw data by examining the 
 </li>
 </ul>
 <p>Further details on generating the ET mask and saving it will be provided in Section <a href="../1_1_et_QAQC_of_mreye_data/">MREye-2.0</a> and Section <a href="../1_2_et_QAQC_of_mreye_tracking/">MREye_Track</a>.</p>
-<h3 id="binning-the-raw-data-according-to-et-masks">Binning the raw data according to ET masks.<a class="headerlink" href="#binning-the-raw-data-according-to-et-masks" title="Permanent link">&para;</a></h3>
+<h3 id="binning-the-raw-data-according-to-et-masks">Binning the raw data according to ET masks<a class="headerlink" href="#binning-the-raw-data-according-to-et-masks" title="Permanent link">&para;</a></h3>
 <ul>
-<li>For the raw data, we first eliminate the SI projection of raw data by setting the corresponding mask elements to a value of 0. </li>
-<li>Then we will bin the data according to the ET mask. <ul>
-<li>Given that the repetition time (TR) is 8.01 ms for T1w-LIBRE and 29.14 ms for T2w-LIBRE, each MRI readout corresponds to approximately 8 ET points for T1w and 29–30 ET points for T2w. </li>
+<li>For the raw data, we first eliminate the SI projection of raw data by setting the corresponding mask elements to a value of 0.</li>
+<li>Then we will bin the data according to the ET mask.</li>
+<li>Given that the repetition time (TR) is 8.01 ms for T1w-LIBRE and 29.14 ms for T2w-LIBRE, each MRI readout corresponds to approximately 8 ET points for T1w and 29–30 ET points for T2w.</li>
 <li>Based on this, we apply a sliding window with a length of roughly three times the TR: 30 points for T1w and 90 points for T2w.</li>
 <li>Within each window, we calculate the number of valid ET mask points (where the value = 1, indicating that the gaze point falls within the selected central range of the screen). If the number of valid points exceeds the user-defined threshold—set as 3/4 of the window length in our case—the corresponding MRI readout is preserved; otherwise, it is excluded.</li>
-</ul>
-</li>
 <li>Finally, we generate a binned mask that selects only the readouts unaffected by significant eye movements.</li>
 <li>Record the number of readouts remaining after binning for each subject and each derivative method. For example:</li>
 </ul>
-<p><div class="language-matlab highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Subject</span><span class="w"> </span><span class="s">001</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">Binning,</span><span class="w"> </span><span class="s">preserved</span><span class="w"> </span><span class="s">#line:</span><span class="w"> </span><span class="s">17314</span><span class="w"> </span><span class="s">out</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">22000</span>
+<div class="language-matlab highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">Subject</span><span class="w"> </span><span class="s">001</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">Binning,</span><span class="w"> </span><span class="s">preserved</span><span class="w"> </span><span class="s">#line:</span><span class="w"> </span><span class="s">17314</span><span class="w"> </span><span class="s">out</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">22000</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">Subject</span><span class="w"> </span><span class="s">002</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">Binning,</span><span class="w"> </span><span class="s">preserved</span><span class="w"> </span><span class="s">#line:</span><span class="w"> </span><span class="s">9573</span><span class="w"> </span><span class="s">out</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">22000</span>
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
@@ -1177,7 +1178,7 @@ Additionally, make sure to record the duration of the raw data by examining the 
 </span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
 </span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">Subject</span><span class="w"> </span><span class="s">004</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">Binning,</span><span class="w"> </span><span class="s">preserved</span><span class="w"> </span><span class="s">#line:</span><span class="w"> </span><span class="s">8835</span><span class="w"> </span><span class="s">out</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">22000</span>
 </span></code></pre></div>
-If the preserved number of readouts are less than 10k, we will expect a low quality of reconstructed images.</p>
+<p>If the preserved number of readouts are less than 10k, we will expect a low quality of reconstructed images.</p>
 <h3 id="create-mitosius">Create Mitosius<a class="headerlink" href="#create-mitosius" title="Permanent link">&para;</a></h3>
 <p>If you are working on the HES-SO server, the dataset can be directly mounted from the data storage server, making it most efficient to run Mitosius directly on the server.</p>
 <p>If you are using an HPC and need to transfer data, it is recommended to create the Mitosius folder locally first and then upload the folder to the HPC instead of transferring the raw data.</p>
@@ -1189,17 +1190,13 @@ You can find more details in the <a href="https://mattechlab.github.io/monalisa/
 <h2 id="2-pipeline-for-processing-dicom">2 Pipeline for processing Dicom<a class="headerlink" href="#2-pipeline-for-processing-dicom" title="Permanent link">&para;</a></h2>
 <p>Whereas, the recon results from standard clinical protocols are in DICOM format, directly exported from scanner PC.</p>
 <ul>
-<li>Convert Dicom to .nii files: download the <a href="https://people.cas.sc.edu/rorden/mricron/dcm2nii.html">MRIcroGL</a> software.<ul>
+<li>Convert Dicom to .nii files: download the <a href="https://people.cas.sc.edu/rorden/mricron/dcm2nii.html">MRIcroGL</a> software.</li>
 <li>Download and install the software.</li>
 <li>Prepare the nifti folder under the Dicom folder.</li>
 <li><code>MRICron.exe &gt;&gt; import &gt;&gt; Dcm2nii &gt;&gt; uncompressed NifTi (.nii)</code></li>
-</ul>
-</li>
-<li>Inspect the .nii files: <ul>
+<li>Inspect the .nii files:</li>
 <li>Prepare <a href="https://www.fil.ion.ucl.ac.uk/spm/docs/installation/">spm</a> software on the laptop.</li>
 <li>Open spm -&gt; display buttons.</li>
-</ul>
-</li>
 <li>Coregister: Estimate &amp; Reslice.
   Coregister the DICOM results from the standard clinical protocol with those from LIBRE. Although the DICOM result from LIBRE will not be used for further analysis, it serves as a reference image, allowing us to transform the clinical protocol image to the same spatial domain as LIBRE for subsequent comparison.</li>
 </ul>
@@ -1298,7 +1295,7 @@ You can find more details in the <a href="https://mattechlab.github.io/monalisa/
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.5090c770.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
         <script src="../../js/mathjax.js"></script>
       
