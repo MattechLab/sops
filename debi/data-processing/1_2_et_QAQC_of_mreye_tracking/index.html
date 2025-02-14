@@ -1758,8 +1758,8 @@ len of coor_data 657900 should be equal to len of coor_recording 657900
 set start margin as 0
 657900
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># import scipy.io</span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># coor_array = coor_data_LIBRE[[&#39;x_coordinate&#39;, &#39;y_coordinate&#39;]].to_numpy()</span>
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># scipy.io.savemat(f&#39;coor_data_raw_t1w_libre_sub00{subject_idx}.mat&#39;, {&#39;coordinates&#39;: coor_array})</span>
@@ -1865,8 +1865,8 @@ len of coor_data_LIBRE 657900       should be equal to len of coor_recording 657
 </span><span id="__span-20-32"><a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a><span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span>
 </span><span id="__span-20-33"><a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a><span class="c1"># ============================================================</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png" /></p>
 <p>By far, we initially cleaned data based on the inherent properties in the metadata from EyeLink. And we plotted the fixation evaluation. </p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># see cleaned_cell [2]</span>
 </span></code></pre></div>
@@ -2070,7 +2070,7 @@ index-109: label corrected, count of valid points is less than half of interval
 index-115: label corrected, count of valid points is less than half of interval
 [74, 91, 109, 115]
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">def</span> <span class="nf">cal_diff_distance</span><span class="p">(</span><span class="n">x_coord</span><span class="p">,</span> <span class="n">y_coord</span><span class="p">):</span>
 </span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>
 </span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="c1"># Calculate differences</span>
@@ -2196,7 +2196,7 @@ index-115: label corrected, count of valid points is less than half of interval
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 </span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">distances_win</span> <span class="o">=</span> <span class="n">cal_diff_sum_window</span><span class="p">(</span><span class="n">X_coord</span><span class="p">,</span> <span class="n">Y_coord</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">7</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
 </span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">distances_win</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -2215,7 +2215,7 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 </span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">window_size</span> <span class="o">=</span> <span class="mi">80</span>
 </span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="n">distances_max_win</span> <span class="o">=</span> <span class="n">cal_max_distance_window</span><span class="p">(</span><span class="n">X_coord</span><span class="p">,</span> <span class="n">Y_coord</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="n">window_size</span><span class="p">)</span>
@@ -2238,7 +2238,7 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 
 Text(0, 0.5, &#39;distance (pixel)&#39;)
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">save_mask_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;./masks_1206/subject_</span><span class="si">{</span><span class="n">subject_idx</span><span class="si">}</span><span class="s1">_max_dist_win_</span><span class="si">{</span><span class="n">window_size</span><span class="si">}</span><span class="s1">.mat&#39;</span>
 </span><span id="__span-31-2"><a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="n">sio</span><span class="o">.</span><span class="n">savemat</span><span class="p">(</span><span class="n">save_mask_path</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;distances_max_win&#39;</span><span class="p">:</span> <span class="n">distances_max_win</span><span class="p">})</span>
 </span><span id="__span-31-3"><a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The mask file has been saved here: </span><span class="si">{</span><span class="n">save_mask_path</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -2297,13 +2297,13 @@ Text(0, 0.5, &#39;distance (pixel)&#39;)
 </span><span id="__span-32-46"><a id="__codelineno-32-46" name="__codelineno-32-46" href="#__codelineno-32-46"></a><span class="n">threshold_value</span> <span class="o">=</span> <span class="n">plt_distribution</span><span class="p">(</span><span class="n">distances_max_win</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
 </span><span id="__span-32-47"><a id="__codelineno-32-47" name="__codelineno-32-47" href="#__codelineno-32-47"></a><span class="nb">print</span><span class="p">(</span><span class="n">threshold_value</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>1.748739720799676
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>21.51341017672875
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png" /></p>
 <div class="language-text highlight"><pre><span></span><code>51.6691085454658
 </code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">def</span> <span class="nf">cal_statistics</span><span class="p">(</span><span class="n">distances</span><span class="p">):</span>
@@ -2585,11 +2585,11 @@ The mask file has been saved here: ./masks/subject_1_lc_mask_center.mat
 </span><span id="__span-38-35"><a id="__codelineno-38-35" name="__codelineno-38-35" href="#__codelineno-38-35"></a>    <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span>
 </span><span id="__span-38-36"><a id="__codelineno-38-36" name="__codelineno-38-36" href="#__codelineno-38-36"></a>    <span class="c1"># ============================================================</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png" /></p>
 <h2 id="5-generate-the-filtered-5-mask">5 Generate the filtered 5 mask<a class="headerlink" href="#5-generate-the-filtered-5-mask" title="Permanent link">&para;</a></h2>
 <p>based on the filtered coordinate</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1"># def find_mean(x)</span>
@@ -2739,16 +2739,16 @@ The mask file has been saved here: ./masks/subject_1_ft_mask_center.mat
 </span><span id="__span-41-36"><a id="__codelineno-41-36" name="__codelineno-41-36" href="#__codelineno-41-36"></a>
 </span><span id="__span-41-37"><a id="__codelineno-41-37" name="__codelineno-41-37" href="#__codelineno-41-37"></a>    <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">raw_mask_lc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">ft_mask_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png" /></p>
 <h3 id="filtered-the-coor_data_dot_filtered_offset">Filtered the coor_data_dot_filtered_offset<a class="headerlink" href="#filtered-the-coor_data_dot_filtered_offset" title="Permanent link">&para;</a></h3>
 <p>Region by the gaze points</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>
@@ -2790,16 +2790,16 @@ To calculate the displacement in both directions (mm)
 656158
 To generate discard masks for x and y direction...
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">plot_h_v_disp</span><span class="p">(</span><span class="n">h_dis_left</span><span class="p">,</span> <span class="n">v_dis_left</span><span class="p">,</span> <span class="n">discarded_x_mask</span><span class="p">,</span> 
 </span><span id="__span-44-2"><a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>              <span class="n">discarded_y_mask</span><span class="p">,</span> <span class="n">criteria_ratio</span><span class="o">=</span><span class="n">criteria_ratio</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">coor_data_left_clean</span><span class="p">,</span> <span class="n">Preserve_mask</span><span class="p">,</span> <span class="n">Discard_mask</span> <span class="o">=</span> <span class="n">filter_XY_with_mask</span><span class="p">(</span><span class="n">coor_data_left</span><span class="p">,</span> <span class="n">discarded_x_mask</span><span class="p">,</span> 
 </span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>                                                                        <span class="n">discarded_y_mask</span><span class="p">,</span> <span class="n">seq_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">====</span><span class="se">\n</span><span class="s1">x_coordinate --- statistics&#39;</span><span class="p">)</span>
 </span><span id="__span-46-2"><a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="n">cal_statistics</span><span class="p">(</span><span class="n">coor_data_left_clean</span><span class="p">[</span><span class="s1">&#39;x_coordinate&#39;</span><span class="p">])</span>
 </span><span id="__span-46-3"><a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">====</span><span class="se">\n</span><span class="s1">y_coordinate --- statistics&#39;</span><span class="p">)</span>
@@ -2825,8 +2825,8 @@ Minimum distance: 255.20
 Maximum distance: 312.20
 Number of NaN values: 527290
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="c1"># Visualization of filtered coor data LIBRE</span>
 </span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="n">coor_data_raw_left</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">coor_data_dot_offset</span><span class="p">)</span>
 </span><span id="__span-47-3"><a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>
@@ -2842,7 +2842,7 @@ Number of NaN values: 527290
 sum of filtered mask: 141776
 sum of mask clean: 128868
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>
 </span></code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">count_true</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Preserve_mask</span><span class="p">)</span>
@@ -3094,22 +3094,22 @@ sum of filtered mask: 136285
 sum of mask clean: 100028
 The mask file has been saved here: ./masks/subject_1_mask_clean_0.3_3.mat
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png" /></p>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Preserve_mask_list</span><span class="p">))</span>
 </span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Preserve_mask_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 </span></code></pre></div>
@@ -3120,7 +3120,7 @@ The mask file has been saved here: ./masks/subject_1_mask_clean_0.3_3.mat
 </span></code></pre></div>
 <div class="language-text highlight"><pre><span></span><code>&lt;matplotlib.collections.PathCollection at 0x31d9317f0&gt;
 </code></pre></div>
-<p><img alt="png" src="../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png" /></p>
+<p><img alt="png" src="../../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png" /></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="n">coor_data_region_clean</span><span class="p">[</span><span class="n">coor_data_region_clean</span><span class="p">[</span><span class="s1">&#39;x_coordinate&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span>
 </span></code></pre></div>
 
