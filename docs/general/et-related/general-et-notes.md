@@ -1,4 +1,4 @@
-!!! abstract "Please note that some of the images used in this section are sourced from the [ET manual](../assets/files/EL1000Plus_UserManual_1.0.20_GOP.pdf)."
+!!! abstract "Please note that some of the images used in this section are sourced from the [ET manual](../../assets/files/EL1000Plus_UserManual_1.0.20_GOP.pdf)."
 
 ## Setting viewframe and focusing
 
@@ -28,7 +28,7 @@
 
     !!! warning "The **{{ settings.eyetracker.eye }}** eye should be visible at the center of the coil's square window for the eye."
 
-        ![base-eye-tracker](../assets/images/base-eye-tracker.png){ align="right" }
+        ![base-eye-tracker](../../assets/images/base-eye-tracker.png){ align="right" }
 
         - [ ] To adjust the camera position, slightly unscrew the fixation locks of the camera arm, move the arm in search of the correct position, and tighten the locks again on the desired position.
         - [ ] **If the eye coverage is still inappropriate**, realign the mirror frame position by sliding it along the rails attached to the coil.
@@ -45,14 +45,14 @@
 
 - [ ] Tighten the nut that locks the arm's position.
 - [ ] Focus the lens so that the image is sharp (e.g., the eyebrows and eyelashes are well defined).
-    ![focus_example](../assets/images/focus.png)
+    ![focus_example](../../assets/images/focus.png)
 - [ ] Switch the ET to *{{ settings.eyetracker.eye | title }} Eye Camera* mode (zoomed in).
 - [ ] Verify that the eye is still well covered by the view and the pupil is segmented.
 - [ ] Press the <span class="keypress">A</span> key to set the pupil and CR detection thresholds automatically.
 - [ ] Check that two crosses appear on the eye.
 - [ ] Fine-tune the pupil detection threshold using the <span class="keypress">:fontawesome-solid-caret-up:</span> and <span class="keypress">:fontawesome-solid-caret-down:</span> arrow keys if necessary.
     While checking the pupil/CR image and thresholding, ask the participant to look at the screen corners to verify correct detection even in extreme positions.
-    ![pupil_threshold](../assets/images/pupil_threshold.png)
+    ![pupil_threshold](../../assets/images/pupil_threshold.png)
 
 **At this point, the pupil should correctly be seen and segmented**, and the crosses on the ET computer should appear in the {{ settings.eyetracker.eye }} eye.
 
@@ -65,7 +65,7 @@
     - [ ] Click on <span class="keypress">Set Options</span> located on the right side of ET computer screen.
     - [ ] Under **Calibration type** in the top left corner, choose the image containing either 9 or 5 points.
 
-        ![9-points_calibration](../assets/images/9-points_calibration.jpg)
+        ![9-points_calibration](../../assets/images/9-points_calibration.jpg)
 
 - [ ] Two crosses should appear on the ET computer screen: one at the center of the pupil and the other at the center of the corneal reflection.
 
@@ -77,7 +77,7 @@
 - [ ] Once the participant's gaze stabilizes on the first fixation point, the <span class="keypress">Accept Fixation</span> button turns green.
     Click on it to confirm the initial position.
 
-    ![accept_fixation](../assets/images/accept_fixation.jpg)
+    ![accept_fixation](../../assets/images/accept_fixation.jpg)
 
 - [ ] Subsequent positions should be automatically validated when the gaze remains stable.
     If not, manually click the <span class="keypress">Accept Fixation</span> button when it turns green.

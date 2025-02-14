@@ -28,13 +28,13 @@ The following section describes how to prepare the session on the day of the sca
 - Verify the aim of the projector's beam by looking through the tube into the Scanning Room.
 - Verify the projection corresponds to the Psychopy laptop screen.
 - Go to the scanner room and take the half-circle one-direction screen from the table behind the scanner and put it on the back of the scanner.    
-![ET_system](../assets/images/ET_system.png "ET_system")
+![ET_system](../../assets/images/ET_system.png "ET_system")
 
 #### **Setting up cables and headphones**
 - Open the door of the cable section between the control room and the scanner room.
 - Connect the scanner machine to the sharing system.
 - Prepare the headphones to connect to the scanner machine. The type of headphone was choose based on the comfortability for the participant. Here are the two possible models:
-![headphones](../assets/images/headphones.jpg "headphones"){ width=80% }
+![headphones](../../assets/images/headphones.jpg "headphones"){ width=80% }
 
 
 #### **Setting up the coils**
@@ -66,7 +66,7 @@ The following section describes how to prepare the session on the day of the sca
     <li>the audio switch box with the corresponding jack cable (This should share your audio on the audio of CHUV's tower).</li>
     <li>Connect the SyncBox to the laptop with the USB cable. It is normally plugged into CHUV's stimuli workstation, it must be re-plugged in there after the session.</li>
   </ul>
-	![computer_connections3](../assets/images/computer_connections3.png "computer_connections3")
+	![computer_connections3](../../assets/images/computer_connections3.png "computer_connections3")
 
 - Switch the laptop on and open the psychopy code.
 - Click the switch button to share your PC.
@@ -74,22 +74,22 @@ The following section describes how to prepare the session on the day of the sca
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button *“S”* from keyboard). Take the SyncBox and go on *“Simulation”* mode.
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. 
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.  
-![syncbox](../assets/images/syncbox.png "syncbox"){ width=63% }
+![syncbox](../../assets/images/syncbox.png "syncbox"){ width=63% }
 
 
 - Open the door of the cable wardrobe between the recording room and the scanner room, and connect the sync box in the following way:  
-![syncbox_connection6](../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
-![syncbox_connection7](../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
+![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
+![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
 
 
 ## **Setup Preparation at the technician position**
 - Change the parameters for the audio system in the *“Scan Application”* section as reported in the following figure at the pc and at the box.  
-![audio_system17](../assets/images/audio_system17.jpg "audio_system17"){ width=40% }
-![audio_system16](../assets/images/audio_system16.jpg "Gas Analyzer front"){ width=42.38% }
+![audio_system17](../../assets/images/audio_system17.jpg "audio_system17"){ width=40% }
+![audio_system16](../../assets/images/audio_system16.jpg "Gas Analyzer front"){ width=42.38% }
 !!! Danger "Ensure that the volume is sufficiently high so that the participant can clearly hear the sounds."
 
 - Switch audio to the scanner room clicking *“input”* button:
-![audio_system18](../assets/images/audio_system18.jpg "Gas Analyzer front"){ width=60% }
+![audio_system18](../../assets/images/audio_system18.jpg "Gas Analyzer front"){ width=60% }
 
 ## **Participant Preparation**
 
@@ -132,11 +132,11 @@ The following section describes how to prepare the session on the day of the sca
 
 - Double click on the psychopy file of the audio protocol to open it.
 - Run the experiment on psychopy clicking the “run experiment” button selected in the red square.   
-![psychopy19](../assets/images/psychopy19.png "psychopy19"){width=80%}
+![psychopy19](../../assets/images/psychopy19.png "psychopy19"){width=80%}
 - Wait for the sentence *“In this task you will hear different sounds in the headphones. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”*
 - Then click *“start session”* on the sync box clicking the round button. 
-![gaz-analyser-front](../assets/images/run_experiment11.jpg "Gas Analyzer front"){width=40% }
-![gaz-analyser-front](../assets/images/run_experiment12.jpg "Gas Analyzer front"){width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment11.jpg "Gas Analyzer front"){width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment12.jpg "Gas Analyzer front"){width=40% }
 - The stimulation will start with the scanning. At the end of the experiment click *“t”* on the experimental laptop and click the round button on the SyncBox to stop the running session.
 
 ### **During the Session**
@@ -149,14 +149,14 @@ The following section describes how to prepare the session on the day of the sca
 - Launch the AAhead_scout_64ch-head-coil protocol by pressing Continue.
 - Once the localizer is concluded, click on the image stack icon with left click and drag the image with a 1 onto the image viewer. That will open the interpolated localizer on the viewer. 
 - If the quality looks good, check the box stating Localizer looked ok. If not, re-acquire the localizer.   
-![localizer](../assets/images/localizer.jpg "localizer"){ width=80% }
+![localizer](../../assets/images/localizer.jpg "localizer"){ width=80% }
 
 #### **Acquire a High-Resolution Anatomical Image**
 
 - Run the wip19_mprage_1iso_cs4p2 protocol by pressing Continue.
 ???+ quote "Anatomical image Acquisition" 
     - While you are still running the MPRAGE sequence open the parameters of the sequence (showed in the figure) and ensure that:  
-	![parameter](../assets/images/parameters.jpg "parameter"){ width=80% }	
+	![parameter](../../assets/images/parameters.jpg "parameter"){ width=80% }	
     - [X]	under ***Sequence*** in the subsection ***Part1***, the *shot per slice* should be set at 419. This is crucial so that so that the acquisition time is more and less 1 minute.
     - [X]	under ***Routine***, *TR* and *TE* should be set at the minimum value. 
     - [X]	under ***Contrast*** in the subsection ***common***, the *fat-water* should be set as standard and the *flip angle* should be set at 5 degree.

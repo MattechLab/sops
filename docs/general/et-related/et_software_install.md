@@ -6,7 +6,7 @@
 - Register a new account for downloading the EyeLink Developers Kits. [Link for installation](https://www.sr-research.com/support/forumdisplay.php?fid=3).
 - The activation of the new account might take up for 24 hours.
 - Install the EyeLink Developer Kit and EyeLink Data Viewer following the instructions.
-  ![install-sr-research](../assets/debi_protocol/data_management/0install_SR_research.png){: style="width: 80%;display: block; margin: 0 auto;"}
+  ![install-sr-research](../../assets/debi_protocol/data_management/0install_SR_research.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 ## 2 Additional Steps
 
@@ -25,7 +25,7 @@
 
 - Modify the files in the directory of EyeLink for supporting Windows
   - Edit edftypes.h in the dir: C:\Program Files (x86)\SR Research\EyeLink\Includes\eyelink
-  ![install-variable-win](../assets/debi_protocol/data_management/0install_variable_win.png){: style="width: 80%;display: block; margin: 0 auto;"}
+  ![install-variable-win](../../assets/debi_protocol/data_management/0install_variable_win.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 ### 2.2 For Mac Platform
 

@@ -475,13 +475,13 @@ print(len(coor_data_LIBRE))
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_20_2.png)
     
 
 
@@ -617,13 +617,13 @@ plt.gca().invert_xaxis()
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_29_1.png)
     
 
 
@@ -861,7 +861,7 @@ plt.show()
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_39_1.png)
     
 
 
@@ -1001,7 +1001,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_41_2.png)
     
 
 
@@ -1030,7 +1030,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_42_2.png)
     
 
 
@@ -1063,7 +1063,7 @@ plt.ylabel('distance (pixel)')
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_43_3.png)
     
 
 
@@ -1134,7 +1134,7 @@ print(threshold_value)
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_0.png)
     
 
 
@@ -1143,7 +1143,7 @@ print(threshold_value)
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_2.png)
     
 
 
@@ -1152,7 +1152,7 @@ print(threshold_value)
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_45_4.png)
     
 
 
@@ -1473,31 +1473,31 @@ for idx in range(5):
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_3.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_59_4.png)
     
 
 
@@ -1669,61 +1669,61 @@ for idx in range(5):
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_3.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_4.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_5.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_6.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_7.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_8.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_63_9.png)
     
 
 
@@ -1782,7 +1782,7 @@ discarded_x_mask, discarded_y_mask = filter_criteria(h_dis_left, v_dis_left, cri
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_66_1.png)
     
 
 
@@ -1796,13 +1796,13 @@ plot_h_v_disp(h_dis_left, v_dis_left, discarded_x_mask,
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_67_1.png)
     
 
 
@@ -1814,7 +1814,7 @@ coor_data_left_clean, Preserve_mask, Discard_mask = filter_XY_with_mask(coor_dat
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_68_0.png)
     
 
 
@@ -1850,13 +1850,13 @@ threshold_value_y = plt_distribution(coor_data_left_clean['y_coordinate'], thres
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_69_2.png)
     
 
 
@@ -1884,7 +1884,7 @@ visualization_func(fig_title='Before vs After (filtering)',
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_70_1.png)
     
 
 
@@ -2163,97 +2163,97 @@ for region_idx in range(4):
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_3.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_4.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_5.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_6.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_7.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_8.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_9.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_10.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_11.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_12.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_13.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_14.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_15.png)
     
 
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_76_16.png)
     
 
 
@@ -2281,7 +2281,7 @@ plt.scatter(coor_data_region_clean['x_coordinate'], coor_data_region_clean['y_co
 
 
     
-![png](../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png)
+![png](../../assets/et_mreye_track_img/5-MREyeTrack_mask_explore-v12.06_subject1_78_1.png)
     
 
 

@@ -297,7 +297,7 @@ if check_all:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_13_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_13_0.png)
     
 
 
@@ -330,13 +330,13 @@ if check_pupil:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_15_1.png)
     
 
 
@@ -380,13 +380,13 @@ if check_blink:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_17_1.png)
     
 
 
@@ -421,7 +421,7 @@ if plot_pupil_blink:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_18_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_18_0.png)
     
 
 
@@ -453,13 +453,13 @@ if Check_saccading:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_20_1.png)
     
 
 
@@ -490,7 +490,7 @@ if plot_pupil_saccade:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_21_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_21_0.png)
     
 
 
@@ -535,13 +535,13 @@ if plot_fixation:
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_23_1.png)
     
 
 
@@ -685,13 +685,13 @@ print(len(coor_data_LIBRE))
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_2.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_29_2.png)
     
 
 
@@ -834,13 +834,13 @@ plt.gca().invert_xaxis()
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_36_1.png)
     
 
 
@@ -883,7 +883,7 @@ plt.show()
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_38_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_38_0.png)
     
 
 
@@ -958,19 +958,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_2.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_3.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_43_3.png)
     
 
 
@@ -1006,19 +1006,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_2.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_3.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_44_3.png)
     
 
 
@@ -1049,19 +1049,19 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_2.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_2.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_3.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_45_3.png)
     
 
 
@@ -1135,7 +1135,7 @@ visualization_func(fig_title='Before vs. After Filtering',
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_46_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_46_1.png)
     
 
 
@@ -1410,19 +1410,19 @@ voilinplot(subject_event_dict, event='fixation',color='teal')
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_0.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_0.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_1.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_1.png)
     
 
 
 
     
-![png](../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_2.png)
+![png](../../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_2.png)
     
 
 ## 6.2 Statistics Test

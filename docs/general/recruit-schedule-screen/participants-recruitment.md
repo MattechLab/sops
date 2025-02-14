@@ -1,6 +1,6 @@
 ## Recruitment shortlist
 
-- [ ] Distribute the [recruitment flyers](../assets/files/Flyer-2.0MREye.pdf) at CHUV, as well as on EPFL, UNIL and HES-SO campuses, both physically and electronically (e.g., e-mail lists).
+- [ ] Distribute the [recruitment flyers](../../assets/files/Flyer-2.0MREye.pdf) at CHUV, as well as on EPFL, UNIL and HES-SO campuses, both physically and electronically (e.g., e-mail lists).
 - [ ] Insert any new potential participant who shows interest into the internal (coded) excel spreadsheet named (XXX). Make sure you get **an e-mail contact** to send documents.
 
 !!!warning "Recruits shortlist"

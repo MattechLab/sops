@@ -1,6 +1,6 @@
 The data workflow can be divided into two parts: (figure is editing)
 <!-- https://docs.google.com/drawings/d/1J4RUVk647YXuAsq7B-6wf6nKiEy5rKnjl5h4MKooOrw/edit -->
-![overall_workflow](../assets/debi_protocol/data_management/1overall_processing_workflow.png){: style="width: 100%;display: block; margin: 0 auto;"}
+![overall_workflow](../../assets/debi_protocol/data_management/1overall_processing_workflow.png){: style="width: 100%;display: block; margin: 0 auto;"}
 
 - MRI data. The raw MRI data should be first stored on the HES-SO server. 
     - We recommend to convert the raw MRI data to BIDS. Since from there, the BIDS compliant data can be quality controlled and pre-processed using the corresponding packages (e.g. MRIQC, fMRIPrep, dMRIPrep) to allow computation of analysis-grade derivatives (e.g. functional or structural connectivity). 

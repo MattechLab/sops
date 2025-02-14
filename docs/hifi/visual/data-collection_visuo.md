@@ -26,7 +26,7 @@ The experimental setup includes:
 - Go to the experimental laptop.
 - Double click on the ethernet connection inside the control panel.
 
-   ![control_panel1.png](../assets/images/control_panel1.png "ET_system")
+   ![control_panel1.png](../../assets/images/control_panel1.png "ET_system")
 
 - Change the IP address → double click on the internet protocol version and change IP address with IP 100.1.1.2 and sub with 255.255.255.0.
 
@@ -62,7 +62,7 @@ The following section describes how to prepare the session on the day of the sca
 
     <li>Un-screw any present lenses, being very careful: one hand must be hold under the lens, to avoid crashes, as it is a bit tricky to screw and un-screw it. In case a lens it’s already present, un-screw it and put it back to its plastic bag, inside the lenses box (see figure C). </li>
   </ul>
-	![lens](../assets/images/lens.png "lens")
+	![lens](../../assets/images/lens.png "lens")
   
 - Bring the plexiglass panel inside the scanning room and place it at the end of the scanner's bore. A sign indicates the top side that MUST face up. The plastic feet must face down to avoid the panel from sliding. To ensure the repeatable positioning of the ET, place the end of the plexiglass such that its edge aligns with the edge of the illuminated MRI rails.
 - Exit the Scanning Room and fetch the ET arm.
@@ -70,10 +70,10 @@ The following section describes how to prepare the session on the day of the sca
 !!! danger "Hold the ET arm FIRMLY because the magnetic field imposes some resistance"
 
 - Unroll and connect the cables (two plugs for the black, one plug for the orange).
-![cables2](../assets/images/cables2.png "ET_system")
+![cables2](../../assets/images/cables2.png "ET_system")
 
 - Take the half-circle one-direction screen from the table behind the scanner and put it on the back of the scanner behind the ET system (don't push the plexiglass yet).  
-![ET_system](../assets/images/ET_system.png "ET_system")
+![ET_system](../../assets/images/ET_system.png "ET_system")
 
 ### Setting up the coils
 
@@ -85,7 +85,7 @@ The following section describes how to prepare the session on the day of the sca
 - Place the two back padding elements filling the spine coil socket.
 - Place the 64-channel head-and-neck coil into its socket at the head end of the bed.
 - Attach the dedicated InfraRed mirror to the coil:   
-![infrared](../assets/images/infrared.jpg "infrared")
+![infrared](../../assets/images/infrared.jpg "infrared")
   <ul>
     <li>Exit from the Scanning Room.</li>
     <li>Fit in a pair of new latex gloves.</li>
@@ -120,7 +120,7 @@ The following section describes how to prepare the session on the day of the sca
     <li>The RJ-45/Ethernet cable from the ET computer into the RJ-45 socket of the experimental laptop.</li>
     <li>Connect the SyncBox to the laptop with the USB cable. It is normally plugged into CHUV's stimuli workstation, it must be re-plugged in there after the session.</li>
   </ul>
-	![computer_connections3.png](../assets/images/computer_connections3.png "Gcomputer_connections3")
+	![computer_connections3.png](../../assets/images/computer_connections3.png "Gcomputer_connections3")
   
 - Switch the laptop on and open the psychopy code.
 - Click the switch button to share your PC.
@@ -129,12 +129,12 @@ The following section describes how to prepare the session on the day of the sca
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. This set-up is intrinsically linked to the capability of receiving / sending the trigger, therefore it's sequence sensitive.
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
 
-![syncbox4](../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
-![syncbox5](../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
+![syncbox4](../../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
+![syncbox5](../../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
 
 - Open the door of the cable wardrobe between the recording room and the scanner room where the ET power is also placed, and connect the syncbox in the following way:  
-![syncbox_connection6](../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
-![syncbox_connection7](../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
+![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
+![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
@@ -195,9 +195,9 @@ The following section describes how to prepare the session on the day of the sca
 - Once the stimulation begins, you follow the messages on the screen to run the calibration (make sure the 5 points calibration has been selected).
 - ET PC – apply threshold (left upper corner, as on the left figure), make sure that the pupil was found, and you see the blue cross on the eye. In case of troubles – check if there is enough light inside the scanner and not too much, check the position of the participant inside the coil. Once the calibration starts accept calibration points when green (Accept fixation).
 
-    ![ET_calibration8](../assets/images/ET_calibration8.png "ET_system")
-   ![ET_calibration9](../assets/images/ET_calibration9.png "ET_system")
-   ![ET_calibration10](../assets/images/ET_calibration10.png "ET_system")
+    ![ET_calibration8](../../assets/images/ET_calibration8.png "ET_system")
+   ![ET_calibration9](../../assets/images/ET_calibration9.png "ET_system")
+   ![ET_calibration10](../../assets/images/ET_calibration10.png "ET_system")
 
 - If the calibration was successful, you will see the sentence ‘calibration successful’ at the bottom in green. Check the stability of the accepted points and overall score o the calibration.
 - Follow up with the validation. What you should see in an ideal situation is: the reference dot on the center of the screen and another dot, which correspond to the pupil calibration, that it is more and less stable moving a little around the reference dot. If the calibration dot is unstable and is moving around far from the reference dot the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable proceed with the validation clicking the accept fixation.
@@ -216,8 +216,8 @@ The following section describes how to prepare the session on the day of the sca
 
 - Wait for the sentence *“In this task you will see a color dot. Please keep your eyes on the fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”*
 - Then click *“start session”* on the sync box clicking the round button. 
-![gaz-analyser-front](../assets/images/run_experiment11.jpg "Gas Analyzer front"){ width=40% }
-![gaz-analyser-front](../assets/images/run_experiment12.jpg "Gas Analyzer front"){ width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment11.jpg "Gas Analyzer front"){ width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment12.jpg "Gas Analyzer front"){ width=40% }
 - The sensory stimulation and the ET trigger will start with the scanning. At the end of the experiment click *“t”* on the experimental laptop and click the round button on the SyncBox to stop the running session.
 
 ### **During the Session**
@@ -233,7 +233,7 @@ The following section describes how to prepare the session on the day of the sca
 - Launch the AAhead_scout_64ch-head-coil protocol by pressing Continue.
 - Once the localizer is concluded, click on the image stack icon with left click and drag the image with a 1 onto the image viewer. That will open the interpolated localizer on the viewer.
 - If the quality looks good, check the box stating Localizer looked ok. If not, re-acquire the localizer.  
-![localizer](../assets/images/localizer.jpg "localizer"){ width=80% }
+![localizer](../../assets/images/localizer.jpg "localizer"){ width=80% }
 
 #### **Acquire a High-Resolution Anatomical Image**
 

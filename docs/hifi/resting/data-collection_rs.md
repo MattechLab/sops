@@ -33,7 +33,7 @@ eyelink machine is correctly working.
 	- Go to the experimental laptop.
 	- Double click on the ethernet connection inside the control panel.
     
-	  ![control_panel1.png](../assets/images/control_panel1.png "control_panel1")
+	  ![control_panel1.png](../../assets/images/control_panel1.png "control_panel1")
 	  
 	- Change the IP address → double click on the internet protocol version and change IP address with IP 100.1.1.2 and sub with 255.255.255.0.
 
@@ -76,7 +76,7 @@ to avoid crashes, as it is a bit tricky to screw and un-screw it. In case a lens
 already present, un-screw it and put it back to its plastic bag, inside the lenses box (see
  figure C). </li>
   </ul>
-	![lens](../assets/images/lens.png "lens")
+	![lens](../../assets/images/lens.png "lens")
   
 - Bring the plexiglass panel inside the scanning room and place it at the end of the scanner's 
 bore. A sign indicates the top side that MUST face up. The plastic feet must face down to avoid
@@ -88,11 +88,11 @@ posterior feet of the ET arm aligned within the two corner markers made of scotc
 !!! danger "Hold the ET arm FIRMLY because the magnetic field imposes some resistance"
 
 - Unroll and connect the cables (two plugs for the black, one plug for the orange).
-![cables2](../assets/images/cables2.png "ET_system")
+![cables2](../../assets/images/cables2.png "ET_system")
 
 - Take the half-circle one-direction screen from the table behind the scanner and put it on the
  back of the scanner behind the ET system (don't push the plexiglass yet).  
-![ET_system](../assets/images/ET_system.png "ET_system")
+![ET_system](../../assets/images/ET_system.png "ET_system")
 
 
 #### **Setting up the coils**
@@ -110,7 +110,7 @@ passage or unstable.
 - Place the two back padding elements filling the spine coil socket.
 - Place the 64-channel head-and-neck coil into its socket at the head end of the bed.
 - Attach the dedicated InfraRed mirror to the coil:   
-![infrared](../assets/images/infrared.jpg "infrared")
+![infrared](../../assets/images/infrared.jpg "infrared")
   <ul>
     <li>Exit from the Scanning Room.</li>
     <li>Fit in a pair of new latex gloves.</li>
@@ -134,7 +134,7 @@ touch the surface of the infrareds mirror.</li>
 - Connect the scanner machine to the sharing system.
 - Prepare the headphones to connect to the scanner machine. The type of headphone was choose 
 based on the comfortability for the participant. Here are the two possible models:
-![headphones](../assets/images/headphones.jpg "headphones"){ width=80% }
+![headphones](../../assets/images/headphones.jpg "headphones"){ width=80% }
 
 #### **Final setting inside the scanning room**
 - Cover the MRI bed with a clean sheet.
@@ -166,7 +166,7 @@ screen on the screen of CHUV's tower).</li>
     <li>Connect the SyncBox to the laptop with the USB cable. It is normally plugged into 
 CHUV's stimuli workstation, it must be re-plugged in there after the session.</li>
   </ul>
-	![computer_connections3.png](../assets/images/computer_connections3.png 
+	![computer_connections3.png](../../assets/images/computer_connections3.png 
 "Gcomputer_connections3")
   
 - Switch the laptop on and open the psychopy code.
@@ -178,12 +178,12 @@ CHUV's stimuli workstation, it must be re-plugged in there after the session.</l
 time at 650ms. 
 - Push the enter button and the syncbox will be now waiting for the scanner's trigger signal to
  forward it.  
-![syncbox](../assets/images/syncbox.png "syncbox"){ width=63% }
+![syncbox](../../assets/images/syncbox.png "syncbox"){ width=63% }
 
 - Open the door of the cable wardrobe between the recording room and the scanner room where the
  ET power is also placed, and connect the syncbox in the following way:  
-![syncbox_connection6](../assets/images/syncbox_connection6.jpg "syncbox_connection6"){width=40% }
-![syncbox_connection7](../assets/images/syncbox_connection7.jpg "syncbox_connection7"){width=40% }
+![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){width=40% }
+![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){width=40% }
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
@@ -199,12 +199,12 @@ and the protocol is IP version 4.</li>
 ## **Setup Preparation at the technician position**
 - Change the parameters for the audio system in the *“Scan Application”* section as reported in
  the following figure at the pc and at the box.  
-![audio_system17](../assets/images/audio_system17.jpg "audio_system17"){ width=40% }
-![audio_system16](../assets/images/audio_system16.jpg "Gas Analyzer front"){ width=42.38% }
+![audio_system17](../../assets/images/audio_system17.jpg "audio_system17"){ width=40% }
+![audio_system16](../../assets/images/audio_system16.jpg "Gas Analyzer front"){ width=42.38% }
 !!! Danger "Ensure that the volume is sufficiently high so that the participant can clearly hear the sounds."
 
 - Switch audio to the scanner room clicking *“input”* button:
-![audio_system18](../assets/images/audio_system18.jpg "Gas Analyzer front"){ width=60% }
+![audio_system18](../../assets/images/audio_system18.jpg "Gas Analyzer front"){ width=60% }
 
 ## **Participant Preparation**
 !!!caution "When the Participant Arrives"
@@ -286,9 +286,9 @@ follow some point with its eyes, without moving his head.
 	- [X] Once the stimulation begins, you follow the messages on the screen to run the calibration (make sure the 5 points calibration has been selected).
 	- [X] At the ET PC: apply threshold (left upper corner, as on the left figure), make sure that the pupil was found, and you see the blue cross on the eye. In case of troubles, check if there is enough light inside the scanner and not too much, check the position of the participant inside the coil. Once the calibration starts accept calibration points when green (Accept fixation).
 	  
-    ![ET_calibration8](../assets/images/ET_calibration8.png "ET_system")
-	  ![ET_calibration9](../assets/images/ET_calibration9.png "ET_system")
-	  ![ET_calibration10](../assets/images/ET_calibration10.png "ET_system")
+    ![ET_calibration8](../../assets/images/ET_calibration8.png "ET_system")
+	  ![ET_calibration9](../../assets/images/ET_calibration9.png "ET_system")
+	  ![ET_calibration10](../../assets/images/ET_calibration10.png "ET_system")
 
 	- [X] If the calibration was successful, you will see the sentence ‘calibration successful’ at the bottom in green. Check the stability of the accepted points and overall score o the calibration.
 	- [X] Follow up with the validation. What you should see in an ideal situation is: the reference dot on the center of the screen and another dot, which correspond to the pupil calibration, that it is more and less stable moving a little around the reference dot. If the calibration dot is unstable and is moving around far from the reference dot the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable proceed with the validation clicking the accept fixation. 
@@ -309,14 +309,14 @@ communications through the speaker are functioning.
 
 - At the end of the ET calibration we are ready to run the experiment.
 - Double click on the PsychoPy file of the checkerboard protocol to open it.
-![psychopy2](../assets/images/psychopy2.png "psychopy2"){ width=70% }
+![psychopy2](../../assets/images/psychopy2.png "psychopy2"){ width=70% }
 !!!tip "Run the experiment on psychopy using the coder rather than clicking the “run experiment” button otherwise the EDF files of the ET were not saved."
 
 - Wait for the sentence *“In this task you will see a color dot. Please keep your eyes on the 
 fixation point. The program is ready for the scanner trigger. Press s to proceed manually.”*
 - Then click *“start session”* on the sync box clicking the round button. 
-![gaz-analyser-front](../assets/images/run_experiment11.jpg "Gas Analyzer front"){ width=40% }
-![gaz-analyser-front](../assets/images/run_experiment12.jpg "Gas Analyzer front"){ width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment11.jpg "Gas Analyzer front"){ width=40% }
+![gaz-analyser-front](../../assets/images/run_experiment12.jpg "Gas Analyzer front"){ width=40% }
 - The sensory stimulation and the ET trigger will start with the scanning. At the end of the 
 experiment click *“t”* on the experimental laptop and click the round button on the SyncBox to 
 stop the running session.
@@ -337,14 +337,14 @@ participant falls asleep at inadequate points, use the speaker to inform them.
 image with a 1 onto the image viewer. That will open the interpolated localizer on the viewer.
 - If the quality looks good, check the box stating Localizer looked ok. If not, re-acquire the 
 localizer.  
-![localizer](../assets/images/localizer.jpg "localizer"){ width=80% }
+![localizer](../../assets/images/localizer.jpg "localizer"){ width=80% }
 
 #### **Acquire a High-Resolution Anatomical Image**
 
 - Run the wip19_mprage_1iso_cs4p2 protocol by pressing *Continue*.
 ???+ quote "Anatomical image Acquisition" 
     - While you are still running the MPRAGE sequence open the parameters of the sequence (showed in the figure) and ensure that:  
-	![parameter](../assets/images/parameters.jpg "parameter"){ width=80% }	
+	![parameter](../../assets/images/parameters.jpg "parameter"){ width=80% }	
     - [X]	under ***Sequence*** in the subsection ***Part1***, the *shot per slice* should be set at 419. This is crucial so that so that the acquisition time is more and less 1 minute.
     - [X]	under ***Routine***, *TR* and *TE* should be set at the minimum value. 
     - [X]	under ***Contrast*** in the subsection ***common***, the *fat-water* should be set as standard and the *flip angle* should be set at 5 degree.
