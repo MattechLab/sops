@@ -1,0 +1,2321 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="standard operating procedures (SOPs) of MatTech Lab">
+      
+      
+        <meta name="author" content="MatTech Members">
+      
+      
+        <link rel="canonical" href="https://mattechlab.github.io/SOPS/debi/data-collection/data-collection_DEBI_protocol/">
+      
+      
+        <link rel="prev" href="../../../general/et-related/general-et-notes/">
+      
+      
+        <link rel="next" href="../../data-processing/0_overall-data-workflow/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>Data collection - MatTech Lab SOPS</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--thanks:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.62 4.62 0 0 1 3.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.75.75 0 0 1-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.61 4.61 0 0 1 1.353-3.407C3.123.585 6.223.537 8.048 2.24Zm-1.153.983c-1.25-1.033-3.321-.967-4.48.191a3.12 3.12 0 0 0-.913 2.335c0 1.556 1.109 3.24 2.652 4.813C5.463 11.898 6.96 13.032 8 13.805c.353-.262.758-.565 1.191-.905l-1.326-1.223a.75.75 0 0 1 1.018-1.102l1.48 1.366c.328-.281.659-.577.984-.887L9.99 9.802a.75.75 0 1 1 1.019-1.103l1.384 1.28q.443-.494.81-.995L12.92 8.7l-1.167-1.168c-.674-.671-1.78-.664-2.474.03q-.404.405-.802.797c-.893.882-2.319.843-3.185-.032q-.518-.524-1.043-1.047a.75.75 0 0 1-.04-1.016q.244-.288.52-.623c.62-.748 1.356-1.637 2.166-2.417m7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.1 3.1 0 0 0-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.755.755 0 0 0 1.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32 0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9-1.9 24.5-11.4 46.3-21.4 62.9-5.5 9.2-11.1 16.6-15.2 21.6-2.1 2.5-3.7 4.4-4.9 5.7-.6.6-1 1.1-1.3 1.4l-.3.3c-4.6 4.6-5.9 11.4-3.4 17.4s8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3 22.9-10 42.4-21.9 54.3-30.6 31.8 11.5 67 17.9 104.1 17.9zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64m128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64m96 32a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512m0-384c13.3 0 24 10.7 24 24v112c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24m-32 224a32 32 0 1 1 64 0 32 32 0 1 1-64 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 88.4 71.6 160 160 160s160-71.6 160-160V64c0-35.3-28.7-64-64-64zm96 416a48 48 0 1 1 0-96 48 48 0 1 1 0 96m48-176a48 48 0 1 1-96 0 48 48 0 1 1 96 0m-48-80a48 48 0 1 1 0-96 48 48 0 1 1 0 96"/></svg>');--md-admonition-icon--important:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M480 32c0-12.9-7.8-24.6-19.8-29.6S434.5.2 425.3 9.3L381.7 53c-48 48-113.1 75-181 75H64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64v128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352h8.7c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.3c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4zm-64 76.7v262.6C357.2 317.8 280.5 288 200.7 288H192v-96h8.7c79.8 0 156.5-29.8 215.3-83.3"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 48v439.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400l153.7 107.6c4.1 2.9 9 4.4 14 4.4 13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416m0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512m-81-337c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-collection-debi-protocol" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MatTech Lab SOPS" class="md-header__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
+      
+  <img src="../../../assets/images/Logo_squared_v1.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MatTech Lab SOPS
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data collection
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MatTech Lab SOPS" class="md-nav__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
+      
+  <img src="../../../assets/images/Logo_squared_v1.svg" alt="logo">
+
+    </a>
+    MatTech Lab SOPS
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    General experimental procedures
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            General experimental procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Recruitment, scheduling, and screening
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Recruitment, scheduling, and screening
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/recruit-schedule-screen/participants-recruitment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recruitment and screening
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/recruit-schedule-screen/scanner-scheduling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scheduling
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data management
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Data management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/data-management/1_data_export/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data export
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/data-management/2_et1_edf_to_bids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EDF-to-BIDS conversion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/data-management/3_data_storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standard data storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Eye Tracking-related procedures
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Eye Tracking-related procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/et-related/et_software_install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ET software installation (Eyelink)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../general/et-related/general-et-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General ET guideline
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Debi protocol
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Debi protocol
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data collection
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Data collection
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overall-experimental-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overall experimental setting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the IP address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-equipment-outside-the-scanner-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare Equipment Outside the Scanner Room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prepare Equipment Outside the Scanner Room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turn-on-the-projector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn on the projector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-psychopy-laptop-on-the-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the Psychopy laptop on the table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-syncbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the syncbox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-et-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the ET system
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-eye-tracker-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare the Eye Tracker device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-infrared-mirror-onto-the-head-coil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the infrared-mirror onto the head coil
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparation-in-the-scanner-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation in the scanner room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation in the scanner room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-three-external-cables-to-et-and-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect three external cables to ET and scanner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-eye-tracker-and-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the eye tracker and screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the participant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Place the participant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#place-the-subject-on-the-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the subject on the bed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-scanner-before-send-the-subject-inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the scanner before send the subject inside
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-lens-of-eye-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the lens of eye tracker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#et-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ET Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ET Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inform-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inform the participant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-psychopy-in-the-psychopy-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open psychopy in the psychopy laptop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-experiment-on-psychopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the experiment on psychopy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the calibration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-threshold-to-find-the-pupil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply threshold to find the pupil
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-with-the-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow up with the validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-into-the-scanner-room-and-inform-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Go into the scanner room and inform the participant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exit-the-scanning-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exit the Scanning Room
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close-the-scanning-room-door" class="md-nav__link">
+    <span class="md-ellipsis">
+      Close the Scanning Room door
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-scanning-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the scanning session
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the scanning session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Experiment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-scanning-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the scanning sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Completed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-tear-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Tear-Down
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Tear-Down">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#showing-the-participant-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Showing the Participant Out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#et-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      ET setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearing-up-the-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clearing up the Scanner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collect-et-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collect ET data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collect-mri-raw-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collect MRI raw data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-twix-raw-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Twix raw data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-the-dicom-data-directly-reconstructed-images-from-the-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export the DICOM data (directly reconstructed images from the scanner)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-up-the-control-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleaning up the Control Room
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data processing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Data processing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/0_overall-data-workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overall data workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/1_1_et_QAQC_of_mreye_data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ET processing in MR-Eye 2.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/1_2_et_QAQC_of_mreye_tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ET processing in MREye_Track
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/2_MRI_post_processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MRI data processing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    HiFi protocols
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            HiFi protocols
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Visual checkerboard fMRI protocol
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Visual checkerboard fMRI protocol
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hifi/visual/data-collection_visuo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data collection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Audio fMRI protocol
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Audio fMRI protocol
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hifi/audio/data-collection_audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data collection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Resting state fMRI protocol
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Resting state fMRI protocol
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../hifi/resting/data-collection_rs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data collection
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overall-experimental-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overall experimental setting
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Preparation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Preparation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-ip-address" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the IP address
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-equipment-outside-the-scanner-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare Equipment Outside the Scanner Room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prepare Equipment Outside the Scanner Room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#turn-on-the-projector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turn on the projector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-psychopy-laptop-on-the-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the Psychopy laptop on the table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-syncbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the syncbox
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-the-et-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up the ET system
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-eye-tracker-device" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prepare the Eye Tracker device
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-infrared-mirror-onto-the-head-coil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the infrared-mirror onto the head coil
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#preparation-in-the-scanner-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preparation in the scanner room
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparation in the scanner room">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-three-external-cables-to-et-and-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect three external cables to ET and scanner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-eye-tracker-and-screen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the eye tracker and screen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#place-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the participant
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Place the participant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#place-the-subject-on-the-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Place the subject on the bed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-scanner-before-send-the-subject-inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the scanner before send the subject inside
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-lens-of-eye-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the lens of eye tracker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#et-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      ET Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ET Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inform-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inform the participant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-psychopy-in-the-psychopy-laptop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Open psychopy in the psychopy laptop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-experiment-on-psychopy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the experiment on psychopy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the calibration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-threshold-to-find-the-pupil" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply threshold to find the pupil
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-with-the-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow up with the validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#go-into-the-scanner-room-and-inform-the-participant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Go into the scanner room and inform the participant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exit-the-scanning-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exit the Scanning Room
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close-the-scanning-room-door" class="md-nav__link">
+    <span class="md-ellipsis">
+      Close the Scanning Room door
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-the-scanning-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running the scanning session
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Running the scanning session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-the-experiment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Experiment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-scanning-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the scanning sequence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Completed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-tear-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Session Tear-Down
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Tear-Down">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#showing-the-participant-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      Showing the Participant Out
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#et-setting" class="md-nav__link">
+    <span class="md-ellipsis">
+      ET setting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clearing-up-the-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clearing up the Scanner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collect-et-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collect ET data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collect-mri-raw-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collect MRI raw data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-twix-raw-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export Twix raw data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-the-dicom-data-directly-reconstructed-images-from-the-scanner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export the DICOM data (directly reconstructed images from the scanner)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cleaning-up-the-control-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cleaning up the Control Room
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="data-collection-debi-protocol">Data Collection DEBI protocol<a class="headerlink" href="#data-collection-debi-protocol" title="Permanent link">&para;</a></h1>
+<details class="quote" open="open">
+<summary>Note</summary>
+<ul>
+<li>Precisely point out what is connected to what by which kind of cables.</li>
+<li>Ask the MRI technician if you need help.</li>
+</ul>
+</details>
+<h2 id="overall-experimental-setting">Overall experimental setting<a class="headerlink" href="#overall-experimental-setting" title="Permanent link">&para;</a></h2>
+<p>The experimental setting is to obtain anatomical MRI scan with synchronized eye tracking recording (the right eye gaze trajectories and eye movement events including blinking, saccades and fixation).</p>
+<p>Here is the illustration of the overall experiment:</p>
+<p><img alt="overall_setting" src="../assets/debi_protocol/overview/overall_setting.png" style="width: 100%;display: block; margin: 0 auto;" /></p>
+<p>The graph above can be divided into the following components:</p>
+<ul>
+<li>Syncbox: A NordicLabs Syncbox sends TTL (transistor-transistor logic) triggers to the scanner and forward the signal converted to the keyboard signal "s" to the PsychoPy laptop.</li>
+</ul>
+<p style="text-align: center;"><img alt="Trigger to PsychoPy PC" src="../assets/debi_protocol/selected/19-pc-trigger-signal.png" style="width: 80%;display: block; margin: 0 auto;" />
+<strong>Trigger to PsychoPy PC</strong></p>
+<p style="text-align: center;"><img alt="Trigger to Scanner" src="../assets/debi_protocol/selected/19-scanner-signal.png" style="width: 80%;display: block; margin: 0 auto;" />
+<strong>Trigger to Scanner</strong></p>
+<ul>
+<li>Scanner: 3T clinical scanner (MAGNETOM PrismaFit, Siemens Healthineers) with a 64-channel head-neck coil with an attached mirror.</li>
+<li>Eye tracker: We use the EyeLink 1000 Plus (SR Research Ltd.) for eye tracking.
+  (i) The eye tracker consists of an infrared lens and camera sensor on one side, along with an infrared lamp to illuminate the subject's right eye. It is positioned inside the scanner bore.
+  (ii) An infrared mirror is mounted on the head coil.</li>
+<li>The Eye Tracker PC is bi-directionally connected to both the eye tracker and the PsychoPy laptop. It receives eye tracking data from the tracker, processes the eye movement trajectories and images, calculates pupil sizes by segmenting the pupil area, and classifies eye movement events based on predefined thresholds. The ET PC also receives trigger and task event messages from the PsychoPy laptop, logs data, and sends both the eye tracking data and logs back to the PsychoPy laptop.</li>
+<li>Stimuli laptop (PsychoPy Laptop): The PsychoPy laptop runs the PsychoPy software, which is used to execute the task programs. These programs coordinate various hardware components, including the ET PC, eye tracker, the screen, and syncbox. In our DEBI experiment, the 'MR-Eye' protocol displays a central dot that changes color at a frequency of 10Hz. In the 'MREye-Track' protocol, a gray dot sequentially appears at the top, bottom, left, and right sides of the screen. The laptop also stores the data and logs generated by the Eye Tracker PC after the experiment.</li>
+</ul>
+<h2 id="session-preparation">Session Preparation<a class="headerlink" href="#session-preparation" title="Permanent link">&para;</a></h2>
+<h3 id="configure-the-ip-address">Configure the IP address<a class="headerlink" href="#configure-the-ip-address" title="Permanent link">&para;</a></h3>
+<p>If you are connecting your PC to the eye tracker (ET) for the first time, you need to reconfigure the IP address.
+On windows:</p>
+<ul>
+<li>Go to <code>Control Panel</code> -&gt; <code>Network and Internet</code> -&gt; <code>Network Connections</code></li>
+<li>Double-click on the <code>Ethernet</code> connection.</li>
+<li>Select <code>Internet Protocol Version 4 (TCP/IPv4)</code> and click <code>Properties</code>.</li>
+<li>Update the IP address to <code>100.1.1.2</code> and the subnet mask <code>255.255.255.0</code>.</li>
+</ul>
+<p><img alt="0-e-ip" src="../assets/debi_protocol/selected/0-e-ip.jpg" style="width: 80%;display: block; margin: 0 auto;" />
+<img alt="0-e2-ip" src="../assets/debi_protocol/selected/0-e2-ip.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<h3 id="prepare-equipment-outside-the-scanner-room">Prepare Equipment Outside the Scanner Room<a class="headerlink" href="#prepare-equipment-outside-the-scanner-room" title="Permanent link">&para;</a></h3>
+<h4 id="turn-on-the-projector">Turn on the projector<a class="headerlink" href="#turn-on-the-projector" title="Permanent link">&para;</a></h4>
+<p>Turn on the Sony projector located in the back room of the scanner room.
+<img alt="projector-e" src="../assets/debi_protocol/selected/1-projector-e.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<p>Ensure the projector beam is directed into the scanner room.</p>
+<h4 id="set-up-the-psychopy-laptop-on-the-table">Set up the Psychopy laptop on the table<a class="headerlink" href="#set-up-the-psychopy-laptop-on-the-table" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Take the psychopy PC from JB's office.
+<img alt="laptop-office" src="../assets/debi_protocol/selected/2-e-jb-office-laptop.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+<li>
+<p>Insert the hdmi into the Psychopy laptop to monitor the visual stimuli on the screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
+<img alt="psychopy-laptop" src="../assets/debi_protocol/selected/2-e-psychopy-laptop.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+<li>
+<p>If the monitor does not automatically switch the screen source, use the button below to manually change it.
+<img alt="button-monitor" src="../assets/debi_protocol/selected/3-e-button-monitor.jpg" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+<li>
+<p>Ensure that the PC beneath the monitor remains turned on.
+<img alt="pc-under-screen" src="../assets/debi_protocol/selected/3-e-pc-under-screen.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+<li>
+<p>Connect the USB cable from the Syncbox to the PsychoPy laptop.
+<img alt="usb-from-syncbox-1" src="../assets/debi_protocol/selected/4-e-usb-from-syncbox.png" style="width: 80%;display: block; margin: 0 auto;" />
+<img alt="usb-from-syncbox-2" src="../assets/debi_protocol/selected/4-e2-usb-from-syncbox.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+<li>
+<p>Plug the Ethernet from the ET computer to the psychopy laptop.
+<img alt="ethernet" src="../assets/debi_protocol/selected/5-e-ethernet.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+</li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Make sure the IP address is reset if the laptop is connected to the ET PC for the first time!</p>
+</div>
+<h4 id="set-up-the-syncbox">Set up the syncbox<a class="headerlink" href="#set-up-the-syncbox" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Ensure the SyncBox cable (RJ45) already plugged onto the interface to the scanner room.
+<img alt="rj45-1" src="../assets/debi_protocol/selected/6-rj45-plugged.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Plug the other end of the cable into the SyncBox.
+<img alt="rj45-2" src="../assets/debi_protocol/selected/6-e2-rj45-plugged.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Turn on the syncbox</li>
+<li>Go to the <code>Simulation</code>, and we can see the <code>Start Session</code> on the page.
+<img alt="start-sync-1" src="../assets/debi_protocol/selected/7-e-start-sync.png" style="width: 80%;display: block; margin: 0 auto;" />
+<img alt="start-sync-2" src="../assets/debi_protocol/selected/7-e2-start-sync.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
+<img alt="tr-sync" src="../assets/debi_protocol/selected/7-e3-tr-sync.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+</ul>
+<h4 id="set-up-the-et-system">Set up the ET system<a class="headerlink" href="#set-up-the-et-system" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Make sure the ET PC is charged
+<img alt="charge-et-pc" src="../assets/debi_protocol/selected/8-e-charge-ET-PC.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Before turning on the ET computer, ensure it is connected to the PsychoPy laptop (this should have been done in the previous step).</li>
+<li>Turn on the ET PC.</li>
+<li>Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
+<img alt="et-initial" src="../assets/debi_protocol/selected/8-e-ET-initial.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">The command elcl.exe will only work and start the software once the eye tracker device is connected to the ET PC. If you encounter any error messages, please ensure the eye tracker is connected to the PC inside the scanner room and try running the command again.</p>
+</div>
+<h4 id="prepare-the-eye-tracker-device">Prepare the Eye Tracker device<a class="headerlink" href="#prepare-the-eye-tracker-device" title="Permanent link">&para;</a></h4>
+<ul>
+<li>All the lenses, mirrors, and other equipment are in the box in JB's office.
+<img alt="box" src="../assets/debi_protocol/selected/9-e-box.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has a silver screw on it) <mark>(photos from Oscar's SOP)</mark></li>
+</ul>
+<p><img alt="lens-1" src="../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png" style="width: 80%;display: block; margin: 0 auto;" />
+<img alt="lens-2" src="../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<div class="admonition tip">
+<p class="admonition-title">The default position of the screw for convenient focus is typically set to around <code>1</code>. <img alt="install-lens" src="../assets/debi_protocol/selected/20-e-screw-of-lens.jpg" />However, the exact value can vary depending on the specific participant and setup for each time. It's recommended to start with the screw at value <code>1</code> and adjust from there for optimal focus during setup. If you're following a specific SOP, it might provide additional details for your equipment.</p>
+</div>
+<p><img alt="install-lens" src="../assets/debi_protocol/selected/11-install-lens-ET.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<h4 id="place-the-infrared-mirror-onto-the-head-coil">Place the infrared-mirror onto the head coil<a class="headerlink" href="#place-the-infrared-mirror-onto-the-head-coil" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Detach the standard mirror's frame from the head coil, if it is placed there.</li>
+<li>Take the infrared mirror out of the «fMRI usage» box. It should be always protected by a mask unless in use.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">This infrared mirror is the most delicate part, because the morror cannot be replaced nor cleaned. This mirror is EXTREMELY EXPENSIVE.</p>
+</div>
+<p><img alt="ir-mirror" src="../assets/debi_protocol/selected/12-e-infered-mirror.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<ul>
+<li>Get two gloves (e.g., from the box hanging at the entrance of the scanner room)</li>
+<li>Put the gloves on, and <strong>DON'T TOUCH ANYTHING</strong>. You must have the standard mirror dismounted and ahead of this step.</li>
+<li><strong>WITH THE GLOVES</strong> proceed to extract the infra-red mirror from its box, being extremely careful. <strong>YOU CAN ONLY TOUCH THE MIRROR WITH GLOVES</strong>, because it cannot be cleaned up. Watch out for FINGERPRINTS and once taken out of the protection mask, IMMEDIATELY AND CAREFULLY ATTACH IT to the head coil.
+<img alt="head_coil_mirror" src="../assets/debi_protocol/selected/22_anno_head_coil_mirror.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+</ul>
+<h3 id="preparation-in-the-scanner-room">Preparation in the scanner room<a class="headerlink" href="#preparation-in-the-scanner-room" title="Permanent link">&para;</a></h3>
+<h4 id="connect-three-external-cables-to-et-and-scanner">Connect three external cables to ET and scanner<a class="headerlink" href="#connect-three-external-cables-to-et-and-scanner" title="Permanent link">&para;</a></h4>
+<p><img alt="cables" src="../assets/debi_protocol/selected/13-e-cables.png" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<ul>
+<li>Two plugs for the black and one plug for the orange to ET
+<img alt="et-cables" src="../assets/debi_protocol/selected/13-e-ET-cables.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Connect the external cable from the syncbox to the scanner.</li>
+</ul>
+<p>!!! warning No photo here due to magnetic field.</p>
+<h4 id="place-the-eye-tracker-and-screen">Place the eye tracker and screen<a class="headerlink" href="#place-the-eye-tracker-and-screen" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Place the glass plate (stored in JB's office) on the scanner</li>
+<li>Position the ET on the glass plate according to the stickers on the plate.</li>
+<li>Place the half-circle one-direction screen, which is on the table behind the scanner, onto the glass plate. Position it between the projector and the eye tracker to reflect the projector's image.
+<img alt="half-circle-screen" src="../assets/debi_protocol/selected/14-half-circle-screen.png" style="width: 80%;display: block; margin: 0 auto;" /></li>
+</ul>
+<h4 id="place-the-participant">Place the participant<a class="headerlink" href="#place-the-participant" title="Permanent link">&para;</a></h4>
+<h5 id="place-the-subject-on-the-bed">Place the subject on the bed<a class="headerlink" href="#place-the-subject-on-the-bed" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Apply a blanket, ear plugs and sand bags to the participant.</li>
+<li>Adjust the head coil and the mirror. If necessary, apply some pads to adjust the participant's head position to ensure the forehead tightly positioned against the head coil.</li>
+<li>Ensure the participant does not cross their legs.</li>
+<li>Provide the participant with the emergency button and explain that they can press it in case of an emergency.</li>
+</ul>
+<h5 id="adjust-the-scanner-before-send-the-subject-inside">Adjust the scanner before send the subject inside<a class="headerlink" href="#adjust-the-scanner-before-send-the-subject-inside" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Twist the knob to adjust the height of the bed and  wait for it to stop.</li>
+<li>Gently move the participant with the manual controls. Stop when the head is under the head-localizer. Instruct the participant to close his eyes.</li>
+<li>Turn on the red light to localize the head. Put one hand on the head coil, then turn the knob left or right to align the red light with the mark on the head coil. Once aligned, turn off the red light and instruct the participant to open their eyes.</li>
+<li>Turn off the ventilation and set the scanner light to the minimum level.</li>
+<li>SSend the participant into the scanner, then proceed to the console at the back of scanner.</li>
+</ul>
+<h5 id="adjust-the-lens-of-eye-tracker">Adjust the lens of eye tracker<a class="headerlink" href="#adjust-the-lens-of-eye-tracker" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Point the lens of eye tracker towards the participant's right eye.</li>
+<li>The default position of the screw on the lens can be set to around 1 for convenient adjustment.
+<img alt="install-lens" src="../assets/debi_protocol/selected/20-e-screw-of-lens.jpg" style="width: 80%;display: block; margin: 0 auto;" /></li>
+<li>Rotate the lens until the pupil is in focus on the screen during camera mode. Adjust until the image is sharp, with both the pupil and eyelashes well defined.
+<img alt="no-pupil" src="../assets/debi_protocol/selected/17-e-no-pupil.jpg" style="width: 80%;display: block; margin: 0 auto;" />
+<img alt="good-pupil" src="../assets/debi_protocol/selected/17-e-good-pupil.jpg" style="width: 80%;display: block; margin: 0 auto;" /></li>
+</ul>
+<h3 id="et-calibration">ET Calibration<a class="headerlink" href="#et-calibration" title="Permanent link">&para;</a></h3>
+<h4 id="inform-the-participant">Inform the participant<a class="headerlink" href="#inform-the-participant" title="Permanent link">&para;</a></h4>
+<p>Inform the participant that you are leaving the room and will shortly come back for a final preparation.</p>
+<h4 id="open-psychopy-in-the-psychopy-laptop">Open psychopy in the psychopy laptop<a class="headerlink" href="#open-psychopy-in-the-psychopy-laptop" title="Permanent link">&para;</a></h4>
+<p>If you are connecting the eye tracker to the experimental laptop for the first time, you will need to configure it (see Section 0).</p>
+<h4 id="run-the-experiment-on-psychopy">Run the experiment on psychopy<a class="headerlink" href="#run-the-experiment-on-psychopy" title="Permanent link">&para;</a></h4>
+<p>Click the <code>Run Experiment</code> button, or run the experiment from the terminal by typing:
+<code>python experiment.py</code>. All the experiments must have a calibration and validation phase before the experiment itself.</p>
+<div class="admonition info">
+<p class="admonition-title">Click <a href="https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py">here</a> to check out the psychopy code for the MR-Eye Track study</p>
+</div>
+<p><img alt="et-calibration" src="../assets/debi_protocol/selected/18-e-calibration.png" /></p>
+<!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
+<p style="text-align: center;"><strong>Example psychopy project (MR-Eye Track)</strong></p>
+<!-- !!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark>" -->
+
+<h4 id="run-the-calibration">Run the calibration<a class="headerlink" href="#run-the-calibration" title="Permanent link">&para;</a></h4>
+<p>Once the stimulation begins, follow the messages on the screen to run the calibration, make sure the following options are selected correctly</p>
+<ul>
+<li>Calibration Type: <code>5 points calibration</code></li>
+<li>Sampling rate: <code>1k</code></li>
+<li>Tracking mode: <code>Pupil-CR</code></li>
+<li>Pupil Tracking: <code>Ellipse</code></li>
+<li>Camera Position: <code>Right</code>"</li>
+</ul>
+<h4 id="apply-threshold-to-find-the-pupil">Apply threshold to find the pupil<a class="headerlink" href="#apply-threshold-to-find-the-pupil" title="Permanent link">&para;</a></h4>
+<ul>
+<li>On the ET PC, click <code>Apply Threshold</code> (top left corner, as shown in the figure below). Ensure that the pupil is detected and that you see the blue cross on the eye. If you encounter issues, check the lighting inside the scanner (ensure it's not too bright or too dim) and verify the participant's position inside the coil. Once the calibration starts, accept the calibration points when they turn green by clicking <code>Accept Fixation</code>.</li>
+<li>If the calibration was successful, you will see the sentence <code>calibration successful</code> at the bottom in green. Check the stability of the accepted points and overall score of the calibration.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">If the calibration points form a cross, it is the perfect calibration.</p>
+</div>
+<p><img alt="good-cross" src="../assets/debi_protocol/selected/16-e-good-cross.jpg" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<h4 id="follow-up-with-the-validation">Follow up with the validation<a class="headerlink" href="#follow-up-with-the-validation" title="Permanent link">&para;</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">What you should see in an ideal situation is: the reference dot on the center of the screen and another dot that corresponds to the pupil calibration. The calibration dot is more or less stable moving a little around the reference dot.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">If the calibration dot is unstable and is moving around far from the reference dot, the experimenter should go back clicking the restart button, adjust the contrast and redo the calibration. Once the calibration dot is quite stable, proceed with the validation clicking the accept fixation.</p>
+</div>
+<p><img alt="validation" src="../assets/debi_protocol/selected/18-e-validation.jpg" style="width: 80%;display: block; margin: 0 auto;" /></p>
+<h4 id="go-into-the-scanner-room-and-inform-the-participant">Go into the scanner room and inform the participant<a class="headerlink" href="#go-into-the-scanner-room-and-inform-the-participant" title="Permanent link">&para;</a></h4>
+<p>Inform the participant that you are leaving the room and will now close the door to start. Let them also know that you are going to communicate with them very shortly to check that communications through the speaker are functioning.</p>
+<h4 id="exit-the-scanning-room">Exit the Scanning Room<a class="headerlink" href="#exit-the-scanning-room" title="Permanent link">&para;</a></h4>
+<h4 id="close-the-scanning-room-door">Close the Scanning Room door<a class="headerlink" href="#close-the-scanning-room-door" title="Permanent link">&para;</a></h4>
+<h3 id="running-the-scanning-session">Running the scanning session<a class="headerlink" href="#running-the-scanning-session" title="Permanent link">&para;</a></h3>
+<h4 id="run-the-experiment">Run the Experiment<a class="headerlink" href="#run-the-experiment" title="Permanent link">&para;</a></h4>
+<div class="admonition info">
+<p class="admonition-title">Click <a href="https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py">here</a> to check out the psychopy code for the MR-Eye Track study</p>
+</div>
+<ul>
+<li>At the end of the ET calibration we are ready to continue with the experiment.</li>
+<li>Wait for the sentence regarding the initial description of the task: “In this task you will see...”</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Due to the upgrade of the scanner, it cannot immediately start the acquisition after receives the trigger signal from the syncbox. Thus, we need to extract the temporal information of the scanner and ET respectively. In order to make such post-processing easier, we need to first start the acquisition, and then the eye tracker. Thus, the first trigger recorded in the pmu in the raw data will be exactly the same trigger that starts the eye tracker.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">The order: start of scanner -&gt; press the button of syncbox is important and cannot be exchanged.</p>
+</div>
+<ul>
+<li>Now two people need to get ready beside the syncbox and the scanner.</li>
+<li>One person first start the scanner acquisition.</li>
+<li>Then, another person press  <code>start session</code> on the sync box clicking the round button.</li>
+<li>The stimulation will start with the ET recording.</li>
+</ul>
+<h4 id="run-the-scanning-sequence">Run the scanning sequence<a class="headerlink" href="#run-the-scanning-sequence" title="Permanent link">&para;</a></h4>
+<p>It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (mprage), and other protocols depending on the project: T1w-LIBRE for MR-Eye Track and T1w-LIBRE, T1w-VIBE, T2w-LIBRE, and T2w-TSE.</p>
+<p>Check this video for the complete acquisition process:</p>
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script>
+<style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+<p><wistia-player media-id="6eod5wljf4"></wistia-player></p>
+<p>Your browser does not support the video? Click <a href="https://github.com/MattechLab/sops/blob/dev/docs/assets/debi_protocol/selected/scan_eva.mp4">here</a> to download it.</p>
+<h4 id="session-completed">Session Completed<a class="headerlink" href="#session-completed" title="Permanent link">&para;</a></h4>
+<ul>
+<li>At the end of the stimulation, click “t” on the experimental laptop and click the round button on the SyncBox to stop the running session.</li>
+<li>The exam is over, inform the participant that the session has concluded.</li>
+<li>You can proceed with the tear-down protocol.</li>
+</ul>
+<h3 id="session-tear-down">Session Tear-Down<a class="headerlink" href="#session-tear-down" title="Permanent link">&para;</a></h3>
+<h4 id="showing-the-participant-out">Showing the Participant Out<a class="headerlink" href="#showing-the-participant-out" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Enter the scanner room, and announce yourself to the participant saying that you will get out the participant in a few seconds.</li>
+<li>Extract the participant by pressing the extraction button and then gently rolling the central knob. Alternatively, you can just press the Home button.  </li>
+<li>Remove the upper side of the head coil:</li>
+<li>Unplug the head coil from the bed connector.</li>
+<li>Lift the lever that releases the upper part of the coil and put it aside (e.g., inside the bore or on a chair next to the scanner).</li>
+<li>Assist the participant to remove the headphones.</li>
+<li>Help the participant sit down.</li>
+<li>Help the participant step down and accompany them out to the control room.</li>
+<li>Help the participant recover their personal belongings and change clothes if necessary.</li>
+<li>Give the participant the corresponding compensation for the participation and transportation.</li>
+<li>Ask the participant to sign the receipt of the amount of the financial compensation.</li>
+</ul>
+<h4 id="et-setting">ET setting<a class="headerlink" href="#et-setting" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Place the half-circle screen back to the table behind the scanner.</li>
+<li>Unplug the two cables (signal and power) connected to the ET arm.</li>
+<li>Roll the two ET cables and put them in the cupboard inside the Scanning room.</li>
+<li>Remove the mirror frame from its rails mounted on the head coil and lay it on the bed.</li>
+<li>Put the gloves on and cover the infrared mirror with a mask for storage.</li>
+</ul>
+<h4 id="clearing-up-the-scanner">Clearing up the Scanner<a class="headerlink" href="#clearing-up-the-scanner" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Unplug the cable on the scanner from syncbox and roll it back to the shelf.</li>
+<li>Remove used blankets and bed-sheets ONE-BY-ONE: extend them to let any forgotten items fall on the floor before you fold it; and dispose of them in the adequate bin (soiled linen bag if they are fabric and trash if they are disposable).</li>
+<li>Dispose of all single-use sanitary protections (padding covers, earplugs, etc.).</li>
+<li>Put the pillows back in their designated storage places.</li>
+<li>Remove the head coil and put it in the scanner's bore.</li>
+<li>Remove the back padding elements and put them back in their designated storage.</li>
+<li>Reinstall the spine coil.</li>
+<li>Wipe the bed and the head coil (bottom and upper parts).</li>
+<li>Lock the head coil back with its bottom part without plugging the connectors.</li>
+<li>Put the head coil away with the other head-coils on the shelf next to the scanner.</li>
+<li>Return the bed to its Home position by pressing the button (more info).</li>
+<li>Take the ET arm, the infrared mirror and the plexiglass panel outside to the control room and store them in the ET/fMRI box.</li>
+<li>Exit and close the external door.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Everything that is removed for the experiment needs to be put back in place at the end of the experiment, i.e., position of the bed, coil, emergency button, ears cover.</p>
+</div>
+<h4 id="collect-et-data">Collect ET data<a class="headerlink" href="#collect-et-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Copy data from the subfolder of PsychoPy program into the hard drive.
+!!! tip "The subfolder should include the files for one session with the formats like
+<code>000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.EDF</code>
+<code>000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.csv</code>
+<code>000001_fixed_dot-16_grid_T1w_2024-10-14_17h24.37.511.log</code>
+where '**.EDF' files are eye tracking records, <code>.csv</code> and <code>.log</code> files logs the task messages and the corresponding timestamps."</li>
+</ul>
+<h4 id="collect-mri-raw-data">Collect MRI raw data<a class="headerlink" href="#collect-mri-raw-data" title="Permanent link">&para;</a></h4>
+<h4 id="export-twix-raw-data">Export Twix raw data<a class="headerlink" href="#export-twix-raw-data" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Twix: Username: medadmin, Password: adm<span class="arithmatex">\(pwd\)</span>4<span class="arithmatex">\(med\)</span>.</li>
+<li>Press <code>Ctrl+Esc</code> to open the IDE terminal.</li>
+<li>In the IDE terminal: ideacmdtool -&gt; type <code>4</code> -&gt; type <code>6</code> //</li>
+<li>Type <code>Twix</code> and the Twix data browser opens.</li>
+<li>Select the data you want to copy, right click on the mouse -&gt; Copy Total RAID file -&gt; select destination (your hard drive).</li>
+<li>The only useful thing is the physio [select the flag on External Signal] <mark>need more explanation </mark></li>
+</ul>
+<h4 id="export-the-dicom-data-directly-reconstructed-images-from-the-scanner">Export the DICOM data (directly reconstructed images from the scanner)<a class="headerlink" href="#export-the-dicom-data-directly-reconstructed-images-from-the-scanner" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Login as SuperUser by pressing <code>Tab</code> + <code>Delete</code> + <code>(Bottone a DX - 9)</code> to enter the advance mode.</li>
+<li>Export DICOM: select the patient, go to export // File System // Browse -&gt; select <code>HD</code>.</li>
+<li>Select the “Enhanced” option (1 DICOM  / volume) instead of Interoperability (1 DICOM / slice).</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">The default option is <code>Interoperability</code>! So we have to change it manually!</p>
+</div>
+<h4 id="cleaning-up-the-control-room">Cleaning up the Control Room<a class="headerlink" href="#cleaning-up-the-control-room" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Plug back the SyncBox and the VGA projector where they were. Make sure you leave it connected exactly as you found it.</li>
+<li>Cover the eye tracker lens with the lid.</li>
+<li>Unscrew the 50mm lens from the eye tracker and place it back to the bag with the tag <code>50mm Lens for MRI use</code> on it.</li>
+<li>Make sure the infrared mirror covered with a mask and everything stored safely in the ET/MRI box.</li>
+<li>Store the ET/MRI box back to the office.</li>
+<li>Switch off ET PC.</li>
+<li>Switch off the projector.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../../js/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
