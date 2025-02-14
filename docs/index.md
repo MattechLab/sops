@@ -1,6 +1,10 @@
-# Mat-TechLab's Standard Operating Procedures
+# Mat-Tech Lab's Standard Operating Procedures
 
-Welcome to MattchLab's SOPs website. These SOPs refers to different protocols which data are collected simultaneously and that show very similar or overlapping procedures. These refers to several different protocols:
+??? thanks "Thanks to Óscar Esteban and his team"
+
+    This SOPs page wouldn't have been possible with the precious help of Óscar Esteban and his team (Céline, Álex, etc.). You can find the original SOPs page from which this one is inspired [here](https://www.axonlab.org/hcph-sops/).
+
+Welcome to Mat-TechLab's SOPs website. These SOPs refers to different protocols (here below), although some of them might show overlapping procedures:
 
 - Visual checkerboard fMRI protocol
 - Audio fMRI protocol
