@@ -6,31 +6,36 @@ site_url: https://mattechlab.github.io/SOPS/
 # Copyright
 copyright: Copyright &copy; 2023
 
+
 nav:
     - Home: index.md
-    - Recruitment, Scheduling, and Screening:
-      - Recruitment and screening: recruitment-scheduling-screening/participants-recruitment.md
-      - Scheduling: recruitment-scheduling-screening/scanner-scheduling.md
-    - Data collection: 
-      - Visual checkerboard fMRI protocol: data-collection/data-collection_visuo.md
-      - Audio fMRI protocol: data-collection/data-collection_audio.md
-      - Resting state fMRI protocol: data-collection/data-collection_rs.md
-      - DEBI protocol: data-collection/data-collection_DEBI_protocol.md
-    - Data management: 
-      - Software installation (Eyelink): data-management/0_software_install.md
-      - Overall data workflow: data-management/0_overall-data-workflow.md
-      - Data export: data-management/1_data_export.md
-      - EDF conversion: data-management/2_et1_edf_to_bids.md
-      - Data storage: data-management/3_data_storage.md
-    - Post-processing:
-      - Eye tracking data: 
-        - MR-Eye 2.0: post-processing/1_1_et_QAQC_of_mreye_data.md
-        - MREye_Track: post-processing/1_2_et_QAQC_of_mreye_tracking.md
-      - MRI data: post-processing/2_MRI_post_processing.md
-    - Appendices:
-      - ET extended guidelines: data-collection/notes-et.md
-      
-        
+    - General experimental procedures:
+      - Recruitment, scheduling, and screening:
+        - Recruitment and screening: general/recruit-schedule-screen/participants-recruitment.md
+        - Scheduling: general/recruit-schedule-screen/scanner-scheduling.md
+      - Data management:
+        - Data export: general/data-management/1_data_export.md
+        - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
+        - Standard data storage: general/data-management/3_data_storage.md
+      - Eye Tracking-related procedures:
+        - ET software installation (Eyelink): general/et-related/et_software_install.md
+        - General ET guideline: general/et-related/general-et-notes.md
+    - Debi protocol:
+      - Data collection: debi/data-collection/data-collection_DEBI_protocol.md
+      - Data processing:
+        - Overall data workflow: debi/data-processing/0_overall-data-workflow.md
+        - ET processing in MR-Eye 2.0: debi/data-processing/1_1_et_QAQC_of_mreye_data.md
+        - ET processing in MREye_Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
+        - MRI data processing: debi/data-processing/2_MRI_post_processing.md
+    - HiFi protocols:
+      - Visual checkerboard fMRI protocol: 
+        - Data collection: hifi/visual/data-collection_visuo.md
+      - Audio fMRI protocol: 
+        - Data collection: hifi/audio/data-collection_audio.md
+      - Resting state fMRI protocol: 
+        - Data collection: hifi/resting/data-collection_rs.md
+
+
 theme:
   name: material
   palette:
