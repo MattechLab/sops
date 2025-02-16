@@ -18,7 +18,7 @@ Copy data from the subfolder of PsychoPy program into the hard drive.
 - In the IDE terminal: ideacmdtool -> type `4` -> type `6` //
 - Type `Twix` and the Twix data browser opens.
 - Select the data you want to copy, right click on the mouse -> Copy Total RAID file -> select destination (your hard drive).
--  The only useful thing is the physio [select the flag on External Signal] <mark>need more explanation </mark>
+-  The only useful thing is the physio, so please select the flag on External Signal.
   
 **Export the DICOM data (directly reconstructed images from the scanner)**
 - Login as SuperUser by pressing `Tab` + `Delete` + `(Bottone a DX - 9)` to enter the advance mode.
