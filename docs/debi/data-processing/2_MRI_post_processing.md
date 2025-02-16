@@ -110,7 +110,7 @@ If the preserved number of readouts are less than 10k, we will expect a low qual
 
 ### Create Mitosius
 
-If you are working on the HES-SO server, the dataset can be directly mounted from the data storage server, making it most efficient to run Mitosius directly on the server.
+If you are working on the remote HPC, the dataset can be directly mounted from the data storage server, making it most efficient to run Mitosius directly on the HPC.
 
 If you are using an HPC and need to transfer data, it is recommended to create the Mitosius folder locally first and then upload the folder to the HPC instead of transferring the raw data.
 
