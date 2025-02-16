@@ -13,7 +13,7 @@ nav:
       - Recruitment, scheduling, and screening:
         - Recruitment and screening: general/recruit-schedule-screen/participants-recruitment.md
         - Scheduling: general/recruit-schedule-screen/scanner-scheduling.md
-      - Data management:
+      - Data preparation:
         - Data export: general/data-management/1_data_export.md
         - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
         - Standard data storage: general/data-management/3_data_storage.md
@@ -22,11 +22,12 @@ nav:
         - General ET guideline: general/et-related/general-et-notes.md
     - Debi protocol:
       - Data collection: debi/data-collection/data-collection_DEBI_protocol.md
-      - Data processing:
+      - Data preparation:
         - Overall data workflow: debi/data-processing/0_overall-data-workflow.md
         - Data export: general/data-management/1_data_export.md
         - Standard data storage: general/data-management/3_data_storage.md
         - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
+      - Data processing:
         - ET processing in MR-Eye 2.0: debi/data-processing/1_1_et_QAQC_of_mreye_data.md
         - ET processing in MREye_Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
         - MRI data processing: debi/data-processing/2_MRI_post_processing.md
