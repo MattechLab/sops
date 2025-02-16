@@ -187,7 +187,8 @@ If you are connecting the eye tracker to the experimental laptop for the first t
 Click the `Run Experiment` button, or run the experiment from the terminal by typing:
 `python experiment.py`. All the experiments must have a calibration and validation phase before the experiment itself.
 
-!!!info "Click [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) to check out the psychopy code for the MR-Eye Track study"
+!!!info "Click [here](https://github.com/Evelyn92/MREye_psychopy/blob/main/ver25/fixation_dots_T1weighted_250127_last_run.py) to check out the psychopy code for the MR-Eye study, and [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) for the MR-Eye Track study"
+
 
 ![et-calibration](../../assets/debi_protocol/selected/18-e-calibration.png)
 <!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
