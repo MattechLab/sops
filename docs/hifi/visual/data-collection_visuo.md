@@ -171,7 +171,7 @@ The following section describes how to prepare the session on the day of the sca
 ### Participant Preparation in the Scanning Room
 
 - Give them the ear-plugs to protect their hearing during acquisition, allow time for them to place them.
-- Instruct the participant to lay on the MRI bed and adjust the participant inside. With the paddings, their head position MUST be adjusted and elevated so that the nose and the forehead of the participant are both close (ideally touching) the upper coil. This procedure ensures the ET has the clearest possible view of the eye and that the setup is standardised across all participants.
+- Instruct the participant to lay on the MRI bed and adjust the participant inside. With the paddings, their head position MUST be adjusted and elevated so that the nose and the forehead of the participant are both close (ideally touching) the upper coil. This procedure ensures the ET has the clearest possible view of the eye and that the setup is standardized across all participants.
 - Give the participant the emergency button. Make the participant try it, so they can see it works. To switch off the alarm, there’s a button on the scanner (circular, both on the left and on the right of the hole).
 - Once the previous part is ensured, the participant is ready. If the participant is cold, put a blanket on top of him.
 - Connect the coil's cable to the corresponding socket on the table.

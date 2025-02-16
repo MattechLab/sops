@@ -1,6 +1,6 @@
 [codespell]
 ignore-words = ./codespell_ignore.txt
-skip = ./site/*,./docs/stylesheets/*, ./docs/assets/files/*
+skip = ./site/*,./docs/stylesheets/*, ./docs/assets/files/*, ./include/templates/script-call-fr.md, ./include/templates/script-invitation-fr.md
 builtin = clear,rare,en-GB_to_en-US
 count =
 quiet-level = 3
