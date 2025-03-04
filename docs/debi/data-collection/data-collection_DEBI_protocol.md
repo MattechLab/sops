@@ -317,7 +317,7 @@ where '**.EDF' files are eye tracking records, `.csv` and `.log` files logs the 
 
 #### Export Twix raw data
 
-- Twix: Username: medadmin, Password: adm$pwd$4$med$.
+- Twix: Username: █████████, Password: ████████████.
 - Press `Ctrl+Esc` to open the IDE terminal.
 - In the IDE terminal: ideacmdtool -> type `4` -> type `6` //
 - Type `Twix` and the Twix data browser opens.
