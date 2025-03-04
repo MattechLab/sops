@@ -66,6 +66,8 @@ Ensure the projector beam is directed into the scanner room.
 - If the monitor does not automatically switch the screen source, use the button below to manually change it.
 ![button-monitor](../../assets/debi_protocol/selected/3-e-button-monitor.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 
+- Change the resolution of the screen of the laptop to 800x600 to ensure the whole screen is projected to the participant inside the scanner.
+
 - Ensure that the PC beneath the monitor remains turned on.
 ![pc-under-screen](../../assets/debi_protocol/selected/3-e-pc-under-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
