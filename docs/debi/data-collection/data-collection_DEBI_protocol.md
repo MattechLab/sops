@@ -139,7 +139,6 @@ Ensure the projector beam is directed into the scanner room.
 
 !!! warning No photo here due to magnetic field.
 
-
 #### Place the eye tracker and screen
 
 - Place the glass plate (stored in JB's office) on the scanner
@@ -191,7 +190,6 @@ Click the `Run Experiment` button, or run the experiment from the terminal by ty
 
 !!!info "Click [here](https://github.com/Evelyn92/MREye_psychopy/blob/main/ver25/fixation_dots_T1weighted_250127_last_run.py) to check out the psychopy code for the MR-Eye study, and [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) for the MR-Eye Track study"
 
-
 ![et-calibration](../../assets/debi_protocol/selected/18-e-calibration.png)
 <!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
 **Example psychopy project (MR-Eye Track)**
@@ -235,7 +233,7 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 
 #### Run the Experiment
 
-!!!info "Click [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) to check out the psychopy code for the MR-Eye Track study"
+!!!info "Click [here](https://github.com/Evelyn92/MREye_psychopy/blob/main/ver25/fixation_dots_T1weighted_250127_last_run.py) to check out the psychopy code for the MR-Eye study, and [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) for the MR-Eye Track study"
 
 - At the end of the ET calibration we are ready to continue with the experiment.
 - Wait for the sentence regarding the initial description of the task: “In this task you will see...”
