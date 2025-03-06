@@ -8,5 +8,5 @@ We extract the physiological signal using modified [mapVBVD](https://github.com/
 
 ![trigger_fig](../../assets/debi_protocol/data_management/trigger_fig.png){: style="width: 50%;display: block; margin: 0 auto;"}
 
-This method allows us to align the timestamps of the ET system and MR readouts, ensuring accurate synchronization in milisecond.
+This method allows us to align the timestamps of the ET system and MR readouts, ensuring accurate synchronization in millisecond.
 
