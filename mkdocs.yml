@@ -27,6 +27,7 @@ nav:
         - Data export: general/data-management/1_data_export.md
         - Standard data storage: general/data-management/3_data_storage.md
         - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
+        - Physio signal extraction from MRI raw data: debi/data-processing/3_physio_extraction.md
       - Data processing:
         - ET processing in MR-Eye 2.0: debi/data-processing/1_1_et_QAQC_of_mreye_data.md
         - ET processing in MREye_Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
