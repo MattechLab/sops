@@ -12,22 +12,28 @@
         <meta name="author" content="MatTech Members">
       
       
+        <link rel="canonical" href="https://mattechlab.github.io/SOPS/debi/data-processing/3_physio_extraction/">
       
       
+        <link rel="prev" href="../../../general/data-management/2_et1_edf_to_bids/">
       
-      <link rel="icon" href="/SOPS/assets/images/favicon.png">
+      
+        <link rel="next" href="../1_1_et_QAQC_of_mreye_data/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
-        <title>MatTech Lab SOPS</title>
+        <title>Physio signal extraction from MRI raw data - MatTech Lab SOPS</title>
       
     
     
-      <link rel="stylesheet" href="/SOPS/assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="/SOPS/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
   
@@ -72,9 +78,9 @@
       
     
     
-      <link rel="stylesheet" href="/SOPS/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/SOPS/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -97,6 +103,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#physiological-signal-extraction" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -109,9 +120,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/SOPS/." title="MatTech Lab SOPS" class="md-header__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
+    <a href="../../.." title="MatTech Lab SOPS" class="md-header__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
       
-  <img src="/SOPS/assets/images/Logo_squared_v1.svg" alt="logo">
+  <img src="../../../assets/images/Logo_squared_v1.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -128,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Physio signal extraction from MRI raw data
             
           </span>
         </div>
@@ -203,9 +214,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/SOPS/." title="MatTech Lab SOPS" class="md-nav__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
+    <a href="../../.." title="MatTech Lab SOPS" class="md-nav__button md-logo" aria-label="MatTech Lab SOPS" data-md-component="logo">
       
-  <img src="/SOPS/assets/images/Logo_squared_v1.svg" alt="logo">
+  <img src="../../../assets/images/Logo_squared_v1.svg" alt="logo">
 
     </a>
     MatTech Lab SOPS
@@ -220,7 +231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -317,7 +328,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/recruit-schedule-screen/participants-recruitment/" class="md-nav__link">
+      <a href="../../../general/recruit-schedule-screen/participants-recruitment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -339,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/recruit-schedule-screen/scanner-scheduling/" class="md-nav__link">
+      <a href="../../../general/recruit-schedule-screen/scanner-scheduling/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -407,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/1_data_export/" class="md-nav__link">
+      <a href="../../../general/data-management/1_data_export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/2_et1_edf_to_bids/" class="md-nav__link">
+      <a href="../../../general/data-management/2_et1_edf_to_bids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -451,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/3_data_storage/" class="md-nav__link">
+      <a href="../../../general/data-management/3_data_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -519,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/et-related/et_software_install/" class="md-nav__link">
+      <a href="../../../general/et-related/et_software_install/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/et-related/general-et-notes/" class="md-nav__link">
+      <a href="../../../general/et-related/general-et-notes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -575,19 +586,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -602,7 +613,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Debi protocol
@@ -616,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/debi/data-collection/data-collection_DEBI_protocol/" class="md-nav__link">
+      <a href="../../data-collection/data-collection_DEBI_protocol/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -635,19 +646,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -662,7 +673,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Data preparation
@@ -676,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/debi/data-processing/0_overall-data-workflow/" class="md-nav__link">
+      <a href="../0_overall-data-workflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/1_data_export/" class="md-nav__link">
+      <a href="../../../general/data-management/1_data_export/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -720,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/3_data_storage/" class="md-nav__link">
+      <a href="../../../general/data-management/3_data_storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -742,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/general/data-management/2_et1_edf_to_bids/" class="md-nav__link">
+      <a href="../../../general/data-management/2_et1_edf_to_bids/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,10 +772,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/SOPS/debi/data-processing/3_physio_extraction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -774,6 +794,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -832,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/debi/data-processing/1_1_et_QAQC_of_mreye_data/" class="md-nav__link">
+      <a href="../1_1_et_QAQC_of_mreye_data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/debi/data-processing/1_2_et_QAQC_of_mreye_tracking/" class="md-nav__link">
+      <a href="../1_2_et_QAQC_of_mreye_tracking/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -876,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/debi/data-processing/2_MRI_post_processing/" class="md-nav__link">
+      <a href="../2_MRI_post_processing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -989,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/hifi/visual/data-collection_visuo/" class="md-nav__link">
+      <a href="../../../hifi/visual/data-collection_visuo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1057,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/hifi/audio/data-collection_audio/" class="md-nav__link">
+      <a href="../../../hifi/audio/data-collection_audio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1125,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/SOPS/hifi/resting/data-collection_rs/" class="md-nav__link">
+      <a href="../../../hifi/resting/data-collection_rs/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1172,6 +1193,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1183,8 +1206,29 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="physiological-signal-extraction">Physiological Signal Extraction<a class="headerlink" href="#physiological-signal-extraction" title="Permanent link">&para;</a></h1>
+<p>To synchronize the scanner with the eye-tracking (ET) recordings, we use the Syncbox (NordicNeuroLab) to simultaneously send triggers to both the ET system and the MR scanner. The scanner records the timestamps in the physiological signal channel as part of the raw data, while the ET system begins recording upon receiving the first trigger.</p>
+<p>To ensure proper synchronization, we first start the scanner acquisition, then activate the Syncbox, which converts the signal into a keyboard input (“s”) to initiate the ET system via the PsychoPy laptop.</p>
+<p>We extract the physiological signal using modified <a href="https://github.com/jaimebarran/mapVBVD">mapVBVD</a> and identify the timestamp of the first trigger with an exclusive script <a href="https://github.com/jaimebarran/mapVBVD/blob/fix/free-running/twix_process_yj/S1_resolve_twix_ext.m">physio signal extraction</a>, marking the exact moment when the ET system starts recording, as shown in the figure below. </p>
+<p><img alt="trigger_fig" src="../../../assets/debi_protocol/data_management/trigger_fig.png" style="width: 50%;display: block; margin: 0 auto;" /></p>
+<p>This method allows us to align the timestamps of the ET system and MR readouts, ensuring accurate synchronization in milisecond.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1228,12 +1272,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/SOPS/", "features": ["navigation.instant", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate"], "search": "/SOPS/assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.expand", "navigation.top", "content.code.copy", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/SOPS/assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="/SOPS/js/mathjax.js"></script>
+        <script src="../../../js/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
