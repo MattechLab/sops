@@ -1,7 +1,7 @@
 ## Recruitment shortlist
 
-- [ ] Distribute the [recruitment flyers](../../assets/files/Flyer-2.0MREye.pdf) at CHUV, as well as on EPFL, UNIL and HES-SO campuses, both physically and electronically (e.g., e-mail lists).
-- [ ] Insert any new potential participant who shows interest into the internal (coded) excel spreadsheet named (XXX). Make sure you get **an e-mail contact** to send documents.
+- [ ] Distribute the [recruitment flyers](../../assets/files/Flyer-2.0MREye.pdf) at CHUV, as well as on EPFL, UNIL and HES-SO campuses, both physically and electronically (e.g., email lists).
+- [ ] Insert any new potential participant who shows interest into the internal (coded) excel spreadsheet named (XXX). Make sure you get **an email contact** to send documents.
 
 !!!warning "Recruits shortlist"
     - [ ] Remove all flyers and indicate that recruitment is not open anymore once the shortlist quotas have been reached.
@@ -22,7 +22,7 @@
 - [ ] Use the [phone script](#first-contact-call-fr) to drive the conversation and record participant responses to questions.
 - [ ] If participant consents to the phone screen, conduct it and mark the results (screener date, if responded "yes" to any medical questions, whether or not passed screener) in the appropriate columns of the recruitment spreadsheet.
 - [ ] Confirm whether the potential participant understood the MRI Safety & Screening Questionnaire, and discuss with them any questions or potential reasons that may disqualify them to participate.
-- [] Specify that these points will be discussed again before the scanner session and that they will sign then.
+- [ ] Specify that these points will be discussed again before the scanner session and that they will sign then.
 
 !!!danger "Carefully screen the subject"
     - [ ] In case of any doubts emerging from the MRI safety screening, indicate the potential participant that you will call them back **within three days**, after contacting the responsible physician.

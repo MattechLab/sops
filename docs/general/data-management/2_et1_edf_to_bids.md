@@ -6,7 +6,7 @@ EyeLink eye tracking system produces EDF recording files. In this step we need t
 
 ## 0 Package preparation
 
-- To use pyEDFRead python package, we must properly install the open-source software EyeLink on our device/laptop in the very first step. You can find the instructions [here](0_software_install.md).
+- To use pyEDFRead python package, we must properly install the open-source software EyeLink on our device/laptop in the very first step. You can find the instructions [here](../et-related/et_software_install.md).
 
 - Import the environments
   
@@ -21,6 +21,7 @@ from collections import defaultdict
 from itertools import product, groupby
 from warnings import warn
 import re
+
 ```
 ## 1 Load raw ET data
 - Use `pyedfread` package to open edf and 

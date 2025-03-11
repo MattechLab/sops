@@ -33,6 +33,12 @@ The graph above can be divided into the following components:
 
 ## Session Preparation
 
+### Documentation
+
+- [ ] Prepare the informed consent form ([EN](../../assets/files/form-en.pdf)|[FR](../../assets/files/form-fr.pdf))
+- [ ] Prepare an MRI safety screener ([EN](../../assets/files/safety_form_EN.pdf)|[FR](../../assets/files/safety_form_FR.pdf))
+- [ ] Prepare a pen and a receipt form that the participant will sign when they are given the compensation
+
 ### Configure the IP address
 
 If you are connecting your PC to the eye tracker (ET) for the first time, you need to reconfigure the IP address.

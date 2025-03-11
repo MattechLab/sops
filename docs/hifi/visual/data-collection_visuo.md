@@ -129,12 +129,12 @@ The following section describes how to prepare the session on the day of the sca
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. This set-up is intrinsically linked to the capability of receiving / sending the trigger, therefore it's sequence sensitive.
 - Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
 
-![syncbox4](../../assets/images/syncbox4.jpg "Gas Analyzer front"){ width=40% }
-![syncbox5](../../assets/images/syncbox5.png "Gas Analyzer front"){ width=40% }
+![syncbox](../../assets/images/syncbox.png "syncbox")
 
-- Open the door of the cable wardrobe between the recording room and the scanner room where the ET power is also placed, and connect the syncbox in the following way:  
-![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
-![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
+- Open the door of the cable wardrobe between the recording room and the scanner room where the ET power is also placed, and connect the syncbox in the following way:
+
+![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=49.5% }
+![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=49.5% }
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
