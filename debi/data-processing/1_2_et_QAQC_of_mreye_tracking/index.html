@@ -1489,11 +1489,11 @@
 
 
 
-<h1 id="analysis-of-et-data-within-mreye_track">Analysis of ET data within MREye_Track<a class="headerlink" href="#analysis-of-et-data-within-mreye_track" title="Permanent link">&para;</a></h1>
+<h1 id="analysis-of-et-data-within-mreye_track">Analysis of <abbr title="eye tracker">ET</abbr> data within MREye_Track<a class="headerlink" href="#analysis-of-et-data-within-mreye_track" title="Permanent link">&para;</a></h1>
 <p>Derived from:
 https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc/</p>
 <p>Author: Yiwei Jia</p>
-<p>In this notebook, we delve into eye-tracking data analysis, focusing specifically on the MREye_track project. The project involves visual stimuli appearing in different directions: up, down, left, right and center. Within this notebook, we inspect the eye-tracking signals, determine regions of interest (ROIs) corresponding to each stimulus, and generate eye-tracking (ET) masks. Additionally, we calculate the distance distribution between two adjacent gaze points and also analyze that of specific time windows of eye-tracking data.</p>
+<p>In this notebook, we delve into eye-tracking data analysis, focusing specifically on the MREye_track project. The project involves visual stimuli appearing in different directions: up, down, left, right and center. Within this notebook, we inspect the eye-tracking signals, determine regions of interest (<abbr title="regions-of-interest">ROIs</abbr>) corresponding to each stimulus, and generate eye-tracking (<abbr title="eye tracker">ET</abbr>) masks. Additionally, we calculate the distance distribution between two adjacent gaze points and also analyze that of specific time windows of eye-tracking data.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Derived from:</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1">#     https://www.axonlab.org/hcph-sops/data-management/eyetrack-qc</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Load the autoreload extension</span>
@@ -1575,7 +1575,7 @@ The duration of mri acquisition sub001 sub002 and sub003: 655240 ms
 </code></pre></div>
 <h2 id="1-metadata-and-calibration">1 Metadata and calibration<a class="headerlink" href="#1-metadata-and-calibration" title="Permanent link">&para;</a></h2>
 <p>We always run a calibration before it is started. As a result, we will typically see the metadata corresponding to calibration on this particular run.</p>
-<p>Now, let's print out the contents of the BIDS' sidecar JSON corresponding to the DWI in this session.</p>
+<p>Now, let's print out the contents of the <abbr title="Brain Imaging Data Structure">BIDS</abbr>' sidecar <abbr title="JavaScript Object Notation">JSON</abbr> corresponding to the <abbr title="diffusion weighted imaging">DWI</abbr> in this session.</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">target_message</span> <span class="o">=</span> <span class="s2">&quot;ET: Start routine &#39;centered_dot&#39;&quot;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">target_timestamp</span> <span class="o">=</span> <span class="mi">0</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;LoggedMessages&#39;</span><span class="p">]):</span>

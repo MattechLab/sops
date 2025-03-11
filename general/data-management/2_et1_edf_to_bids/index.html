@@ -1472,13 +1472,13 @@
   <h1>EDF-to-BIDS conversion</h1>
 
 <p>Derived from <a href="https://www.axonlab.org/hcph-sops/data-management/edf-to-bids/">edf_to_bids</a> and <a href="https://github.com/TheAxonLab/hcph-sops/blob/mkdocs/code/eyetracking/convert.py">convert.py</a>
-Hsop: Converting eye-tracking into BIDS - Standard Operating Procedures of the HCPh project (axonlab.org)
+Hsop: Converting eye-tracking into <abbr title="Brain Imaging Data Structure">BIDS</abbr> - Standard Operating Procedures of the <abbr title="Human Connectome Phantom (this project)">HCPh</abbr> project (axonlab.org)
 TheAxonLab/hcph-sops (github.com)</p>
-<p>EyeLink eye tracking system produces EDF recording files. In this step we need to first convert the raw edf files to BIDS format for enforcing a standardized structure, naming convention and metadata description. It makes researchers easier to understand and use data from different sources.</p>
+<p>EyeLink eye tracking system produces <abbr title="EyeLink Data Format">EDF</abbr> recording files. In this step we need to first convert the raw edf files to <abbr title="Brain Imaging Data Structure">BIDS</abbr> format for enforcing a standardized structure, naming convention and metadata description. It makes researchers easier to understand and use data from different sources.</p>
 <h2 id="0-package-preparation">0 Package preparation<a class="headerlink" href="#0-package-preparation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>To use pyEDFRead python package, we must properly install the open-source software EyeLink on our device/laptop in the very first step. You can find the instructions <a href="0_software_install.md">here</a>.</p>
+<p>To use pyEDFRead python package, we must properly install the open-source software EyeLink on our device/laptop in the very first step. You can find the instructions <a href="../../et-related/et_software_install/">here</a>.</p>
 </li>
 <li>
 <p>Import the environments</p>
@@ -1494,7 +1494,7 @@ TheAxonLab/hcph-sops (github.com)</p>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">warn</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="kn">import</span> <span class="nn">re</span>
 </span></code></pre></div>
-<h2 id="1-load-raw-et-data">1 Load raw ET data<a class="headerlink" href="#1-load-raw-et-data" title="Permanent link">&para;</a></h2>
+<h2 id="1-load-raw-et-data">1 Load raw <abbr title="eye tracker">ET</abbr> data<a class="headerlink" href="#1-load-raw-et-data" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Use <code>pyedfread</code> package to open edf and </li>
 </ul>
@@ -1507,9 +1507,9 @@ TheAxonLab/hcph-sops (github.com)</p>
 </span></code></pre></div>
 The edf file will generate Pandas dataframes:</p>
 <ul>
-<li><code>ori_recording</code>: The ET recordings with trajectory information, pupil area and other information.</li>
+<li><code>ori_recording</code>: The <abbr title="eye tracker">ET</abbr> recordings with trajectory information, pupil area and other information.</li>
 <li><code>ori_events</code>: contains information of task events.</li>
-<li><code>ori_messages</code>: log messages including ET calibration, validation and user-defined task messages sent from Psychopy program to the device.</li>
+<li><code>ori_messages</code>: log messages including <abbr title="eye tracker">ET</abbr> calibration, validation and user-defined task messages sent from Psychopy program to the device.</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">ori_messages</span> <span class="o">=</span> <span class="n">ori_messages</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
@@ -1534,7 +1534,7 @@ The edf file will generate Pandas dataframes:</p>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">c</span><span class="p">:</span> <span class="n">c</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">messages</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">values</span><span class="p">}</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">)</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span>
 </span></code></pre></div></li>
-<li>Check the information about calibration of ET data.</li>
+<li>Check the information about calibration of <abbr title="eye tracker">ET</abbr> data.</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Extract calibration headers</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">_cal_hdr</span> <span class="o">=</span> <span class="n">ori_messages</span><span class="o">.</span><span class="n">trialid</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;!CAL&quot;</span><span class="p">)</span>
@@ -1846,7 +1846,7 @@ The edf file will generate Pandas dataframes:</p>
 </span><span id="__span-14-27"><a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">recording</span><span class="p">)</span> <span class="o">==</span> <span class="n">raw_recording_len</span>
 </span></code></pre></div>
 <ul>
-<li>Shape the columns to comply with BIDS format.</li>
+<li>Shape the columns to comply with <abbr title="Brain Imaging Data Structure">BIDS</abbr> format.</li>
 </ul>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Munging columns to comply with BIDS. </span>
 </span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># At this point, the dataframe is almost ready for writing out as BIDS.</span>
@@ -1977,7 +1977,7 @@ The edf file will generate Pandas dataframes:</p>
 </span><span id="__span-17-33"><a id="__codelineno-17-33" name="__codelineno-17-33" href="#__codelineno-17-33"></a>            <span class="s2">&quot;eye1_blink&quot;</span><span class="p">,</span>
 </span><span id="__span-17-34"><a id="__codelineno-17-34" name="__codelineno-17-34" href="#__codelineno-17-34"></a>        <span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </span></code></pre></div>
-<h2 id="6-write-the-data-into-bids-structure">6 Write the data into BIDS structure<a class="headerlink" href="#6-write-the-data-into-bids-structure" title="Permanent link">&para;</a></h2>
+<h2 id="6-write-the-data-into-bids-structure">6 Write the data into <abbr title="Brain Imaging Data Structure">BIDS</abbr> structure<a class="headerlink" href="#6-write-the-data-into-bids-structure" title="Permanent link">&para;</a></h2>
 <p><div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span> <span class="nn">copy</span> <span class="kn">import</span> <span class="n">deepcopy</span>
 </span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>
 </span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;Columns&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recording</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
@@ -2057,8 +2057,8 @@ We need to convert the 'CalibrationCount' into <code>int</code> type before the 
 </span><span id="__span-20-57"><a id="__codelineno-20-57" name="__codelineno-20-57" href="#__codelineno-20-57"></a>    <span class="n">filename</span><span class="p">,</span>
 </span><span id="__span-20-58"><a id="__codelineno-20-58" name="__codelineno-20-58" href="#__codelineno-20-58"></a><span class="p">)</span>
 </span></code></pre></div></p>
-<p>Now the BIDS files are generated:
-EDF Path</p>
+<p>Now the <abbr title="Brain Imaging Data Structure">BIDS</abbr> files are generated:
+<abbr title="EyeLink Data Format">EDF</abbr> Path</p>
 <ul>
 <li>&lt;filename&gt;.json</li>
 <li>&lt;filename&gt;.tsv.gz</li>

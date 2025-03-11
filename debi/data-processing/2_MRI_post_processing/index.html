@@ -1402,13 +1402,13 @@
   <h1>MRI data processing</h1>
 
 <ul>
-<li>DICOM from standard clinical protocols: spm12 -&gt; reslicing and registration
+<li><abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> from standard clinical protocols: spm12 -&gt; reslicing and registration
 revise the codes.</li>
-<li>raw data from MR-Eye or MR_Track protocols: binning with ET masks -&gt; Compressed sensing recon</li>
+<li>raw data from <abbr title="Magnetic Resonance">MR</abbr>-Eye or MR_Track protocols: binning with <abbr title="eye tracker">ET</abbr> masks -&gt; Compressed sensing recon</li>
 </ul>
 <h2 id="1-reconstruction-from-raw-data">1 Reconstruction from raw data<a class="headerlink" href="#1-reconstruction-from-raw-data" title="Permanent link">&para;</a></h2>
-<p>For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the <a href="https://mattechlab.github.io/monalisa/">Monalisa toolkit</a>, which supports non-Cartesian trajectories of the T1w/T2w-LIBRE protocol. The reconstruction results are typically saved in .mat format.</p>
-<p>Given that the matrix size of T1w/T2w-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of RAM.</p>
+<p>For the motion-resolved task, a binning mask must be manually generated, and image reconstruction is performed using the <a href="https://mattechlab.github.io/monalisa/">Monalisa toolkit</a>, which supports non-Cartesian trajectories of the <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>/<abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-LIBRE protocol. The reconstruction results are typically saved in .mat format.</p>
+<p>Given that the matrix size of <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>/<abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-LIBRE is 480, the reconstruction process requires computational resources and should be performed on systems with more than 256GB of RAM.</p>
 <p>The practical steps for reconstructing the data are as follows:</p>
 <h3 id="prepare-raw-data-path-on-debi">Prepare raw data path on Debi<a class="headerlink" href="#prepare-raw-data-path-on-debi" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
@@ -1468,25 +1468,25 @@ Additionally, make sure to record the duration of the raw data by examining the 
 </span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">nEcho</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span>
 </span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">The</span><span class="w"> </span><span class="s">duration</span><span class="w"> </span><span class="s">of</span><span class="w"> </span><span class="s">the</span><span class="w"> </span><span class="s">rawdata</span><span class="w"> </span><span class="s">is:</span><span class="w"> </span><span class="s">650185</span><span class="w"> </span><span class="s">ms</span><span class="w"> </span><span class="s">with</span><span class="w"> </span><span class="s">data</span><span class="w"> </span><span class="s">points:22000</span>
 </span></code></pre></div>
-<h3 id="generate-et-masks">Generate ET masks<a class="headerlink" href="#generate-et-masks" title="Permanent link">&para;</a></h3>
+<h3 id="generate-et-masks">Generate <abbr title="eye tracker">ET</abbr> masks<a class="headerlink" href="#generate-et-masks" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Synchronize the eye-tracking (ET) data with the MRI readouts using the trigger information.</li>
+<li>Synchronize the eye-tracking (<abbr title="eye tracker">ET</abbr>) data with the <abbr title="Magnetic Resonance Imaging">MRI</abbr> readouts using the trigger information.</li>
 <li>
-<p>Once the criteria for selecting the ET data have been established, we will generate an ET mask that matches the duration of the MRI readout.
-  For instance, if the raw data duration is 650,185 ms, as determined in a previous step, and the ET sampling rate is 1 kHz, an ET mask with a length of 650,185 samples can be generated after identifying the start timestamp of the ET data.</p>
+<p>Once the criteria for selecting the <abbr title="eye tracker">ET</abbr> data have been established, we will generate an <abbr title="eye tracker">ET</abbr> mask that matches the duration of the <abbr title="Magnetic Resonance Imaging">MRI</abbr> readout.
+  For instance, if the raw data duration is 650,185 ms, as determined in a previous step, and the <abbr title="eye tracker">ET</abbr> sampling rate is 1 kHz, an <abbr title="eye tracker">ET</abbr> mask with a length of 650,185 samples can be generated after identifying the start timestamp of the <abbr title="eye tracker">ET</abbr> data.</p>
 </li>
 <li>
-<p>Save the generated ET mask in .mat format.</p>
+<p>Save the generated <abbr title="eye tracker">ET</abbr> mask in .mat format.</p>
 </li>
 </ul>
-<p>Further details on generating the ET mask and saving it will be provided in Section <a href="../1_1_et_QAQC_of_mreye_data/">MREye-2.0</a> and Section <a href="../1_2_et_QAQC_of_mreye_tracking/">MREye_Track</a>.</p>
-<h3 id="binning-the-raw-data-according-to-et-masks">Binning the raw data according to ET masks<a class="headerlink" href="#binning-the-raw-data-according-to-et-masks" title="Permanent link">&para;</a></h3>
+<p>Further details on generating the <abbr title="eye tracker">ET</abbr> mask and saving it will be provided in Section <a href="../1_1_et_QAQC_of_mreye_data/">MREye-2.0</a> and Section <a href="../1_2_et_QAQC_of_mreye_tracking/">MREye_Track</a>.</p>
+<h3 id="binning-the-raw-data-according-to-et-masks">Binning the raw data according to <abbr title="eye tracker">ET</abbr> masks<a class="headerlink" href="#binning-the-raw-data-according-to-et-masks" title="Permanent link">&para;</a></h3>
 <ul>
 <li>For the raw data, we first eliminate the SI projection of raw data by setting the corresponding mask elements to a value of 0.</li>
-<li>Then we will bin the data according to the ET mask.</li>
-<li>Given that the repetition time (TR) is 8.01 ms for T1w-LIBRE and 29.14 ms for T2w-LIBRE, each MRI readout corresponds to approximately 8 ET points for T1w and 29–30 ET points for T2w.</li>
-<li>Based on this, we apply a sliding window with a length of roughly three times the TR: 30 points for T1w and 90 points for T2w.</li>
-<li>Within each window, we calculate the number of valid ET mask points (where the value = 1, indicating that the gaze point falls within the selected central range of the screen). If the number of valid points exceeds the user-defined threshold—set as 3/4 of the window length in our case—the corresponding MRI readout is preserved; otherwise, it is excluded.</li>
+<li>Then we will bin the data according to the <abbr title="eye tracker">ET</abbr> mask.</li>
+<li>Given that the repetition time (<abbr title="repetition time">TR</abbr>) is 8.01 ms for <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-LIBRE and 29.14 ms for <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-LIBRE, each <abbr title="Magnetic Resonance Imaging">MRI</abbr> readout corresponds to approximately 8 <abbr title="eye tracker">ET</abbr> points for <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr> and 29–30 <abbr title="eye tracker">ET</abbr> points for <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>.</li>
+<li>Based on this, we apply a sliding window with a length of roughly three times the <abbr title="repetition time">TR</abbr>: 30 points for <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr> and 90 points for <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>.</li>
+<li>Within each window, we calculate the number of valid <abbr title="eye tracker">ET</abbr> mask points (where the value = 1, indicating that the gaze point falls within the selected central range of the screen). If the number of valid points exceeds the user-defined threshold—set as 3/4 of the window length in our case—the corresponding <abbr title="Magnetic Resonance Imaging">MRI</abbr> readout is preserved; otherwise, it is excluded.</li>
 <li>Finally, we generate a binned mask that selects only the readouts unaffected by significant eye movements.</li>
 <li>Record the number of readouts remaining after binning for each subject and each derivative method. For example:</li>
 </ul>
@@ -1500,15 +1500,15 @@ Additionally, make sure to record the duration of the raw data by examining the 
 </span></code></pre></div>
 <p>If the preserved number of readouts are less than 10k, we will expect a low quality of reconstructed images.</p>
 <h3 id="create-mitosius">Create Mitosius<a class="headerlink" href="#create-mitosius" title="Permanent link">&para;</a></h3>
-<p>If you are working on the remote HPC, the dataset can be directly mounted from the data storage server, making it most efficient to run Mitosius directly on the HPC.</p>
-<p>If you are using an HPC and need to transfer data, it is recommended to create the Mitosius folder locally first and then upload the folder to the HPC instead of transferring the raw data.</p>
+<p>If you are working on the remote <abbr title="high-performance computing">HPC</abbr>, the dataset can be directly mounted from the data storage server, making it most efficient to run Mitosius directly on the <abbr title="high-performance computing">HPC</abbr>.</p>
+<p>If you are using an <abbr title="high-performance computing">HPC</abbr> and need to transfer data, it is recommended to create the Mitosius folder locally first and then upload the folder to the <abbr title="high-performance computing">HPC</abbr> instead of transferring the raw data.</p>
 <p>The scripts about how to use mitosius please refer to the <a href="https://mattechlab.github.io/monalisa/2-3_mitosius_prepare.html">Monalisa document</a>.</p>
 <h3 id="recon-function">Recon function<a class="headerlink" href="#recon-function" title="Permanent link">&para;</a></h3>
 <p>In our reconstruction, we utilize <code>Steva</code> function for Single-frame Least-square Regularized Reconstruction, where reularizaiton is the l1-norm of spatial gradient of the image.
 The reconstructed results are in the format of <code>**.mat</code>.
 You can find more details in the <a href="https://mattechlab.github.io/monalisa/2-2_reconstruction_calls.html#steva">Monalisa document</a>.</p>
 <h2 id="2-pipeline-for-processing-dicom">2 Pipeline for processing Dicom<a class="headerlink" href="#2-pipeline-for-processing-dicom" title="Permanent link">&para;</a></h2>
-<p>Whereas, the recon results from standard clinical protocols are in DICOM format, directly exported from scanner PC.</p>
+<p>Whereas, the recon results from standard clinical protocols are in <abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> format, directly exported from scanner <abbr title="personal computer">PC</abbr>.</p>
 <ul>
 <li>Convert Dicom to .nii files: download the <a href="https://people.cas.sc.edu/rorden/mricron/dcm2nii.html">MRIcroGL</a> software.</li>
 <li>Download and install the software.</li>
@@ -1518,7 +1518,7 @@ You can find more details in the <a href="https://mattechlab.github.io/monalisa/
 <li>Prepare <a href="https://www.fil.ion.ucl.ac.uk/spm/docs/installation/">spm</a> software on the laptop.</li>
 <li>Open spm -&gt; display buttons.</li>
 <li>Coregister: Estimate &amp; Reslice.
-  Coregister the DICOM results from the standard clinical protocol with those from LIBRE. Although the DICOM result from LIBRE will not be used for further analysis, it serves as a reference image, allowing us to transform the clinical protocol image to the same spatial domain as LIBRE for subsequent comparison.</li>
+  Coregister the <abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> results from the standard clinical protocol with those from LIBRE. Although the <abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> result from LIBRE will not be used for further analysis, it serves as a reference image, allowing us to transform the clinical protocol image to the same spatial domain as LIBRE for subsequent comparison.</li>
 </ul>
 <div class="language-matlab highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">addpath</span><span class="p">(</span><span class="s">&#39;/Users/cag/Documents/forclone/spm&#39;</span><span class="p">)</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c">%%</span>
