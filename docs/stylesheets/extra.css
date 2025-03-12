@@ -17,3 +17,6 @@ div.recommended.highlight span.hll {
   -webkit-mask-image: var(--md-admonition-icon--thanks);
           mask-image: var(--md-admonition-icon--thanks);
 }
+
+.redcolor { color: red; }
+.bluecolor { color: darkblue; }
