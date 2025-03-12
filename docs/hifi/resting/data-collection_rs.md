@@ -4,7 +4,7 @@
 
 The experimental setup includes:
 
-- [X] **Syncbox**: A NordicLabs Syncbox receives TTL (transistor-transistor logic) triggers 
+- [X] **SyncBox**: A NordicLabs SyncBox receives TTL (transistor-transistor logic) triggers 
 from the scanner. This box can forward the triggers converted into other formats and/or 
 manipulate them (e.g., filter, generate, etc.).
 - [X] **Eye tracker (ET)**: We use the EyeLink 1000 Plus (SR Research Ltd., Ottawa, Canada). 
@@ -176,14 +176,14 @@ CHUV's stimuli workstation, it must be re-plugged in there after the session.</l
  from keyboard). Take the SyncBox and go on *“Simulation”* mode.
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR 
 time at 650ms. 
-- Push the enter button and the syncbox will be now waiting for the scanner's trigger signal to
+- Push the enter button and the SyncBox will be now waiting for the scanner's trigger signal to
  forward it.  
-![syncbox](../../assets/images/syncbox.png "syncbox"){ width=63% }
+![SyncBox](../../assets/images/syncbox.png "SyncBox"){ width=63% }
 
 - Open the door of the cable wardrobe between the recording room and the scanner room where the
- ET power is also placed, and connect the syncbox in the following way:  
-![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){width=40% }
-![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){width=40% }
+ ET power is also placed, and connect the SyncBox in the following way:  
+![SyncBox_connection6](../../assets/images/syncbox_connection6.jpg "SyncBox_connection6"){width=40% }
+![SyncBox_connection7](../../assets/images/syncbox_connection7.jpg "SyncBox_connection7"){width=40% }
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.

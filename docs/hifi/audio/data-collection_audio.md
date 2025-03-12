@@ -4,7 +4,7 @@
 
 The experimental setup includes:
 
-- [X] **Syncbox:** A NordicLabs Syncbox receives TT (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
+- [X] **SyncBox:** A NordicLabs SyncBox receives TT (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
 - [X] **Experimental laptop:** It is the laptop where the Psychopy software is installed and with it the task programs are executed. This laptop also stores the data recorded by the ET at the end of the experiment.
 
 #### **ONE DAY BEFORE SCAN DATE**
@@ -73,13 +73,13 @@ The following section describes how to prepare the session on the day of the sca
 - Switch the SyncBox on using the button on the right side named *power*.
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button *“S”* from keyboard). Take the SyncBox and go on *“Simulation”* mode.
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. 
-- Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.  
-![syncbox](../../assets/images/syncbox.png "syncbox"){ width=63% }
+- Push the enter button  and the SyncBox will be now waiting for the scanner's trigger signal to forward it.  
+![SyncBox](../../assets/images/syncbox.png "SyncBox"){ width=63% }
 
 
 - Open the door of the cable wardrobe between the recording room and the scanner room, and connect the sync box in the following way:  
-![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=40% }
-![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=40% }
+![SyncBox_connection6](../../assets/images/syncbox_connection6.jpg "SyncBox_connection6"){ width=40% }
+![SyncBox_connection7](../../assets/images/syncbox_connection7.jpg "SyncBox_connection7"){ width=40% }
 
 
 ## **Setup Preparation at the technician position**

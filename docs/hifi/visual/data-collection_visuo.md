@@ -4,7 +4,7 @@
 
 The experimental setup includes:
 
-- **Syncbox**: A NordicLabs Syncbox receives TTL (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
+- **SyncBox**: A NordicLabs SyncBox receives TTL (transistor-transistor logic) triggers from the scanner. This box can forward the triggers converted into other formats and/or manipulate them (e.g., filter, generate, etc.).
 - **Eye tracker (ET)**: We use the EyeLink 1000 Plus (SR Research Ltd., Ottawa, Canada). Our particular variant “Long Range” is composed of three main elements:
   <ul>
       <li>inside the scanner's bore, we place an arm that holds an infrared lens and camera sensor on one side and an infrared lamp that illuminates the right eye of the subject through</li>
@@ -127,14 +127,14 @@ The following section describes how to prepare the session on the day of the sca
 - Switch the SyncBox on using the button on the right side.
 - Change the SyncBox correctly to send the triggers (Corresponding to push the key-button “S” from keyboard). Take the SyncBox and go on “Simulation” mode.
 - Then, change the parameters in the main menu modifying the pulse length at 100ms and the TR time at 650ms. This set-up is intrinsically linked to the capability of receiving / sending the trigger, therefore it's sequence sensitive.
-- Push the enter button  and the syncbox will be now waiting for the scanner's trigger signal to forward it.
+- Push the enter button  and the SyncBox will be now waiting for the scanner's trigger signal to forward it.
 
-![syncbox](../../assets/images/syncbox.png "syncbox")
+![SyncBox](../../assets/images/syncbox.png "SyncBox")
 
-- Open the door of the cable wardrobe between the recording room and the scanner room where the ET power is also placed, and connect the syncbox in the following way:
+- Open the door of the cable wardrobe between the recording room and the scanner room where the ET power is also placed, and connect the SyncBox in the following way:
 
-![syncbox_connection6](../../assets/images/syncbox_connection6.jpg "syncbox_connection6"){ width=49.5% }
-![syncbox_connection7](../../assets/images/syncbox_connection7.jpg "syncbox_connection7"){ width=49.5% }
+![SyncBox_connection6](../../assets/images/syncbox_connection6.jpg "SyncBox_connection6"){ width=49.5% }
+![SyncBox_connection7](../../assets/images/syncbox_connection7.jpg "SyncBox_connection7"){ width=49.5% }
 
 - Switch on the ET’s PC using the power-om button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
