@@ -1,6 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
 
 div.recommended.highlight span.hll {
   background-color: #a7e8c8;
+}
+
+/*@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../assets/fonts/vt323.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+*/
+span.syncbox {
+  border: 2px solid midnightblue;
+  border-radius: 4px;
+  padding: 3px;
+  font-family: 'VT323';
+  background-color: midnightblue;
+  color: palegreen;
+}
+
+span.keypress {
+  border: 1px solid black;
+  box-shadow: 2px 2px darkgrey;
+  font-size: .85em;
+  font-family: monospace;
+  line-height: .85em;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: .05em;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+
+span.consolebutton {
+  font-family: Arial;
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 5px 20px;
+  color: white;
+  background-color: darkgrey;
+}
+
+span.consolebutton.red {
+  background-color: tomato;
+}
+
+span.consolebutton.green {
+  background-color: green;
+}
+
+span.consolebutton.brown {
+  background-color: rgb(191,121,30);
+}
+
+span.flipud {
+  display: inline-block;
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+span.fliplr {
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+span.flip {
+  display: inline-block;
+  -moz-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1);
 }
 
 .md-typeset .admonition.thanks,
@@ -18,5 +97,22 @@ div.recommended.highlight span.hll {
           mask-image: var(--md-admonition-icon--thanks);
 }
 
+.md-typeset .admonition.important,
+.md-typeset details.important {
+/*  border-color: rgb(43, 155, 70);*/
+}
+.md-typeset .important > .admonition-title,
+.md-typeset .important > summary {
+/*  background-color: rgba(43, 155, 70, 0.1);*/
+}
+.md-typeset .important > .admonition-title::before,
+.md-typeset .important > summary::before {
+/*  background-color: rgb(43, 155, 70);*/
+  -webkit-mask-image: var(--md-admonition-icon--important);
+          mask-image: var(--md-admonition-icon--important);
+}
+
 .redcolor { color: red; }
 .bluecolor { color: darkblue; }
+
+li.task-list-item ol { list-style-type: decimal; }
