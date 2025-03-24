@@ -16,14 +16,6 @@ The graph above can be divided into the following components:
 
 - SyncBox: A NordicLabs SyncBox sends TTL (transistor-transistor logic) triggers to the scanner and forward the signal converted to the keyboard signal "s" to the PsychoPy laptop.
 
-![Trigger to PsychoPy PC](../../assets/debi_protocol/selected/19-pc-trigger-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
-**Trigger to PsychoPy PC**
-{: style="text-align: center;"}
-
-![Trigger to Scanner](../../assets/debi_protocol/selected/19-scanner-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
-**Trigger to Scanner**
-{: style="text-align: center;"}
-
 - Scanner: 3T clinical scanner (MAGNETOM PrismaFit, Siemens Healthineers) with a 64-channel head-neck coil with an attached mirror.
 - Eye tracker: We use the EyeLink 1000 Plus (SR Research Ltd.) for eye tracking.
   (i) The eye tracker consists of an infrared lens and camera sensor on one side, along with an infrared lamp to illuminate the subject's right eye. It is positioned inside the scanner bore.
@@ -55,6 +47,8 @@ On windows:
 ### Prepare Equipment Outside the Scanner Room
 
 #### Turn on the projector
+
+!!! important "If someone is already scanning, ask first if you can switch the projector on already"
 
 Turn on the Sony projector located in the back room of the scanner room.
 ![projector-e](../../assets/debi_protocol/selected/1-projector-e.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -92,6 +86,22 @@ Ensure the projector beam is directed into the scanner room.
 - Plug the other end of the cable into the SyncBox.
 ![rj45-2](../../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Turn on the SyncBox
+- Check syncrhonization
+    - [ ] Enter the <span class="syncbox">Synchronization</span> mode by selecting it and pushing the enter button :fontawesome-solid-circle:{ .bluecolor }.
+    - [ ] Hit the down arrow button :fontawesome-solid-caret-down:{ .bluecolor } until you find <span class="syncbox">Send triggerpulse to PC</span>
+    - [ ] Push the enter button :fontawesome-solid-circle:{ .bluecolor } every time you want to send an <span class="keypress">s</span> character.
+    - [ ] Check that the *PsychoPy* laptop types those triggers (e.g., on an open editor receiving keypresses, or the shell prompt, or looking at your open log).
+
+    ![Trigger to PsychoPy PC](../../assets/debi_protocol/selected/19-pc-trigger-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
+    **Trigger to PsychoPy PC**
+    {: style="text-align: center;"}
+
+    - [ ] Check that the *PsychoPy* laptop types those triggers onto the scanner's PC.
+
+    ![Trigger to Scanner](../../assets/debi_protocol/selected/19-scanner-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
+    **Trigger to Scanner**
+    {: style="text-align: center;"}
+
 - Go to the `Simulation`, and we can see the `Start Session` on the page.
 ![start-sync-1](../../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![start-sync-2](../../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -100,10 +110,11 @@ Ensure the projector beam is directed into the scanner room.
 
 #### Set up the ET system
 
-- Make sure the ET PC is charged
+- Make sure the ET PC is plugged in.
 ![charge-et-pc](../../assets/debi_protocol/selected/8-e-charge-ET-PC.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Before turning on the ET computer, ensure it is connected to the PsychoPy laptop (this should have been done in the previous step).
-- Turn on the ET PC.
+- Switch on the ET’s PC using the power-on button at the front
+- Select "Eyelink" when given the option of which operating system to launch.
 - Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
 ![et-initial](../../assets/debi_protocol/selected/8-e-ET-initial.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
@@ -125,7 +136,7 @@ Ensure the projector beam is directed into the scanner room.
 
 - Detach the standard mirror's frame from the head coil, if it is placed there.
 - Take the infrared mirror out of the «fMRI usage» box. It should be always protected by a mask unless in use.
-!!! warning "This infrared mirror is the most delicate part, because the morror cannot be replaced nor cleaned. This mirror is EXTREMELY EXPENSIVE."
+!!! warning "This infrared mirror is the most delicate part, because the mirror cannot be replaced nor cleaned. This mirror is EXTREMELY EXPENSIVE."
 ![ir-mirror](../../assets/debi_protocol/selected/12-e-infered-mirror.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - Get two gloves (e.g., from the box hanging at the entrance of the scanner room)
@@ -135,39 +146,53 @@ Ensure the projector beam is directed into the scanner room.
 
 ### Preparation in the scanner room
 
-#### Connect three external cables to ET and scanner
+#### Connect the external cables to ET and scanner
 
 ![cables](../../assets/debi_protocol/selected/13-e-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-- Two plugs for the black and one plug for the orange to ET
+- Unroll and connect the cables (two plugs for the black, one plug for the orange).
 ![et-cables](../../assets/debi_protocol/selected/13-e-ET-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
-- Connect the external cable from the SyncBox to the scanner.
 
-!!! warning No photo here due to magnetic field.
+!!! warning "No photo here due to magnetic field."
 
 #### Place the eye tracker and screen
 
 - Place the glass plate (stored in JB's office) on the scanner
 - Position the ET on the glass plate according to the stickers on the plate.
+
+!!! danger "Hold the ET arm FIRMLY, because the magnetic field imposes some resistance."
+
 - Place the half-circle one-direction screen, which is on the table behind the scanner, onto the glass plate. Position it between the projector and the eye tracker to reflect the projector's image.
 ![half-circle-screen](../../assets/debi_protocol/selected/14-half-circle-screen.png){: style="width: 80%;display: block; margin: 0 auto;"}
+
+- Check the output of the following command and verify that IP/mask is **100.1.1.2/24**, and the protocol is IP version 4.
+
+    ``` shell
+    ifconfig -a
+    ```
+
+- Check whether the link is properly established. The ET should respond to echos sent from a terminal with:
+
+    ```shell
+    ping 100.1.1.1
+    ```
 
 #### Place the participant
 
 ##### Place the subject on the bed
 
-- Apply a blanket, ear plugs and sand bags to the participant.
+- Provide the participant with a blanket, ear plugs and sand bags.
 - Adjust the head coil and the mirror. If necessary, apply some pads to adjust the participant's head position to ensure the forehead tightly positioned against the head coil.
-- Ensure the participant does not cross their legs.
-- Provide the participant with the emergency button and explain that they can press it in case of an emergency.
+- Ensure the participant does not cross the legs.
+- Provide the participant with the emergency button and explain that it can be pressed it in case of an emergency.
 
 ##### Adjust the scanner before send the subject inside
 
 - Twist the knob to adjust the height of the bed and  wait for it to stop.
-- Gently move the participant with the manual controls. Stop when the head is under the head-localizer. Instruct the participant to close his eyes.
-- Turn on the red light to localize the head. Put one hand on the head coil, then turn the knob left or right to align the red light with the mark on the head coil. Once aligned, turn off the red light and instruct the participant to open their eyes.
+- Gently move the participant with the manual controls. Stop when the head is under the head-localizer. Instruct the participant to close the eyes.
+- Turn on the red light to localize the head. Put one hand on the head coil, then turn the knob left or right to align the red light with the mark on the head coil. Once aligned, turn off the red light and instruct the participant to open the eyes.
 - Turn off the ventilation and set the scanner light to the minimum level.
-- SSend the participant into the scanner, then proceed to the console at the back of scanner.
+- Send the participant into the scanner, then proceed to the console at the back of scanner.
 
 ##### Adjust the lens of eye tracker
 
@@ -177,7 +202,6 @@ Ensure the projector beam is directed into the scanner room.
 - Rotate the lens until the pupil is in focus on the screen during camera mode. Adjust until the image is sharp, with both the pupil and eyelashes well defined.
 ![no-pupil](../../assets/debi_protocol/selected/17-e-no-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 ![good-pupil](../../assets/debi_protocol/selected/17-e-good-pupil.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
-
 
 ### ET Calibration
 
@@ -192,7 +216,7 @@ If you are connecting the eye tracker to the experimental laptop for the first t
 #### Run the experiment on psychopy
 
 Click the `Run Experiment` button, or run the experiment from the terminal by typing:
-`python experiment.py`. All the experiments must have a calibration and validation phase before the experiment itself.
+`python experiment.py`. All the experiments must have a calibration and validation phase before the experiment itself (they come with the software).
 
 !!!info "Click [here](https://github.com/Evelyn92/MREye_psychopy/blob/main/ver25/fixation_dots_T1weighted_250127_last_run.py) to check out the psychopy code for the [2.0 MR-Eye study](https://data.snf.ch/grants/grant/220433), and [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) for the [MR-Eye Track study](https://hee-projets.heig-vd.ch/en/projects/183/MREye-Track)"
 
@@ -211,7 +235,7 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 - Sampling rate: `1k`
 - Tracking mode: `Pupil-CR`
 - Pupil Tracking: `Ellipse`
-- Camera Position: `Right`"
+- Camera Position: `Right`
 
 #### Apply threshold to find the pupil
 
@@ -278,7 +302,6 @@ Your browser does not support the video? Click [here](https://github.com/Mattech
 - Remove the upper side of the head coil:
   - Unplug the head coil from the bed connector.
   - Lift the lever that releases the upper part of the coil and put it aside (e.g., inside the bore or on a chair next to the scanner).
-- Assist the participant to remove the headphones.
 - Help the participant sit down.
 - Help the participant step down and accompany them out to the control room.
 - Help the participant recover their personal belongings and change clothes if necessary.

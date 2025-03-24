@@ -136,7 +136,7 @@ The following section describes how to prepare the session on the day of the sca
 ![SyncBox_connection6](../../assets/images/syncbox_connection6.jpg "SyncBox_connection6"){ width=49.5% }
 ![SyncBox_connection7](../../assets/images/syncbox_connection7.jpg "SyncBox_connection7"){ width=49.5% }
 
-- Switch on the ET’s PC using the power-om button at the front
+- Switch on the ET’s PC using the power-on button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
 - [ ] Check the output of the following command and verify that IP/mask is **100.1.1.2/24**, and the protocol is IP version 4.
 
