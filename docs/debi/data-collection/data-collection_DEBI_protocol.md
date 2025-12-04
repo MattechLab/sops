@@ -27,8 +27,8 @@ The graph above can be divided into the following components:
 
 ### Documentation
 
-- [ ] Prepare the informed consent form ([EN](../../assets/files/form-en.pdf)|[FR](../../assets/files/form-fr.pdf))
-- [ ] Prepare an MRI safety screener ([EN](../../assets/files/safety_form_EN.pdf)|[FR](../../assets/files/safety_form_FR.pdf))
+- [ ] Prepare the informed consent form ([EN](../../assets/files/informed_consent/form-en.pdf)|[FR](../../assets/files/informed_consent/form-fr.pdf)|[DE](../../assets/files/informed_consent/form-de.pdf))
+- [ ] Prepare an MRI safety screener ([EN](../../assets/files/mri_safety/safety_form-en.pdf)|[FR](../../assets/files/mri-safety/safety_form-fr.pdf))
 - [ ] Prepare a pen and a receipt form that the participant will sign when they are given the compensation
 
 ### Configure the IP address
