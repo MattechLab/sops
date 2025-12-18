@@ -28,7 +28,7 @@ The graph above can be divided into the following components:
 ### Documentation
 
 - [ ] Prepare the informed consent form ([EN](../../assets/files/informed_consent/form-en.pdf)|[FR](../../assets/files/informed_consent/form-fr.pdf)|[DE](../../assets/files/informed_consent/form-de.pdf))
-- [ ] Prepare an MRI safety screener ([EN](../../assets/files/mri_safety/safety_form-en.pdf)|[FR](../../assets/files/mri-safety/safety_form-fr.pdf))
+- [ ] Prepare an MRI safety screener ([EN](../../assets/files/mri_safety/safety_form-en.pdf)|[FR](../../assets/files/mri_safety/safety_form-fr.pdf))
 - [ ] Prepare a pen and a receipt form that the participant will sign when they are given the compensation
 
 ### Configure the IP address
@@ -225,7 +225,9 @@ Click the `Run Experiment` button, or run the experiment from the terminal by ty
 **Example psychopy project (MR-Eye Track)**
 {: style="text-align: center;"}
 
-<!-- !!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's, but we did not notice there was such message popping out before)</mark>" -->
+!!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's SOP, but we did not notice there was such message popping out before)</mark>"
+
+!!! important "For every new visual stimulation, even on the same subject, there must be new calibration and validation phases to ensure a proper generated EDF"
 
 #### Run the calibration
 
@@ -239,9 +241,9 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 
 #### Apply threshold to find the pupil
 
-- On the ET PC, click `Apply Threshold` (top left corner, as shown in the figure below). Ensure that the pupil is detected and that you see the blue cross on the eye. If you encounter issues, check the lighting inside the scanner (ensure it's not too bright or too dim) and verify the participant's position inside the coil. Once the calibration starts, accept the calibration points when they turn green by clicking `Accept Fixation`.
+- On the ET PC, click `Apply Threshold` (top left corner, as shown in the figure below). Ensure that the pupil is detected and that you see the blue cross on the eye. If you encounter issues, check the lighting inside the scanner (ensure it's not too bright or too dim) and verify the participant's position inside the coil. Once the calibration starts, accept the calibration points when they turn green by clicking `Accept Fixation` (the first click is always manual, the following ones are automatic or manual).
 - If the calibration was successful, you will see the sentence `calibration successful` at the bottom in green. Check the stability of the accepted points and overall score of the calibration.
-!!!tip "If the calibration points form a cross, it is the perfect calibration."
+!!!tip "If the calibration points form a cross, it is a perfect calibration."
 ![good-cross](../../assets/debi_protocol/selected/16-e-good-cross.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Follow up with the validation
@@ -253,7 +255,7 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 
 #### Go into the scanner room and inform the participant
 
-  Inform the participant that you are leaving the room and will now close the door to start. Let them also know that you are going to communicate with them very shortly to check that communications through the speaker are functioning.
+Inform the participant that you are leaving the room and will now close the door to start. Let them also know that you are going to communicate with them very shortly to check that communications through the speaker are functioning.
 
 #### Exit the Scanning Room
 
@@ -261,31 +263,88 @@ Once the stimulation begins, follow the messages on the screen to run the calibr
 
 ### Running the scanning session
 
-#### Run the Experiment
+#### Prepare the visual stimulation experiment
 
 !!!info "Click [here](https://github.com/Evelyn92/MREye_psychopy/blob/main/ver25/fixation_dots_T1weighted_250127_last_run.py) to check out the psychopy code for the [2.0 MR-Eye study](https://data.snf.ch/grants/grant/220433), and [here](https://github.com/MattechLab/MR-EyeTrack/blob/dev/visual_stimuli/fixed_dot-16_grid_T1w.py) for the [MR-Eye Track study](https://hee-projets.heig-vd.ch/en/projects/183/MREye-Track)"
 
 - At the end of the ET calibration we are ready to continue with the experiment.
 - Wait for the sentence regarding the initial description of the task: “In this task you will see...”
+- Now, get ready to prepare the scanning sequence (next step).
 
-!!! important "Due to the upgrade of the scanner, it cannot immediately start the acquisition after receives the trigger signal from the SyncBox. Thus, we need to extract the temporal information of the scanner and ET respectively. In order to make such post-processing easier, we need to first start the acquisition, and then the eye tracker. Thus, the first trigger recorded in the pmu in the raw data will be exactly the same trigger that starts the eye tracker."
+#### Prepare the scanning sequence
 
-!!! danger "The order: start of scanner -> press the button of SyncBox is important and cannot be exchanged."
+##### Copy the Pulseq (.seq) files
 
-- Now two people need to get ready beside the SyncBox and the scanner.
-- One person first start the scanner acquisition.
-- Then, another person press  `start session` on the sync box clicking the round button.
-- The stimulation will start with the ET recording.
+If you are using Pulseq to develop your own sequences, the first thing you'd need to do is to copy your .seq files into the corresponding Siemens folder for Pulseq, in C:\ProgramData\Siemens\Numaris\MriCustomer\CustomerSeq\pulseq, as shown in the picture below.
 
-#### Run the scanning sequence
+![pulseq-folder](../../assets/images/pulseq-folder.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
 
-It includes a head-scout (64-ch head-coil), a high-resolution anatomical image (mprage), and other protocols depending on the project: T1w-LIBRE for MR-Eye Track and T1w-LIBRE, T1w-VIBE, T2w-LIBRE, and T2w-TSE.
+##### Add a new patient
 
-Check this video for the complete acquisition process:
+First, register a new patient, completing the **last name**, the **name**, the **patient ID** (you can press the Tab bar and the field will be automatically filled by the current timestamp), **date of birth**, age (automatic after entering the date of birth), **sex**, **height** and **weight**. On the right of the UI, open the Program Selection window to choose your protocol. If you don't have one yet, it is recommended to create one, so everytime you scan a new subject, you don't have to drag and drop all the sequences, they will already be there! Select "**Any Polarization**" as RF Transmit Mode. Select "**Brain**" as Body Part and Laterality. Select "**Head First Supine**" as Patient Orientation. You're good to go!
+
+![idea-patient](../../assets/images/idea-patient.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
+
+The protocol includes several sequences. In DEBI protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences depending on the project: T1w-LIBRE for MR-Eye Track and T1w-LIBRE, T1w-VIBE, T2w-LIBRE, and T2w-TSE for 2.0 MR-Eye.
+
+##### Load the Pulseq (.seq) files
+
+Once you have run the scout and the MP-RAGE, and you have positioned the FOV accordingly (check the video recording below), load the .seq file by going to Sequence > Special.
+
+- [ ] Change "libBalance / Grad health" to "disabled"
+
+!!! warning "Disable the "libBalance / Grad health" before loading the sequence. Otherwise, the UI might freeze..."
+
+- [ ] Select your sequence from the Pulseq file list
+- [ ] Change "Timing and Flip Angles" to "strict"
+- [ ] Leave the rest of the parameters untouched
+- [ ] Adjust the FOV and Shimming box (check the video recording below)
+
+![pulseq-load-sequence](../../assets/images/pulseq-load-sequence.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
+
+##### Modify some system parameters
+
+- Go to System > Coils and modify the following:
+
+    - [ ] Select HC1 to HC7 (all of them, in the video recording it is only shown HC3 to HC7, when the video was recorded)
+    
+![idea-coils](../../assets/images/idea-coils.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
+
+- Go to System > Miscellaneous and modify the following:
+
+    - [ ] Coil selection: Manual
+    - [ ] Coil combination: Sum of Squares
+
+- Go to System > Adjustments to:
+
+    - [ ] Adjustment strategy: Standard
+    - [ ] B0 Shim: Standard
+    - [ ] B1 Shim: Patient-specific
+    - [ ] Adjustment Tolerance: Auto
+    - [ ] Disable "Adjust with Body Coil"
+
+![idea-adjustments](../../assets/images/idea-adjustments.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
+
+##### Send the trigger to both the scanner and the stimuli laptop
+
+In IDEA UI, go to Physio, and select EXT Trigger.
+
+![idea-ext_trigger](../../assets/images/idea-ext_trigger.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
+
+Then, when the scan is launched through the Syncbox, you should see something like the following screenshot (make sure you have activated the Physio display with External Signal I):
+
+![idea-triggers](../../assets/images/idea-triggers.jpeg){: style="width: 80%; display: block; margin: 0 auto;"}
+
+##### Video recording of the whole process
 
 <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script><style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6eod5wljf4"></wistia-player>
 
 Your browser does not support the video? Click [here](https://github.com/MattechLab/sops/blob/dev/docs/assets/debi_protocol/selected/scan_eva.mp4) to download it.
+
+##### How to acquire prescans
+
+You can refer to this link documentation of monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
+[Prescan Acquisition Guide](https://mattechlab.github.io/monalisa/2-6_prescan_acquisition.html). Remember to enable "Adjust with Body Coil" in System > Adjustments (only for prescans).
 
 #### Session Completed
 
