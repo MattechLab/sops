@@ -86,7 +86,7 @@ Ensure the projector beam is directed into the scanner room.
 - Plug the other end of the cable into the SyncBox.
 ![rj45-2](../../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Turn on the SyncBox
-- Check syncrhonization
+- Check synchronization
     - [ ] Enter the <span class="syncbox">Synchronization</span> mode by selecting it and pushing the enter button :fontawesome-solid-circle:{ .bluecolor }.
     - [ ] Hit the down arrow button :fontawesome-solid-caret-down:{ .bluecolor } until you find <span class="syncbox">Send triggerpulse to PC</span>
     - [ ] Push the enter button :fontawesome-solid-circle:{ .bluecolor } every time you want to send an <span class="keypress">s</span> character.
@@ -281,7 +281,7 @@ If you are using Pulseq to develop your own sequences, the first thing you'd nee
 
 ##### Add a new patient
 
-First, register a new patient, completing the **last name**, the **name**, the **patient ID** (you can press the Tab bar and the field will be automatically filled by the current timestamp), **date of birth**, age (automatic after entering the date of birth), **sex**, **height** and **weight**. On the right of the UI, open the Program Selection window to choose your protocol. If you don't have one yet, it is recommended to create one, so everytime you scan a new subject, you don't have to drag and drop all the sequences, they will already be there! Select "**Any Polarization**" as RF Transmit Mode. Select "**Brain**" as Body Part and Laterality. Select "**Head First Supine**" as Patient Orientation. You're good to go!
+First, register a new patient, completing the **last name**, the **name**, the **patient ID** (you can press the Tab bar and the field will be automatically filled by the current timestamp), **date of birth**, age (automatic after entering the date of birth), **sex**, **height** and **weight**. On the right of the UI, open the Program Selection window to choose your protocol. If you don't have one yet, it is recommended to create one, so every time you scan a new subject, you don't have to drag and drop all the sequences, they will already be there! Select "**Any Polarization**" as RF Transmit Mode. Select "**Brain**" as Body Part and Laterality. Select "**Head First Supine**" as Patient Orientation. You're good to go!
 
 ![idea-patient](../../assets/images/idea-patient.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
 
