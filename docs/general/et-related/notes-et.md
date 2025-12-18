@@ -10,8 +10,8 @@
 
     !!! danger "The following two steps MUST be executed in this order"
 
-            - [ ] Drag and drop the modal dialog into the scanner's projector screen.
-            - [ ] Update the session number with the corresponding number.
+        - [ ] Drag and drop the modal dialog into the scanner's projector screen.
+        - [ ] Update the session number with the corresponding number.
 
 - [ ] Press <span class="keypress">Enter</span> to begin the *Camera Setup Mode*.
 

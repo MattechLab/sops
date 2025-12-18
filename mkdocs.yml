@@ -13,24 +13,22 @@ nav:
       - Recruitment, scheduling, and screening:
         - Recruitment and screening: general/recruit-schedule-screen/participants-recruitment.md
         - Scheduling: general/recruit-schedule-screen/scanner-scheduling.md
-      - Data preparation:
+      - Data management:
         - Data export: general/data-management/1_data_export.md
-        - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
         - Standard data storage: general/data-management/3_data_storage.md
       - Eye Tracking-related procedures:
         - ET software installation (Eyelink): general/et-related/et_software_install.md
-        - General ET guideline: general/et-related/general-et-notes.md
+        - ET extended guidelines: general/et-related/notes-et.md
+        - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
+      - Emergency procedures: general/emergency-procedures.md        
     - Debi protocol:
       - Data collection: debi/data-collection/data-collection_DEBI_protocol.md
-      - Data preparation:
+      - Data management:
         - Overall data workflow: debi/data-processing/0_overall-data-workflow.md
-        - Data export: general/data-management/1_data_export.md
-        - Standard data storage: general/data-management/3_data_storage.md
-        - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
         - Physio signal extraction from MRI raw data: debi/data-processing/3_physio_extraction.md
       - Data processing:
         - ET processing in MR-Eye 2.0: debi/data-processing/1_1_et_QAQC_of_mreye_data.md
-        - ET processing in MREye_Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
+        - ET processing in MR-Eye Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
         - MRI data processing: debi/data-processing/2_MRI_post_processing.md
     - HiFi protocols:
       - Visual checkerboard fMRI protocol: 
