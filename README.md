@@ -30,7 +30,7 @@ Workflow for editing sops:
   ``` bash
   mkdocs serve
   ```
-
+  Now you can visualize the website build locally, probably at http://127.0.0.1:8000/sops/. On push the webiste will be automatically deployed online. 
 - Deploy the site to the github page
 
 ``` bash
