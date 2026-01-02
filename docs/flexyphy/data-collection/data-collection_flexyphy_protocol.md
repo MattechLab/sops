@@ -27,7 +27,7 @@ The graph above can be divided into the following components:
   (i) The eye tracker consists of an infrared lens and camera sensor on one side, along with an infrared lamp to illuminate the subject's right eye. It is positioned inside the scanner bore.
   (ii) An infrared mirror is mounted on the head coil.
 - The Eye Tracker PC is bi-directionally connected to both the eye tracker and the PsychoPy laptop. It receives eye tracking data from the tracker, processes the eye movement trajectories and images, calculates pupil sizes by segmenting the pupil area, and classifies eye movement events based on predefined thresholds. The ET PC also receives trigger and task event messages from the PsychoPy laptop, logs data, and sends both the eye tracking data and logs back to the PsychoPy laptop.
-- Stimuli laptop (PsychoPy Laptop): The PsychoPy laptop runs the PsychoPy software, which is used to execute the task programs. These programs coordinate various hardware components, including the ET PC, eye tracker, the screen, and SyncBox. In our flexiphy experiment, two diffent protocols displays a central fixation shape and a moving fixation shape that sequentially change 4 locations horizontally.
+- Stimuli laptop (PsychoPy Laptop): The PsychoPy laptop runs the PsychoPy software, which is used to execute the task programs. These programs coordinate various hardware components, including the ET PC, eye tracker, the screen, and SyncBox. In our flexiphy experiment, two different protocols displays a central fixation shape and a moving fixation shape that sequentially change 4 locations horizontally.
 
 ## Session Preparation
 
@@ -299,7 +299,7 @@ The protocol includes several sequences. In DEBI protocol's case, a head-scout, 
 ##### Load the Pulseq (.seq) files
 
 To avoid biases induced by 1. the voulonteer mooving more since he spent more time in the sccanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
-Hence the protocol is functionning in the following order:
+Hence the protocol is functioning in the following order:
 1. GRE prescan (repeated twice, once for the body coil once with the acquisition coils)
 2. Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)
 3. LIBRE prescan (repeated twice, once for the body coil once with the acquisition coils)
