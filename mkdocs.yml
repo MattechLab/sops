@@ -32,6 +32,8 @@ nav:
         - ET processing in MR-Eye 2.0: debi/data-processing/1_1_et_QAQC_of_mreye_data.md
         - ET processing in MREye_Track: debi/data-processing/1_2_et_QAQC_of_mreye_tracking.md
         - MRI data processing: debi/data-processing/2_MRI_post_processing.md
+    - Flexyphy protocol:
+      - Data collection: flexyphy/data-collection/data-collection_flexyphy_protocol.md
     - HiFi protocols:
       - Visual checkerboard fMRI protocol: 
         - Data collection: hifi/visual/data-collection_visuo.md
