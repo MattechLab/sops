@@ -22,7 +22,11 @@ nav:
         - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
       - Emergency procedures: general/emergency-procedures.md        
     - Debi protocol:
-      - Data collection: debi/data-collection/data-collection_DEBI_protocol.md
+      - Data collection:
+        - Overall experimental setting: debi/data-collection/0_overall_exp_setting.md
+        - Session preparation: debi/data-collection/1_session_prep.md
+        - Run scanning session: debi/data-collection/2_run_scanning_session.md
+        - Session teardown: debi/data-collection/3_session_teardown.md
       - Data management:
         - Overall data workflow: debi/data-processing/0_overall-data-workflow.md
         - Physio signal extraction from MRI raw data: debi/data-processing/3_physio_extraction.md
