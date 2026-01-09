@@ -102,7 +102,7 @@ Ensure the projector beam is directed into the scanner room.
     **Trigger to PsychoPy PC**
     {: style="text-align: center;"}
 
-    - [ ] Check that the syncbox triggers are sent onto the scanner's PC (by pushing the enter button :fontawesome-solid-circle:{ .bluecolor }). If not, the trigger cable might not be correctly plugged inside the scanner room (black cable that connects the electronics panel to the scanner). The RJ45 cable and the trigger cable must be plugged (inside and outside the scanner) to the same exit number.
+    - [ ] Check that the SyncBox triggers are sent onto the scanner's PC (by pushing the enter button :fontawesome-solid-circle:{ .bluecolor }). If not, the trigger cable might not be correctly plugged inside the scanner room (black cable that connects the electronics panel to the scanner). The RJ45 cable and the trigger cable must be plugged (inside and outside the scanner) to the same exit number.
 
     ![Trigger to Scanner](../../assets/debi_protocol/selected/19-scanner-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
     **Trigger to Scanner**
@@ -235,7 +235,7 @@ Click the `Run Experiment` button, or run the experiment from the terminal by ty
 **Example psychopy project (MR-Eye Track)**
 {: style="text-align: center;"}
 
-!!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen</mark>. <mark>(According to Helene's SOP, but we did not notice there was such message popping out before)</mark>"
+!!! important "Make sure that once the experiment start after the calibration, the data are being stored to the xx.EDF file. There should be a message about that displayed <mark>at the ET’s PC screen, indicating that the recordings have started</mark>. <mark>(According to Helene's SOP, but we did not notice there was such message popping out before)</mark>"
 
 !!! important "For every new visual stimulation, even on the same subject, there must be new calibration and validation phases to ensure a proper generated EDF"
 
@@ -302,14 +302,15 @@ The protocol includes several sequences. In DEBI protocol's case, a head-scout, 
 
 ##### Load the Pulseq (.seq) files
 
-To avoid biases induced by 1. the voulonteer mooving more since he spent more time in the sccanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
+To avoid biases induced by 1. the volunteer moving more since he spent more time in the scanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
 Hence the protocol is functioning in the following order:
-1. GRE prescan (repeated twice, once for the body coil once with the acquisition coils)
+
+1. GRE prescans (repeated twice, once for the body coil once with the acquisition coils)
 2. Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)
-3. LIBRE prescan (repeated twice, once for the body coil once with the acquisition coils)
+3. LIBRE prescans (repeated twice, once for the body coil once with the acquisition coils)
 4. Randomly ordered (standard_phyllotaxis_libre, uniform_phyllotaxis_libre, flexiphy_phyllotaxis_libre)
 
-For each .seq file, once you have run the scout and the MP-RAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold over artifacts we are in reality acquiring double the FOV of what is shown by the FOX box at the scanner console), load the .seq file by going to Sequence > Special.
+For each .seq file, once you have run the scout and the MPRAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold-over artifacts we are in reality acquiring double the FOV of what is shown by the FOV box at the scanner console), load the .seq file by going to Sequence > Special.
 
 - [ ] Change "libBalance / Grad health" to "disabled"
 
@@ -357,13 +358,16 @@ Then, when the scan is launched through the Syncbox, you should see something li
 
 ##### Video recording of the whole process
 
+
+!!! warning "This video needs to be updated with the novel FOV placement, or this has to be clarified"
+
 <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script><style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6eod5wljf4"></wistia-player>
 
 Your browser does not support the video? Click [here](https://github.com/MattechLab/sops/blob/dev/docs/assets/debi_protocol/selected/scan_eva.mp4) to download it.
 
 ##### How to acquire prescans
 
-You can refer to this link documentation of monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
+You can refer to this link documentation of Monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
 [Prescan Acquisition Guide](https://mattechlab.github.io/monalisa/2-6_prescan_acquisition.html). Remember to enable "Adjust with Body Coil" in System > Adjustments (only for prescans).
 
 #### Session Completed
@@ -392,6 +396,7 @@ You can refer to this link documentation of monalisa reconstruction where we exp
 - Place the half-circle screen back to the table behind the scanner.
 - Unplug the two cables (signal and power) connected to the ET arm.
 - Roll the two ET cables and put them in the cupboard inside the Scanning room.
+- Roll the trigger cable and put it in the cupboard inside the Scanning room.
 - Remove the mirror frame from its rails mounted on the head coil and lay it on the bed.
 - Put the gloves on and cover the infrared mirror with a mask for storage.
 
