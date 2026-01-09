@@ -6,12 +6,12 @@
 
 Welcome to Mat-TechLab's SOPs website. These SOPs refers to different protocols (here below), although some of them might show overlapping procedures:
 
-- Visual checkerboard fMRI protocol
-- Audio fMRI protocol
-- Resting state audio-visual fMRI protocol
-- DEBI protocol
+- General experimental procedures
+- Debi protocol
+- Flexyphy protocol
+- HiFi protocols
 
-In the Data Collection section, the different protocols are extensively descripted.
+In the Data Collection section of each protocol you will find extensive information.
 
 ## About us
 
