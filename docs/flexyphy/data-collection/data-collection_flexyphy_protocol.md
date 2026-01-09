@@ -111,7 +111,7 @@ Ensure the projector beam is directed into the scanner room.
 - Go to the `Simulation`, and we can see the `Start Session` on the page.
 ![start-sync-1](../../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![start-sync-2](../../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
-- Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers. In this experiment, we use only the first tigger to synchronise the raw data MRI acquisition and the visual stimulation.
+- Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers. In this experiment, we use only the first trigger to synchronize the raw data MRI acquisition and the visual stimulation.
 ![tr-sync](../../assets/debi_protocol/selected/7-e3-tr-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Set up the ET system
@@ -163,7 +163,7 @@ Ensure the projector beam is directed into the scanner room.
 
 #### Place the eye tracker and screen
 
-- Place the glass plate (stored in JB's office) on the scanner
+- Place the glass plate (stored in JB's office) in the scanner
 - Position the ET on the glass plate according to the stickers on the plate.
 
 !!! danger "Hold the ET arm FIRMLY, because the magnetic field imposes some resistance."
@@ -184,6 +184,10 @@ Ensure the projector beam is directed into the scanner room.
     ```
 
 #### Place the participant
+
+!!! danger "Go through the Information to the participant section."
+- Sign the ICF and go through the experimental instructions one more time.
+- Make sure any metallic object (necklace, earring, piercing, elements in the pockts, e.g coins, etc) is correctly removed before entering the scanner room. Sometimes, boots and bras have metallic parts too. 
 
 ##### Place the subject on the bed
 
