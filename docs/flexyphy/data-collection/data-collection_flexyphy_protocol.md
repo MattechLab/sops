@@ -6,11 +6,11 @@
 
 This page contains a complete description of the data collection process for the flexyphy project.
 The acquisition of N=20 subjects were / will be collected in compliance with the ethical protocol VD 2023-02197 kick fMRI project (Ki-Ck fMRI – IRM fonctionnelle avec correction de mouvements).
-The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. Note that as a side effect of this project we also improve the 3D radial phyllotaxis spiral also for non-sequential binning (uniform phyllotaxis). 
+The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. This project consequentally improves the 3D radial phyllotaxis spiral for non-sequential binning (uniform phyllotaxis). 
 
 ## Overall experimental setting
 
-The goal of this setting is to compare several trajectories (3 trajectories: the standard phyllotaxsis, uniform phillotaxis, and flexiphy) on two different acquisition sequences associated to two different visual tasks: a gre sequence with central fixation task and a libre sequence with a moving fixation task.
+The goal of this setting is to compare several trajectories (3 trajectories: the standard phyllotaxis, uniform phillotaxis, and flexiphy) on two different acquisition sequences associated to two different visual tasks: a GRE sequence with central fixation task and a LIBRE sequence with a moving dot task.
 
 The goal is to obtain anatomical T1w MRI scan with synchronized eye tracking recording (the right eye gaze trajectories and eye movement events including blinking, saccades and fixation).
 
@@ -22,12 +22,12 @@ The graph above can be divided into the following components:
 
 - SyncBox: A NordicLabs SyncBox sends TTL (transistor-transistor logic) triggers to the scanner and forward the signal converted to the keyboard signal "s" to the PsychoPy laptop.
 
-- Scanner: 3T clinical scanner (MAGNETOM PrismaFit, Siemens Healthineers) with a 64-channel head-neck coil with an attached mirror.
+- Scanner: 3T clinical scanner (MAGNETOM PrismaFit, Siemens Healthineers) with a 64-channel head-neck coil with an attached infrared mirror.
 - Eye tracker: We use the EyeLink 1000 Plus (SR Research Ltd.) for eye tracking.
   (i) The eye tracker consists of an infrared lens and camera sensor on one side, along with an infrared lamp to illuminate the subject's right eye. It is positioned inside the scanner bore.
   (ii) An infrared mirror is mounted on the head coil.
 - The Eye Tracker PC is bi-directionally connected to both the eye tracker and the PsychoPy laptop. It receives eye tracking data from the tracker, processes the eye movement trajectories and images, calculates pupil sizes by segmenting the pupil area, and classifies eye movement events based on predefined thresholds. The ET PC also receives trigger and task event messages from the PsychoPy laptop, logs data, and sends both the eye tracking data and logs back to the PsychoPy laptop.
-- Stimuli laptop (PsychoPy Laptop): The PsychoPy laptop runs the PsychoPy software, which is used to execute the task programs. These programs coordinate various hardware components, including the ET PC, eye tracker, the screen, and SyncBox. In our flexiphy experiment, two different protocols displays a central fixation shape and a moving fixation shape that sequentially change 4 locations horizontally.
+- Stimuli laptop (PsychoPy Laptop): The PsychoPy laptop runs the PsychoPy software, which is used to execute the task programs. These programs coordinate various hardware components, including the ET PC, eye tracker, the screen, and SyncBox. In our flexiphy experiment, two different protocols displays 1) a central fixation shape and 2) a moving dot (along 4 horizontal locations) to induce a smooth pursuit eye movement.
 
 ## Session Preparation
 
@@ -35,7 +35,7 @@ The graph above can be divided into the following components:
 
 - [ ] Prepare the informed consent form ([FR](../../assets/files/informed_consent/flexyphy/adults-formulaire-d-information-et-consentement-kick-fmri.pdf))
 - [ ] Prepare an MRI safety screener ([EN](../../assets/files/mri_safety/safety_form-en.pdf)|[FR](../../assets/files/mri_safety/safety_form-fr.pdf))
-- [ ] Prepare a pen and a receipt form that the participant will sign when they are given the compensation
+- [ ] Prepare a pen and a receipt form that the participant will sign to receive the compensation
 
 ### Configure the IP address
 
@@ -66,7 +66,7 @@ Ensure the projector beam is directed into the scanner room.
 - Take the psychopy PC from JB's office.
 ![laptop-office](../../assets/debi_protocol/selected/2-e-jb-office-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-- Insert the hdmi into the Psychopy laptop to monitor the visual stimuli on the screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
+- Insert the HDMI into the Psychopy laptop to monitor the visual stimuli on the fixed computer screen. The hdmi should be from the 3-cable bundle (which connects PC, projector and the Psychopy laptop).
 ![psychopy-laptop](../../assets/debi_protocol/selected/2-e-psychopy-laptop.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 - If the monitor does not automatically switch the screen source, use the button below to manually change it.
@@ -102,7 +102,7 @@ Ensure the projector beam is directed into the scanner room.
     **Trigger to PsychoPy PC**
     {: style="text-align: center;"}
 
-    - [ ] Check that the *PsychoPy* laptop types those triggers onto the scanner's PC.
+    - [ ] Check that the syncbox triggers are sent onto the scanner's PC (by pushing the enter button :fontawesome-solid-circle:{ .bluecolor }). If not, the trigger cable might not be correctly plugged inside the scanner room (black cable that connects the electronics panel to the scanner). The RJ45 cable and the trigger cable must be plugged (inside and outside the scanner) to the same exit number.
 
     ![Trigger to Scanner](../../assets/debi_protocol/selected/19-scanner-signal.png){: style="width: 80%;display: block; margin: 0 auto;"}
     **Trigger to Scanner**
@@ -111,7 +111,7 @@ Ensure the projector beam is directed into the scanner room.
 - Go to the `Simulation`, and we can see the `Start Session` on the page.
 ![start-sync-1](../../assets/debi_protocol/selected/7-e-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![start-sync-2](../../assets/debi_protocol/selected/7-e2-start-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
-- Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers.
+- Configure the TR time to 2500 ms according to our sequence. The TR determines the interval between two triggers. In this experiment, we use only the first tigger to synchronise the raw data MRI acquisition and the visual stimulation.
 ![tr-sync](../../assets/debi_protocol/selected/7-e3-tr-sync.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 #### Set up the ET system
@@ -121,7 +121,7 @@ Ensure the projector beam is directed into the scanner room.
 - Before turning on the ET computer, ensure it is connected to the PsychoPy laptop (this should have been done in the previous step).
 - Switch on the ET’s PC using the power-on button at the front
 - Select "Eyelink" when given the option of which operating system to launch.
-- Initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
+- If it doesn't work automatically, initialize the ET software from the ET work station here by typing "elcl.exe" in the terminal
 ![et-initial](../../assets/debi_protocol/selected/8-e-ET-initial.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 !!! warning "The command elcl.exe will only work and start the software once the eye tracker device is connected to the ET PC. If you encounter any error messages, please ensure the eye tracker is connected to the PC inside the scanner room and try running the command again."
@@ -130,7 +130,7 @@ Ensure the projector beam is directed into the scanner room.
 
 - All the lenses, mirrors, and other equipment are in the box in JB's office.
 ![box](../../assets/debi_protocol/selected/9-e-box.png){: style="width: 80%;display: block; margin: 0 auto;"}
-- Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has a silver screw on it) <mark>(photos from Oscar's SOP)</mark>
+- Install the <mark>50mm</mark> lens onto the eye tracker (the compatible lens has copper screws on it)
   
 ![lens-1](../../assets/debi_protocol/selected/10-e1-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
 ![lens-2](../../assets/debi_protocol/selected/10-e2-cover-mri-compatible-lens.png){: style="width: 80%;display: block; margin: 0 auto;"}
@@ -156,7 +156,7 @@ Ensure the projector beam is directed into the scanner room.
 
 ![cables](../../assets/debi_protocol/selected/13-e-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
-- Unroll and connect the cables (two plugs for the black, one plug for the orange).
+- Unroll and connect the cables (two plugs for the black - power supply cable, one plug for the orange - optic fiber). Check that the trigger cable (black one) is correctly plug to the scanner.
 ![et-cables](../../assets/debi_protocol/selected/13-e-ET-cables.png){: style="width: 80%;display: block; margin: 0 auto;"}
 
 !!! warning "No photo here due to magnetic field."
