@@ -2964,7 +2964,7 @@ On windows:</p>
 <p style="text-align: center;"><img alt="Trigger to PsychoPy PC" src="../../../assets/debi_protocol/selected/19-pc-trigger-signal.png" style="width: 80%;display: block; margin: 0 auto;" />
 <strong>Trigger to PsychoPy <abbr title="personal computer">PC</abbr></strong></p>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Check that the syncbox triggers are sent onto the scanner's <abbr title="personal computer">PC</abbr> (by pushing the enter button <span class="twemoji bluecolor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0"/></svg></span>). If not, the trigger cable might not be correctly plugged inside the scanner room (black cable that connects the electronics panel to the scanner). The RJ45 cable and the trigger cable must be plugged (inside and outside the scanner) to the same exit number.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Check that the SyncBox triggers are sent onto the scanner's <abbr title="personal computer">PC</abbr> (by pushing the enter button <span class="twemoji bluecolor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 256a256 256 0 1 1 512 0 256 256 0 1 1-512 0"/></svg></span>). If not, the trigger cable might not be correctly plugged inside the scanner room (black cable that connects the electronics panel to the scanner). The RJ45 cable and the trigger cable must be plugged (inside and outside the scanner) to the same exit number.</li>
 </ul>
 <p style="text-align: center;"><img alt="Trigger to Scanner" src="../../../assets/debi_protocol/selected/19-scanner-signal.png" style="width: 80%;display: block; margin: 0 auto;" />
 <strong>Trigger to Scanner</strong></p>
@@ -3098,7 +3098,7 @@ On windows:</p>
 <!-- {: style="width: 80%;display: block; margin: 0 auto;"} -->
 <p style="text-align: center;"><strong>Example psychopy project (<abbr title="Magnetic Resonance">MR</abbr>-Eye Track)</strong></p>
 <div class="admonition important">
-<p class="admonition-title">Make sure that once the experiment start after the calibration, the data are being stored to the xx.<abbr title="EyeLink Data Format">EDF</abbr> file. There should be a message about that displayed <mark>at the <abbr title="eye tracker">ET</abbr>’s <abbr title="personal computer">PC</abbr> screen</mark>. <mark>(According to Helene's <abbr title="standard operating procedure">SOP</abbr>, but we did not notice there was such message popping out before)</mark></p>
+<p class="admonition-title">Make sure that once the experiment start after the calibration, the data are being stored to the xx.<abbr title="EyeLink Data Format">EDF</abbr> file. There should be a message about that displayed <mark>at the <abbr title="eye tracker">ET</abbr>’s <abbr title="personal computer">PC</abbr> screen, indicating that the recordings have started</mark>. <mark>(According to Helene's <abbr title="standard operating procedure">SOP</abbr>, but we did not notice there was such message popping out before)</mark></p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">For every new visual stimulation, even on the same subject, there must be new calibration and validation phases to ensure a proper generated <abbr title="EyeLink Data Format">EDF</abbr></p>
@@ -3154,13 +3154,15 @@ On windows:</p>
 <p><img alt="idea-patient" src="../../../assets/images/idea-patient.jpeg" style="width: 80%;display: block; margin: 0 auto;" /></p>
 <p>The protocol includes several sequences. In DEBI protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences depending on the project: <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-LIBRE for <abbr title="Magnetic Resonance">MR</abbr>-Eye Track and <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-LIBRE, <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-VIBE, <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-LIBRE, and <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-TSE for 2.0 <abbr title="Magnetic Resonance">MR</abbr>-Eye.</p>
 <h5 id="load-the-pulseq-seq-files">Load the Pulseq (.seq) files<a class="headerlink" href="#load-the-pulseq-seq-files" title="Permanent link">&para;</a></h5>
-<p>To avoid biases induced by 1. the voulonteer mooving more since he spent more time in the sccanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
-Hence the protocol is functioning in the following order:
-1. <abbr title="gradient-recalled echo">GRE</abbr> prescan (repeated twice, once for the body coil once with the acquisition coils)
-2. Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)
-3. LIBRE prescan (repeated twice, once for the body coil once with the acquisition coils)
-4. Randomly ordered (standard_phyllotaxis_libre, uniform_phyllotaxis_libre, flexiphy_phyllotaxis_libre)</p>
-<p>For each .seq file, once you have run the scout and the MP-RAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold over artifacts we are in reality acquiring double the FOV of what is shown by the FOX box at the scanner console), load the .seq file by going to Sequence &gt; Special.</p>
+<p>To avoid biases induced by 1. the volunteer moving more since he spent more time in the scanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
+Hence the protocol is functioning in the following order:</p>
+<ol>
+<li><abbr title="gradient-recalled echo">GRE</abbr> prescans (repeated twice, once for the body coil once with the acquisition coils)</li>
+<li>Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)</li>
+<li>LIBRE prescans (repeated twice, once for the body coil once with the acquisition coils)</li>
+<li>Randomly ordered (standard_phyllotaxis_libre, uniform_phyllotaxis_libre, flexiphy_phyllotaxis_libre)</li>
+</ol>
+<p>For each .seq file, once you have run the scout and the MPRAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold-over artifacts we are in reality acquiring double the FOV of what is shown by the FOV box at the scanner console), load the .seq file by going to Sequence &gt; Special.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Change "libBalance / Grad health" to "disabled"</li>
 </ul>
@@ -3210,13 +3212,16 @@ Hence the protocol is functioning in the following order:
 <p>Then, when the scan is launched through the Syncbox, you should see something like the following screenshot (make sure you have activated the Physio display with External Signal I):</p>
 <p><img alt="idea-triggers" src="../../../assets/images/idea-triggers.jpeg" style="width: 80%; display: block; margin: 0 auto;" /></p>
 <h5 id="video-recording-of-the-whole-process">Video recording of the whole process<a class="headerlink" href="#video-recording-of-the-whole-process" title="Permanent link">&para;</a></h5>
+<div class="admonition warning">
+<p class="admonition-title">This video needs to be updated with the novel FOV placement, or this has to be clarified</p>
+</div>
 <script src="https://fast.wistia.com/player.js" async></script>
 <script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script>
 <style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
 <p><wistia-player media-id="6eod5wljf4"></wistia-player></p>
 <p>Your browser does not support the video? Click <a href="https://github.com/MattechLab/sops/blob/dev/docs/assets/debi_protocol/selected/scan_eva.mp4">here</a> to download it.</p>
 <h5 id="how-to-acquire-prescans">How to acquire prescans<a class="headerlink" href="#how-to-acquire-prescans" title="Permanent link">&para;</a></h5>
-<p>You can refer to this link documentation of monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
+<p>You can refer to this link documentation of Monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
 <a href="https://mattechlab.github.io/monalisa/2-6_prescan_acquisition.html">Prescan Acquisition Guide</a>. Remember to enable "Adjust with Body Coil" in System &gt; Adjustments (only for prescans).</p>
 <h4 id="session-completed">Session Completed<a class="headerlink" href="#session-completed" title="Permanent link">&para;</a></h4>
 <ul>
@@ -3243,6 +3248,7 @@ Hence the protocol is functioning in the following order:
 <li>Place the half-circle screen back to the table behind the scanner.</li>
 <li>Unplug the two cables (signal and power) connected to the <abbr title="eye tracker">ET</abbr> arm.</li>
 <li>Roll the two <abbr title="eye tracker">ET</abbr> cables and put them in the cupboard inside the Scanning room.</li>
+<li>Roll the trigger cable and put it in the cupboard inside the Scanning room.</li>
 <li>Remove the mirror frame from its rails mounted on the head coil and lay it on the bed.</li>
 <li>Put the gloves on and cover the infrared mirror with a mask for storage.</li>
 </ul>
