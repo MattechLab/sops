@@ -21,7 +21,7 @@
 - [ ] In the *Program Selection* tab:
     ![](../assets/general/notes-scanning/console-04-new-exam.jpg)
     - [ ] Enter the weight and height of the participant.
-    - [ ] Select the right protocol under *RESEARCH* ⤷ *Yiwei/Jaime/Mauro/Yannick*.
+    - [ ] Select the right protocol under *RESEARCH* ⤷ *your-name*.
     - [ ] Select *Brain* as the organ.
     - [ ] Select the *Position* as "Head First Supine".
     - [ ] Before you hit <span class="consolebutton red">Exam</span>, you can edit general patient's data by changing to the *Patient Registration* tab if you need to edit general information about the patient.
@@ -96,12 +96,12 @@
     !!! warning "Some protocol folders on {{settings.mri.models.mri3}} are password-protected."
         To be able to save the protocol into a password-protected folder:
 
-        - [ ] Click on the closed-lock icon (:fontawesome-solid-lock:) placed next to the protected folder's name (`RESEARCH/Oscar` on {{settings.mri.models.mri3}})
+        - [ ] Click on the closed-lock icon (:fontawesome-solid-lock:) placed next to the protected folder's name (`RESEARCH/` on {{settings.mri.models.mri3}})
         - [ ] Type the password into the modal dialog: {{secrets.login.unlockpass_dotcockpit| default("******") }}
 
     - [ ] Open the Dot-Cockpit window
         ![](../assets/general/notes-scanning/save_protocol1.jpg)
-    - [ ] In `Browse`, find the right folder to save the protocol in (*RESEARCH* ⤷ *Oscar*).
+    - [ ] In `Browse`, find the right folder to save the protocol in (*RESEARCH* ⤷ *your-name*).
     - [ ] Right click on the folder and select *New* ⤷ *Program*. This opens an empty page in the program editor
         ![](../assets/general/notes-scanning/save_protocol2.jpg)
         ![](../assets/general/notes-scanning/save_protocol3.jpg)
