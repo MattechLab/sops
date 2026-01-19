@@ -4,7 +4,7 @@
 
 - [ ] Prepare the informed consent form ([EN](../../assets/files/informed_consent/form-en.pdf)|[FR](../../assets/files/informed_consent/form-fr.pdf)|[DE](../../assets/files/informed_consent/form-de.pdf))
 - [ ] Prepare an MRI safety screener ([EN](../../assets/files/mri_safety/safety_form-en.pdf)|[FR](../../assets/files/mri_safety/safety_form-fr.pdf))
-- [ ] Prepare a pen and a receipt form that the participant will sign when they are given the compensation
+- [ ] Prepare a pen and a [receipt form](../../assets/files/reimbursement.pdf) that the participant will sign when they are given the compensation
 
 ### Configure the IP address
 
