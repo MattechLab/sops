@@ -72,6 +72,10 @@ Then, when the scan is launched through the Syncbox, you should see something li
 
 ![idea-triggers](../../assets/images/idea-triggers.jpeg){: style="width: 80%; display: block; margin: 0 auto;"}
 
+If the trigger worked, you should see that both the visual stimulation and the scanning have started. Also, on the ET's PC, you should see a screen like this one, where the number in the red textbox indicates the samples being recorded:
+
+![et-recording](../../assets/images/et-recording.jpeg){: style="width: 80%; display: block; margin: 0 auto;"}
+
 ##### Video recording of the whole process
 
 <script src="https://fast.wistia.com/player.js" async></script><script src="https://fast.wistia.com/embed/6eod5wljf4.js" async type="module"></script><style>wistia-player[media-id='6eod5wljf4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/6eod5wljf4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> <wistia-player media-id="6eod5wljf4"></wistia-player>
