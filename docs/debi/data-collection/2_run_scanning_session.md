@@ -58,7 +58,7 @@ Once you have run the scout and the MP-RAGE, and you have positioned the FOV acc
     - [ ] B0 Shim: Standard
     - [ ] B1 Shim: Patient-specific
     - [ ] Adjustment Tolerance: Auto
-    - [ ] Disable "Adjust with Body Coil"
+    - [ ] Disable "Adjust with Body Coil" (this is only to acquire prescans)
 
 ![idea-adjustments](../../assets/images/idea-adjustments.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
 
@@ -86,6 +86,8 @@ Your browser does not support the video? Click [here](https://github.com/Mattech
 
 You can refer to this link documentation of monalisa reconstruction where we explained with a video recording how to do acquire the prescans:
 [Prescan Acquisition Guide](https://mattechlab.github.io/monalisa/2-6_prescan_acquisition.html). Remember to enable "Adjust with Body Coil" in System > Adjustments (only for prescans).
+
+!!! warning "When copying parameters from one sequence to another (HC to BC), make sure that the correct coils are selected!! E.g. If you copied the parameters (Copy Parameters + Adjustment Volume) from HC to BC, the coils selected for the BC scan are the ones from the HC, so you would need to manually select Body in System > Coils"
 
 #### Session Completed
 
