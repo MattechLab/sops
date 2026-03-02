@@ -90,5 +90,10 @@ You can refer to this link documentation of monalisa reconstruction where we exp
 #### Session Completed
 
 - At the end of the stimulation, click “t” on the experimental laptop and click the round button on the SyncBox to stop the running session.
+
+!!! warning "By pressing 't', the EDF data is being transferred from the ET PC to the laptop. Don't disconnect the ethernet cable before doing this!!"
+
+![edf-transfer](../../assets/debi_protocol/selected/EDF-transfer-data.jpg){: style="width: 80%;display: block; margin: 0 auto;"}
+
 - The exam is over, inform the participant that the session has concluded.
 - You can proceed with the tear-down protocol.
