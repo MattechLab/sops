@@ -39,6 +39,9 @@ nav:
         - MRI data processing: debi/data-processing/2_MRI_post_processing.md
     - Flexyphy protocol:
       - Data collection: flexyphy/data-collection/data-collection_flexyphy_protocol.md
+      - Data processing: 
+        - Overall data workflow: flexyphy/data-processing/0_overall-data-workflow-flexyphy.md
+        - Folder structure and HPC computing: flexyphy/data-processing/1_folder-structuring-and-HPC-computing-flexyphy.md
     - HiFi protocols:
       - Visual checkerboard fMRI protocol: 
         - Data collection: hifi/visual/data-collection_visuo.md

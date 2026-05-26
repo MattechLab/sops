@@ -5,8 +5,7 @@
 ## About this project
 
 This page contains a complete description of the data collection process for the flexyphy project.
-The acquisition of N=20 subjects were / will be collected in compliance with the ethical protocol VD 2023-02197 kick fMRI project (Ki-Ck fMRI – IRM fonctionnelle avec correction de mouvements).
-The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. This project consequentally improves the 3D radial phyllotaxis spiral for non-sequential binning (uniform phyllotaxis). 
+The acquisition of N=10 subjects was be collected in compliance with the ethical protocol VD 2023-02197 kick fMRI project (Ki-Ck fMRI – IRM fonctionnelle avec correction de mouvements). The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. Note that as a side effect of this project we also improve the 3D radial phyllotaxis spiral also for non-sequential binning (uniform phyllotaxis). 
 
 ## Overall experimental setting
 
@@ -298,19 +297,11 @@ First, register a new patient, completing the **last name**, the **name**, the *
 
 ![idea-patient](../../assets/images/idea-patient.jpeg){: style="width: 80%;display: block; margin: 0 auto;"}
 
-The protocol includes several sequences. In DEBI protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences depending on the project: T1w-LIBRE for MR-Eye Track and T1w-LIBRE, T1w-VIBE, T2w-LIBRE, and T2w-TSE for 2.0 MR-Eye.
+The protocol includes several sequences. In FLEXIPHY protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences (prescans, 3 GRE sequences with different trajectories and 3 LIBRE sequences with different trajectories) are present.
 
 ##### Load the Pulseq (.seq) files
 
-To avoid biases induced by 1. the volunteer moving more since he spent more time in the scanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
-Hence the protocol is functioning in the following order:
-
-1. GRE prescans (repeated twice, once for the body coil once with the acquisition coils)
-2. Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)
-3. LIBRE prescans (repeated twice, once for the body coil once with the acquisition coils)
-4. Randomly ordered (standard_phyllotaxis_libre, uniform_phyllotaxis_libre, flexiphy_phyllotaxis_libre)
-
-For each .seq file, once you have run the scout and the MPRAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold-over artifacts we are in reality acquiring double the FOV of what is shown by the FOV box at the scanner console), load the .seq file by going to Sequence > Special.
+For each .seq file, once you have run the scout and the MP-RAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold over artifacts we are in reality acquiring double the FOV of what is shown by the FOX box at the scanner console), load the .seq file by going to Sequence > Special.
 
 - [ ] Change "libBalance / Grad health" to "disabled"
 
