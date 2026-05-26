@@ -2,102 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mattechlab.github.io/SOPS/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-collection/0_overall_exp_setting/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-collection/1_session_prep/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-collection/2_run_scanning_session/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-collection/3_session_teardown/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-processing/0_overall-data-workflow/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-processing/1_1_et_QAQC_of_mreye_data/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-processing/1_2_et_QAQC_of_mreye_tracking/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-processing/2_MRI_post_processing/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/debi/data-processing/3_physio_extraction/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/flexyphy/data-collection/data-collection_flexyphy_protocol/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://mattechlab.github.io/SOPS/flexyphy/data-processing/0_overall-data-workflow-flexyphy/</loc>
+         <lastmod>2026-05-26</lastmod>
+    </url>
+    <url>
+         <loc>https://mattechlab.github.io/SOPS/flexyphy/data-processing/1_folder-structuring-and-HPC-computing-flexyphy/</loc>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/emergency-procedures/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/notes-scanning/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/participant-prep/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/pulseq/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/data-management/1_data_export/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/data-management/2_et1_edf_to_bids/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/data-management/3_data_storage/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/et-related/et_software_install/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/et-related/notes-et/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/recruit-schedule-screen/participants-recruitment/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/general/recruit-schedule-screen/scanner-scheduling/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/hifi/audio/data-collection_audio/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/hifi/resting/data-collection_rs/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
     <url>
          <loc>https://mattechlab.github.io/SOPS/hifi/visual/data-collection_visuo/</loc>
-         <lastmod>2026-03-02</lastmod>
+         <lastmod>2026-05-26</lastmod>
     </url>
 </urlset>

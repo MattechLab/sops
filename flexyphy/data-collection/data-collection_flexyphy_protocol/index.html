@@ -18,14 +18,14 @@
         <link rel="prev" href="../../../debi/data-processing/2_MRI_post_processing/">
       
       
-        <link rel="next" href="../../../hifi/visual/data-collection_visuo/">
+        <link rel="next" href="../../data-processing/0_overall-data-workflow-flexyphy/">
       
       
         
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1995,6 +1995,119 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data processing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Data processing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/0_overall-data-workflow-flexyphy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overall data workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-processing/1_folder-structuring-and-HPC-computing-flexyphy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder structure and HPC computing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2949,8 +3062,7 @@
 </details>
 <h2 id="about-this-project">About this project<a class="headerlink" href="#about-this-project" title="Permanent link">&para;</a></h2>
 <p>This page contains a complete description of the data collection process for the flexyphy project.
-The acquisition of N=20 subjects were / will be collected in compliance with the ethical protocol VD 2023-02197 kick <abbr title="functional MRI">fMRI</abbr> project (Ki-Ck <abbr title="functional MRI">fMRI</abbr> – IRM fonctionnelle avec correction de mouvements).
-The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. This project consequentally improves the 3D radial phyllotaxis spiral for non-sequential binning (uniform phyllotaxis). </p>
+The acquisition of N=10 subjects was be collected in compliance with the ethical protocol VD 2023-02197 kick <abbr title="functional MRI">fMRI</abbr> project (Ki-Ck <abbr title="functional MRI">fMRI</abbr> – IRM fonctionnelle avec correction de mouvements). The goal of this project is to acquire data to demonstrate the superiority of a redesigned 3D radial phyllotaxis spiral, that is suitable for collecting resting state data, requiring sequential binning of data. Note that as a side effect of this project we also improve the 3D radial phyllotaxis spiral also for non-sequential binning (uniform phyllotaxis). </p>
 <h2 id="overall-experimental-setting">Overall experimental setting<a class="headerlink" href="#overall-experimental-setting" title="Permanent link">&para;</a></h2>
 <p>The goal of this setting is to compare several trajectories (3 trajectories: the standard phyllotaxis, uniform phillotaxis, and flexiphy) on two different acquisition sequences associated to two different visual tasks: a <abbr title="gradient-recalled echo">GRE</abbr> sequence with central fixation task and a LIBRE sequence with a moving dot task.</p>
 <p>The goal is to obtain anatomical <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr> <abbr title="Magnetic Resonance Imaging">MRI</abbr> scan with synchronized eye tracking recording (the right eye gaze trajectories and eye movement events including blinking, saccades and fixation).</p>
@@ -3236,17 +3348,9 @@ On windows:</p>
 <h5 id="add-a-new-patient">Add a new patient<a class="headerlink" href="#add-a-new-patient" title="Permanent link">&para;</a></h5>
 <p>First, register a new patient, completing the <strong>last name</strong>, the <strong>name</strong>, the <strong>patient ID</strong> (you can press the Tab bar and the field will be automatically filled by the current timestamp), <strong>date of birth</strong>, age (automatic after entering the date of birth), <strong>sex</strong>, <strong>height</strong> and <strong>weight</strong>. On the right of the UI, open the Program Selection window to choose your protocol. If you don't have one yet, it is recommended to create one, so every time you scan a new subject, you don't have to drag and drop all the sequences, they will already be there! Select "<strong>Any Polarization</strong>" as <abbr title="radiofrequency">RF</abbr> Transmit Mode. Select "<strong>Brain</strong>" as Body Part and Laterality. Select "<strong>Head First Supine</strong>" as Patient Orientation. You're good to go!</p>
 <p><img alt="idea-patient" src="../../../assets/images/idea-patient.jpeg" style="width: 80%;display: block; margin: 0 auto;" /></p>
-<p>The protocol includes several sequences. In DEBI protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences depending on the project: <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-LIBRE for <abbr title="Magnetic Resonance">MR</abbr>-Eye Track and <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-LIBRE, <abbr title="T&lt;sub&gt;1&lt;/sub&gt;-weighted MRI">T1w</abbr>-VIBE, <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-LIBRE, and <abbr title="T&lt;sub&gt;2&lt;/sub&gt;-weighted MRI">T2w</abbr>-TSE for 2.0 <abbr title="Magnetic Resonance">MR</abbr>-Eye.</p>
+<p>The protocol includes several sequences. In FLEXIPHY protocol's case, a head-scout, a high-resolution anatomical image (MP-RAGE), and other sequences (prescans, 3 <abbr title="gradient-recalled echo">GRE</abbr> sequences with different trajectories and 3 LIBRE sequences with different trajectories) are present.</p>
 <h5 id="load-the-pulseq-seq-files">Load the Pulseq (.seq) files<a class="headerlink" href="#load-the-pulseq-seq-files" title="Permanent link">&para;</a></h5>
-<p>To avoid biases induced by 1. the volunteer moving more since he spent more time in the scanner 2. More accurate coil sensitivity due to the proximity of the prescan file to the mainscan file of a given trajectory w.r.t the others, the order of different trajectory was randomized.
-Hence the protocol is functioning in the following order:</p>
-<ol>
-<li><abbr title="gradient-recalled echo">GRE</abbr> prescans (repeated twice, once for the body coil once with the acquisition coils)</li>
-<li>Randomly ordered (standard_phyllotaxis_gre, uniform_phyllotaxis_gre, flexiphy_phyllotaxis_gre)</li>
-<li>LIBRE prescans (repeated twice, once for the body coil once with the acquisition coils)</li>
-<li>Randomly ordered (standard_phyllotaxis_libre, uniform_phyllotaxis_libre, flexiphy_phyllotaxis_libre)</li>
-</ol>
-<p>For each .seq file, once you have run the scout and the MPRAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold-over artifacts we are in reality acquiring double the FOV of what is shown by the FOV box at the scanner console), load the .seq file by going to Sequence &gt; Special.</p>
+<p>For each .seq file, once you have run the scout and the MP-RAGE, and you have positioned the FOV accordingly (The FOV and Shimming box were placed in a central box covering most of the brain, note that to avoid fold over artifacts we are in reality acquiring double the FOV of what is shown by the FOX box at the scanner console), load the .seq file by going to Sequence &gt; Special.</p>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Change "libBalance / Grad health" to "disabled"</li>
 </ul>
