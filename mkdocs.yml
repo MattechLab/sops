@@ -60,7 +60,7 @@ theme:
     # - tabs
     - navigation.instant
     # - navigation.tabs
-    - navigation.expand
+    # - navigation.expand
     - navigation.top
     - content.code.copy
     - content.code.annotate
