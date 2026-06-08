@@ -24,6 +24,7 @@ nav:
         - ET extended guidelines: general/et-related/notes-et.md
         - EDF-to-BIDS conversion: general/data-management/2_et1_edf_to_bids.md
       - Pulseq: general/pulseq.md
+      - FAQ & Troubleshooting: general/faq.md
     - Debi protocol:
       - Data collection:
         - Overall experimental setting: debi/data-collection/0_overall_exp_setting.md
