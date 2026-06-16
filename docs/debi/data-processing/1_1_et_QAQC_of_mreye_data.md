@@ -951,7 +951,7 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
      398.6000061]
     Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
      300.1000061 ]
-    After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+    After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
     The length of X coordinate data: 374558
     The length of Y coordinate data: 374558
 
@@ -999,7 +999,7 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
      398.6000061]
     Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
      300.1000061 ]
-    After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+    After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
     The length of X coordinate data: 374558
     The length of Y coordinate data: 374558
 
@@ -1042,7 +1042,7 @@ filtered_coor_data_LIBRE, Preserve_mask, Discard_mask = filter_XY_coord(coor_dat
      398.6000061]
     Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
      300.1000061 ]
-    After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+    After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
     The length of X coordinate data: 374558
     The length of Y coordinate data: 374558
 
@@ -1320,7 +1320,7 @@ def cal_event_stat(event_duration):
     
     return event_stat_dict
     
-def voilinplot(subject_event_dict, event,color='skyblue'):
+def violinplot(subject_event_dict, event,color='skyblue'):
     sub_num = len(subject_event_dict)
     event_duration_list=[]
     for idx in range(sub_num):
@@ -1403,9 +1403,9 @@ A violin plot combines the features of a box plot and a density plot, making it 
 
 
 ```python
-voilinplot(subject_event_dict, event='blink', color='skyblue')
-voilinplot(subject_event_dict, event='saccade',color='coral')
-voilinplot(subject_event_dict, event='fixation',color='teal')
+violinplot(subject_event_dict, event='blink', color='skyblue')
+violinplot(subject_event_dict, event='saccade',color='coral')
+violinplot(subject_event_dict, event='fixation',color='teal')
 ```
 
 

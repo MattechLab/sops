@@ -9,7 +9,7 @@ The acquisition of N=10 subjects was be collected in compliance with the ethical
 
 ## Overall experimental setting
 
-The goal of this setting is to compare several trajectories (3 trajectories: the standard phyllotaxis, uniform phillotaxis, and flexiphy) on two different acquisition sequences associated to two different visual tasks: a GRE sequence with central fixation task and a LIBRE sequence with a moving dot task.
+The goal of this setting is to compare several trajectories (3 trajectories: the standard phyllotaxis, uniform phyllotaxis, and flexiphy) on two different acquisition sequences associated to two different visual tasks: a GRE sequence with central fixation task and a LIBRE sequence with a moving dot task.
 
 The goal is to obtain anatomical T1w MRI scan with synchronized eye tracking recording (the right eye gaze trajectories and eye movement events including blinking, saccades and fixation).
 
@@ -91,7 +91,7 @@ Ensure the projector beam is directed into the scanner room.
 - Plug the other end of the cable into the SyncBox.
 ![rj45-2](../../assets/debi_protocol/selected/6-e2-rj45-plugged.png){: style="width: 80%;display: block; margin: 0 auto;"}
 - Turn on the SyncBox
-- Check syncrohonization
+- Check synchronization
     - [ ] Enter the <span class="syncbox">Synchronization</span> mode by selecting it and pushing the enter button :fontawesome-solid-circle:{ .bluecolor }.
     - [ ] Hit the down arrow button :fontawesome-solid-caret-down:{ .bluecolor } until you find <span class="syncbox">Send triggerpulse to PC</span>
     - [ ] Push the enter button :fontawesome-solid-circle:{ .bluecolor } every time you want to send an <span class="keypress">s</span> character.
@@ -186,7 +186,7 @@ Ensure the projector beam is directed into the scanner room.
 
 !!! danger "Go through the Information to the participant section."
 - Sign the ICF and go through the experimental instructions one more time.
-- Make sure any metallic object (necklace, earring, piercing, elements in the pockts, e.g coins, etc) is correctly removed before entering the scanner room. Sometimes, boots and bras have metallic parts too. 
+- Make sure any metallic object (necklace, earring, piercing, elements in the pockets, e.g coins, etc) is correctly removed before entering the scanner room. Sometimes, boots and bras have metallic parts too. 
 
 ##### Place the subject on the bed
 

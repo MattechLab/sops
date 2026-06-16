@@ -74,7 +74,7 @@
 
 At any moment, you may determine that the participant will require medical attention:
 
-  - The participant's health has been threatened or is actively at risk (e.g., elevated heart frequency, lack of pulse, respiratory issues, unconsciousness, dizzyness, unsteadyness, etc.)
+  - The participant's health has been threatened or is actively at risk (e.g., elevated heart frequency, lack of pulse, respiratory issues, unconsciousness, dizziness, unsteadiness, etc.)
   - The participant is unresponsive
   - The participant reports feeling unwell and needs attention
   - You think they may need medical attention but you are unsure.

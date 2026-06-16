@@ -53,7 +53,7 @@
     - [ ] Drag and drop the protocol's stack icon (🗇) corresponding to the `anat-T1w__mprage` sequence into the image viewer.
         The icon will appear AFTER the image has been acquired.
 
-- [ ] Make sure that the FOV (yellow square) includes the whole brain by tilting or translating the FOV. If the full brain, including the cerebellum, do not fit in the FOV, favorise making sure that the cortex is fully enclosed in the yellow square. For reproducibility, it is better if the FOV across sequences have a similar center and a similar tilt. However, if it is not possible, the priority remains to include the whole brain in the FOV.
+- [ ] Make sure that the FOV (yellow square) includes the whole brain by tilting or translating the FOV. If the full brain, including the cerebellum, do not fit in the FOV, prioritize making sure that the cortex is fully enclosed in the yellow square. For reproducibility, it is better if the FOV across sequences have a similar center and a similar tilt. However, if it is not possible, the priority remains to include the whole brain in the FOV.
 - [ ] If two sequences have the same resolution and the same number of slices, you can copy paste the FOV
     - [ ] Open the sequence for which you want to adjust the FOV/geometry
     - [ ] Right click on the sequence for which the FOV has already been carefully positioned
@@ -112,7 +112,7 @@
     - [ ] Once finished, click on the floppy disk icon (:fontawesome-solid-floppy-disk:) in the upper left to save.
     - [ ] Give the protocol a relevant name starting with the date of acquisition in the format YYYYMMDD and click <span class="consolebutton">Save</span>.
         ![](../assets/general/notes-scanning/save_protocol6.jpg)
-    - [ ] If desired, the protocol details can also be downloaded as a pdf on a peripherical USB key.
+    - [ ] If desired, the protocol details can also be downloaded as a pdf on a peripheral USB key.
         - [ ] Right-click on the protocol and select *Print*
         - [ ] Save the PDF in your USB key.
 - [ ] Make sure you save a different protocol for each of the four PE directions (i.e., AP, PA, LR, RL).
@@ -135,7 +135,7 @@
 - [ ] Turn off the satellite station ({{ secrets.hosts.console_left | default("███") }}, the computer on the left side of the control desk)
 - [ ] Turn off the control station ({{ secrets.hosts.console_right | default("███") }}, the computer on the right side of the control desk)
 - [ ] Wait for both computers to shut down.
-- [ ] Push the blue button displaying an overdotted circle and the **SYSTEM OFF** label above, which is found right above the key
+- [ ] Push the blue button displaying an over-dotted circle and the **SYSTEM OFF** label above, which is found right above the key
 - [ ] Turn the key into the *closed lock* position (:fontawesome-solid-lock:)
 
 ---
@@ -208,7 +208,7 @@ There are two options to extract the participant, when the session has concluded
 
 | ![take_table_down](../assets/general/notes-scanning/take_table_down.png) | ![quick_return](../assets/general/notes-scanning/quick_return.png) |
 |:--:|:--:|
-| *The participant can be extracted by pressing the extraction button (bottom arrow in the leftmost picture) and then genly rolling the central knob. Alternatively, you can just press the* Home :fontawesome-solid-house: *button (rightmost picture).* {: colspan=2} |
+| *The participant can be extracted by pressing the extraction button (bottom arrow in the leftmost picture) and then gently rolling the central knob. Alternatively, you can just press the* Home :fontawesome-solid-house: *button (rightmost picture).* {: colspan=2} |
 
 
 ---

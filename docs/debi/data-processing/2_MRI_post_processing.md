@@ -118,7 +118,7 @@ The scripts about how to use mitosius please refer to the [Monalisa document](ht
 
 ### Recon function
 
-In our reconstruction, we utilize `Steva` function for Single-frame Least-square Regularized Reconstruction, where reularizaiton is the l1-norm of spatial gradient of the image.
+In our reconstruction, we utilize `Steva` function for Single-frame Least-square Regularized Reconstruction, where regularization is the l1-norm of spatial gradient of the image.
 The reconstructed results are in the format of `**.mat`.
 You can find more details in the [Monalisa document](https://mattechlab.github.io/monalisa/2-2_reconstruction_calls.html#steva).
 

@@ -2,7 +2,7 @@
 
 ## 1 EyeLink Installation
 
-- The EyeLink MUST be installed before PyEDFRead and Pychopy.
+- The EyeLink MUST be installed before PyEDFRead and PsychoPy.
 - Register a new account for downloading the EyeLink Developers Kits. [Link for installation](https://www.sr-research.com/support/forumdisplay.php?fid=3).
 - The activation of the new account might take up for 24 hours.
 - Install the EyeLink Developer Kit and EyeLink Data Viewer following the instructions.
