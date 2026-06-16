@@ -2912,7 +2912,7 @@ X_coord [        nan         nan         nan ... 398.8999939 398.5
  398.6000061]
 Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
  300.1000061 ]
-After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
 The length of X coordinate data: 374558
 The length of Y coordinate data: 374558
 </code></pre></div>
@@ -2941,7 +2941,7 @@ X_coord [        nan         nan         nan ... 398.8999939 398.5
  398.6000061]
 Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
  300.1000061 ]
-After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
 The length of X coordinate data: 374558
 The length of Y coordinate data: 374558
 </code></pre></div>
@@ -2965,7 +2965,7 @@ X_coord [        nan         nan         nan ... 398.8999939 398.5
  398.6000061]
 Y_coord [         nan          nan          nan ... 302.1000061  301.79998779
  300.1000061 ]
-After cleaning nan, eminating data affected by blinking,            and preserving the fixation 
+After cleaning nan, eliminating data affected by blinking,            and preserving the fixation 
 The length of X coordinate data: 374558
 The length of Y coordinate data: 374558
 </code></pre></div>
@@ -3191,7 +3191,7 @@ mode: T1
 </span><span id="__span-32-11"><a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>
 </span><span id="__span-32-12"><a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>    <span class="k">return</span> <span class="n">event_stat_dict</span>
 </span><span id="__span-32-13"><a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>
-</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="k">def</span> <span class="nf">voilinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">):</span>
+</span><span id="__span-32-14"><a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a><span class="k">def</span> <span class="nf">violinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">):</span>
 </span><span id="__span-32-15"><a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>    <span class="n">sub_num</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">)</span>
 </span><span id="__span-32-16"><a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>    <span class="n">event_duration_list</span><span class="o">=</span><span class="p">[]</span>
 </span><span id="__span-32-17"><a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">sub_num</span><span class="p">):</span>
@@ -3258,9 +3258,9 @@ mode: T1
 </code></pre></div>
 <p>A Violin Plot is a Useful Tool for Visualizing Event Statistics.</p>
 <p>A violin plot combines the features of a box plot and a density plot, making it particularly useful for visualizing the distribution of data. It provides a comprehensive view of both the summary statistics and the underlying data distribution, which is highly beneficial when analyzing eye movement event statistics across different subjects.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">voilinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;blink&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
-</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">voilinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;saccade&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
-</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="n">voilinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;fixation&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;teal&#39;</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">violinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;blink&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+</span><span id="__span-35-2"><a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="n">violinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;saccade&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;coral&#39;</span><span class="p">)</span>
+</span><span id="__span-35-3"><a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="n">violinplot</span><span class="p">(</span><span class="n">subject_event_dict</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="s1">&#39;fixation&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;teal&#39;</span><span class="p">)</span>
 </span></code></pre></div>
 <p><img alt="png" src="../../../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_0.png" /></p>
 <p><img alt="png" src="../../../assets/et_mreye_img/L9_eye-tracking_data_Solution_56_1.png" /></p>
