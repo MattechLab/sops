@@ -2,7 +2,7 @@ name: Run tests
 
 on: [push]
 
-jobs:  
+jobs:
   codespell:
     name: Check for spelling errors
     runs-on: ubuntu-latest
@@ -10,7 +10,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        
+
       - name: Codespell
         uses: codespell-project/actions-codespell@v1
+
+  cspell:
+    name: Check for spelling errors (cspell)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Cspell
+        run: npx cspell --no-progress "**/*.md"
 
