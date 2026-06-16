@@ -76,6 +76,9 @@ theme:
       bug: fontawesome/regular/circle-xmark
 
 
+hooks:
+  - hooks/codespell_check.py
+
 plugins:
   - search
   - macros:

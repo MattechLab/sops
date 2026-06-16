@@ -23,7 +23,7 @@ The calibration or validation procedure of the eye-tracker is rejected.
 - Ensure the participant's forehead is firmly pressed against the head coil before entering the MRI scanner. If needed, use sponge pads to adjust head height.
 - Turn off the scanner's interior light to prevent interference with the eye-tracker's infrared reflection system.
 - Verify that the eye-tracker camera properly focuses on the pupil, with eyelashes visible in detail. If not, adjust the lens to the recommended setting (around 1) and fine-tune the smaller knob for precise focus.
-- Avoid any possible source of artefacts, such as make-up or facial creams.
+- Avoid any possible source of artifacts, such as make-up or facial creams.
 
 !!! tip "Additional guidance on ET setup and focus"
     See the [ET extended guidelines](et-related/notes-et.md#setting-viewframe-and-focusing) for step-by-step instructions on adjusting the viewframe, focus, and pupil detection thresholds.

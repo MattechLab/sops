@@ -1,4 +1,5 @@
 git+https://github.com/oesteban/git-changelog.git@experimental
+codespell
 markdown-include
 mkdocs
 mkdocs-macros-plugin
