@@ -74,6 +74,6 @@ jobs:
     - name: Deploy
       run: |
         cd www/
-        echo -e "a\n*\nq\n"|git add -i
-        git commit -am "auto: deploy new website"
+        git add -A
+        git commit -m "auto: deploy new website" || echo "Nothing to commit, site is unchanged"
         git push

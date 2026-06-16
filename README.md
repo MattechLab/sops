@@ -64,9 +64,13 @@ Workflow for editing sops:
   git push
 ```
 
-The workflow in the .github/workflows will take care of the deployment
-with the same function as
+### What happens when you push
 
-``` bash
- mkdocs gh-deploy
-```
+- **Pushing to any branch** runs [`.github/workflows/tests.yml`](.github/workflows/tests.yml): two parallel jobs, `codespell` and `cspell`, just spellchecking the docs. Nothing is built or deployed.
+- **Pushing to `mkdocs`** instead runs [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) (`tests.yml` skips this branch, since the same checks happen here too):
+  1. `codespell` and `cspell` jobs run first (same as above).
+  2. Once both pass, the `build` job checks out this branch into `mkdocs/` and the `gh-pages` branch into `www/`, wipes `www/`'s tracked files, then runs `mkdocs build -d ../www/` to regenerate the static site there (skipping its own spellcheck hooks, since the jobs above already checked this push).
+  3. The `Deploy` step commits and pushes whatever changed in `www/` straight to `gh-pages` — that's the branch actually served at <https://mattechlab.github.io/sops/>.
+- If either spellchecker fails, the build/deploy never runs, so a typo on `mkdocs` won't reach the live site.
+
+This is the automated equivalent of running `mkdocs gh-deploy` locally — you never need to run that yourself.
