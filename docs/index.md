@@ -4,7 +4,9 @@
 
     This SOPs page wouldn't have been possible with the precious help of Óscar Esteban and his team (Céline, Álex, etc.). You can find the original SOPs page from which this one is inspired [here](https://www.axonlab.org/hcph-sops/).
 
-Welcome to Mat-TechLab's SOPs website. These SOPs refers to different protocols (here below), although some of them might show overlapping procedures:
+Welcome to Mat-TechLab's SOPs website!
+
+These SOPs refers to different protocols (here below), although some of them might show overlapping procedures:
 
 - General experimental procedures
 - Debi protocol
