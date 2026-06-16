@@ -5,6 +5,8 @@ import subprocess
 
 
 def on_pre_build(config):
+    if os.environ.get("SKIP_SPELLCHECK_HOOKS"):
+        return
     repo_root = os.path.dirname(os.path.abspath(config["config_file_path"]))
     cspell_bin = os.path.join(repo_root, "node_modules", ".bin", "cspell")
     result = subprocess.run([cspell_bin, "--no-progress", "**/*.md"], cwd=repo_root)

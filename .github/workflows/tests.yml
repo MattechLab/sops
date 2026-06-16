@@ -1,6 +1,10 @@
 name: Run tests
 
-on: [push]
+# mkdocs branch pushes run the same spellcheck jobs via deploy.yml instead,
+# gating the build/deploy step - no need to run them twice here too.
+on:
+  push:
+    branches-ignore: [ mkdocs ]
 
 jobs:
   codespell:
