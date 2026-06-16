@@ -15,12 +15,18 @@ jobs:
         path: mkdocs
     - name: Set up Python
       uses: actions/setup-python@v4
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
     - name: Setup Git & Install dependencies
       run: |
         git config --global user.email "nipreps@gmail.com"
         git config --global user.name "nipreps-bot"
         python -m pip install --upgrade pip
         pip install -r mkdocs/requirements.txt
+        cd mkdocs/
+        npm ci
     - uses: actions/checkout@v2
       with:
         ref: gh-pages
@@ -30,6 +36,9 @@ jobs:
         cd www/
         git ls-files -z | xargs -0 git rm -f
     - name: Build
+      env:
+        JUPYTER_PLATFORM_DIRS: "1"
+        NO_MKDOCS_2_WARNING: "true"
       run: |
         cd mkdocs/
         mkdocs build -d ../www/
