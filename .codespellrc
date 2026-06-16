@@ -1,6 +1,6 @@
 [codespell]
 ignore-words = ./codespell_ignore.txt
-skip = ./site/*,./docs/stylesheets/*,./docs/assets/files/*,./include/templates/script-call-fr.md,./include/templates/script-invitation-fr.md,./include/abbreviations.md,*.ipynb
+skip = ./site/*,./node_modules/*,./docs/stylesheets/*,./docs/assets/files/*,./include/templates/script-call-fr.md,./include/templates/script-invitation-fr.md,./include/abbreviations.md,./cspell.json,./package-lock.json,*.ipynb
 builtin = clear,rare,en-GB_to_en-US
 count =
 quiet-level = 3

@@ -78,6 +78,7 @@ theme:
 
 hooks:
   - hooks/codespell_check.py
+  - hooks/cspell_check.py
 
 plugins:
   - search

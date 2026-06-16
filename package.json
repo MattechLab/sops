@@ -1,0 +1,8 @@
+{
+  "name": "sops-docs",
+  "private": true,
+  "description": "Tooling for linting the MatTech Lab SOPS documentation",
+  "devDependencies": {
+    "cspell": "^8.19.4"
+  }
+}
