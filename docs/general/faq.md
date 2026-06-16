@@ -1,5 +1,8 @@
 # Frequently Asked Questions (FAQ)
 
+<!-- TEMPORARY CI TEST CONTENT - to be reverted: this sentence has teh purpose of testing
+the speling checkers, with a wibbleflorpzap word cspell should also catch. -->
+
 ## Troubleshooting
 
 ### Problem 1: Visual stimuli experiment fails to run on the on-site laptop
